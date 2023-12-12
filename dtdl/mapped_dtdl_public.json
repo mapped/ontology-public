@@ -252,6 +252,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Alternating_Current_Electrical_System;1",
+    "@type": "Interface",
+    "displayName": "Alternating_Current_Electrical_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_System;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Altitude_Sensor;1",
     "@type": "Interface",
     "displayName": "Altitude_Sensor",
@@ -420,6 +429,15 @@
     "displayName": "BACnet_Vendor_Id",
     "extends": [
       "dtmi:mapped:core:Identity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Backflow_Preventer;1",
+    "@type": "Interface",
+    "displayName": "Backflow_Preventer",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
     ]
   },
   {
@@ -619,6 +637,15 @@
     "displayName": "Chiller_Plant",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Collection;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Circulating_Pump;1",
+    "@type": "Interface",
+    "displayName": "Circulating_Pump",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Pump;1"
     ]
   },
   {
@@ -999,6 +1026,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Direct_Current_Electrical_System;1",
+    "@type": "Interface",
+    "displayName": "Direct_Current_Electrical_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_System;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Direct_Expansion_Unit;1",
     "@type": "Interface",
     "displayName": "Direct_Expansion_Unit",
@@ -1122,6 +1158,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Domestic_Hot_Water_Circulating_Pump;1",
+    "@type": "Interface",
+    "displayName": "Domestic_Hot_Water_Circulating_Pump",
+    "extends": [
+      "dtmi:mapped:core:Circulating_Pump;1",
+      "dtmi:org:brickschema:schema:Brick:Hot_Water_Pump;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Domestic_Hot_Water_Differential_Temperature_Sensor;1",
     "@type": "Interface",
     "displayName": "Domestic_Hot_Water_Differential_Temperature_Sensor",
@@ -1146,6 +1192,15 @@
     "displayName": "Drain_Pan_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Drinking_Water_Fixture;1",
+    "@type": "Interface",
+    "displayName": "Drinking_Water_Fixture",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Distribution;1"
     ]
   },
   {
@@ -1260,6 +1315,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electric_Water_Heater;1",
+    "@type": "Interface",
+    "displayName": "Electric_Water_Heater",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Heater;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Electrical_Receptacle;1",
     "@type": "Interface",
     "displayName": "Electrical_Receptacle",
@@ -1313,6 +1377,15 @@
     "displayName": "Email_Identity",
     "extends": [
       "dtmi:mapped:core:Identity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Emergency_Light;1",
+    "@type": "Interface",
+    "displayName": "Emergency_Light",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Safety_Equipment;1"
     ]
   },
   {
@@ -1485,6 +1558,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Exhaust_Air_System;1",
+    "@type": "Interface",
+    "displayName": "Exhaust_Air_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_System;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Exit_Sign;1",
+    "@type": "Interface",
+    "displayName": "Exit_Sign",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Safety_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:External_Identity;1",
     "@type": "Interface",
     "description": "An identity specific to an external data source.",
@@ -1555,6 +1646,24 @@
     "displayName": "Fire_Damper",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Damper;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fire_Extinguisher;1",
+    "@type": "Interface",
+    "displayName": "Fire_Extinguisher",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Safety_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fire_Hydrant;1",
+    "@type": "Interface",
+    "displayName": "Fire_Hydrant",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Fire_Safety_Equipment;1"
     ]
   },
   {
@@ -1672,6 +1781,24 @@
     "displayName": "GHG_Emissions_Intensity_Per_Energy",
     "extends": [
       "dtmi:mapped:core:GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Gas_Pressure_Reducing_Valve;1",
+    "@type": "Interface",
+    "displayName": "Gas_Pressure_Reducing_Valve",
+    "extends": [
+      "dtmi:mapped:core:Pressure_Reducing_Valve;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Gas_Water_Heater;1",
+    "@type": "Interface",
+    "displayName": "Gas_Water_Heater",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Heater;1"
     ]
   },
   {
@@ -2641,6 +2768,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pressure_Reducing_Valve;1",
+    "@type": "Interface",
+    "displayName": "Pressure_Reducing_Valve",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Pressure_Request_Count_Status;1",
     "@type": "Interface",
     "displayName": "Pressure_Request_Count_Status",
@@ -2837,6 +2973,15 @@
     "displayName": "Return_Air_Static_Pressure_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Static_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Return_Air_System;1",
+    "@type": "Interface",
+    "displayName": "Return_Air_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_System;1"
     ]
   },
   {
@@ -3183,6 +3328,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Steam_Pressure_Reducing_Valve;1",
+    "@type": "Interface",
+    "displayName": "Steam_Pressure_Reducing_Valve",
+    "extends": [
+      "dtmi:mapped:core:Pressure_Reducing_Valve;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Steam_Pressure_Sensor;1",
     "@type": "Interface",
     "displayName": "Steam_Pressure_Sensor",
@@ -3255,6 +3409,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Supply_Air_System;1",
+    "@type": "Interface",
+    "displayName": "Supply_Air_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_System;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Supply_Air_Temperature_Reset_Setpoint;1",
     "@type": "Interface",
     "displayName": "Supply_Air_Temperature_Reset_Setpoint",
@@ -3305,6 +3468,34 @@
     "displayName": "Tank",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tank_Electric_Water_Heater;1",
+    "@type": "Interface",
+    "displayName": "Tank_Electric_Water_Heater",
+    "extends": [
+      "dtmi:mapped:core:Electric_Water_Heater;1",
+      "dtmi:mapped:core:Tank_Water_Heater;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tank_Water_Heater;1",
+    "@type": "Interface",
+    "displayName": "Tank_Water_Heater",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Heater;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tankless_Water_Heater;1",
+    "@type": "Interface",
+    "displayName": "Tankless_Water_Heater",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Heater;1"
     ]
   },
   {
@@ -3360,6 +3551,15 @@
     "displayName": "Thermal_Energy_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Thermal_Expansion_Tank;1",
+    "@type": "Interface",
+    "displayName": "Thermal_Expansion_Tank",
+    "extends": [
+      "dtmi:mapped:core:Tank;1"
     ]
   },
   {
@@ -3640,6 +3840,15 @@
     "displayName": "Water_Pressure_Low_Reset_Setpoint",
     "extends": [
       "dtmi:mapped:core:Pressure_Low_Reset_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Water_Pressure_Reducing_Valve;1",
+    "@type": "Interface",
+    "displayName": "Water_Pressure_Reducing_Valve",
+    "extends": [
+      "dtmi:mapped:core:Pressure_Reducing_Valve;1"
     ]
   },
   {
