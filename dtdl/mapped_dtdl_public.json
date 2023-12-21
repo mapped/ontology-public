@@ -713,6 +713,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Communication_Signal_Strength_Status;1",
+    "@type": "Interface",
+    "displayName": "Communication_Signal_Strength_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Compressor_Discharge_Refrigerant_Pressure_Sensor;1",
     "@type": "Interface",
     "displayName": "Compressor_Discharge_Refrigerant_Pressure_Sensor",
@@ -1970,6 +1979,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:High_Limit;1",
+    "@type": "Interface",
+    "displayName": "High_Limit",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Limit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:High_Static_Pressure_Alarm;1",
     "@type": "Interface",
     "displayName": "High_Static_Pressure_Alarm",
@@ -2206,6 +2224,15 @@
     "displayName": "Low_Humidity_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Low_Limit;1",
+    "@type": "Interface",
+    "displayName": "Low_Limit",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Limit;1"
     ]
   },
   {
@@ -3876,6 +3903,24 @@
     "displayName": "Water_Storage_Tank",
     "extends": [
       "dtmi:mapped:core:Storage_Tank;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Water_Usage_High_Limit;1",
+    "@type": "Interface",
+    "displayName": "Water_Usage_High_Limit",
+    "extends": [
+      "dtmi:mapped:core:High_Limit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Water_Usage_Low_Limit;1",
+    "@type": "Interface",
+    "displayName": "Water_Usage_Low_Limit",
+    "extends": [
+      "dtmi:mapped:core:Low_Limit;1"
     ]
   },
   {
