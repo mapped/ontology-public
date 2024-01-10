@@ -2696,6 +2696,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pool_Equipment;1",
+    "@type": "Interface",
+    "displayName": "Pool_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Postal_Address_Identity;1",
     "@type": "Interface",
     "description": "This is an identity representation of the address vertex of the place. The value of this identity should be derived from the corresponding Address vertex.",
