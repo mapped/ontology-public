@@ -475,7 +475,7 @@
     "@type": "Interface",
     "displayName": "Bio_Containment_Unit",
     "extends": [
-      "dtmi:mapped:core:Device;1"
+      "dtmi:org:brickschema:schema:Brick:Room;1"
     ]
   },
   {
