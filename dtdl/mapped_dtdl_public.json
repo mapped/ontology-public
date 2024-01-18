@@ -704,11 +704,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Coefficient_Of_Performance_Status;1",
+    "@id": "dtmi:mapped:core:Coefficient_Of_Performance;1",
     "@type": "Interface",
-    "displayName": "Coefficient_Of_Performance_Status",
+    "displayName": "Coefficient_Of_Performance",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Status;1"
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
