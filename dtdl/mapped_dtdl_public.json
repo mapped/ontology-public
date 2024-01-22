@@ -836,7 +836,7 @@
     "@type": "Interface",
     "displayName": "Cooling_Air_Temperature_Setpoint_Offset",
     "extends": [
-      "dtmi:mapped:core:Setpoint_Offset;1"
+      "dtmi:mapped:core:Temperature_Setpoint_Offset;1"
     ]
   },
   {
@@ -1900,6 +1900,15 @@
     "displayName": "Heat_Exchanger_Return_Water_Temperature_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Water_Temperature_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "displayName": "Heating_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Temperature_Setpoint_Offset;1"
     ]
   },
   {
@@ -3578,6 +3587,15 @@
     "displayName": "Temperature_Alarm_Setpoint",
     "extends": [
       "dtmi:mapped:core:Alarm_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "displayName": "Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Setpoint_Offset;1"
     ]
   },
   {
