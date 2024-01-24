@@ -1343,11 +1343,47 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Elevator_Alarm;1",
+    "@type": "Interface",
+    "displayName": "Elevator_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Elevator_Call_Panel;1",
+    "@type": "Interface",
+    "displayName": "Elevator_Call_Panel",
+    "extends": [
+      "dtmi:mapped:core:Elevator_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Elevator_Equipment;1",
+    "@type": "Interface",
+    "displayName": "Elevator_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Elevator_Pressurization_Fan;1",
     "@type": "Interface",
     "displayName": "Elevator_Pressurization_Fan",
     "extends": [
       "dtmi:mapped:core:Pressurization_Fan;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Elevator_System;1",
+    "@type": "Interface",
+    "displayName": "Elevator_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:System;1"
     ]
   },
   {
@@ -6878,7 +6914,8 @@
     "@type": "Interface",
     "displayName": "Elevator",
     "extends": [
-      "dtmi:mapped:core:Device;1"
+      "dtmi:mapped:core:Device;1",
+      "dtmi:mapped:core:Elevator_Equipment;1"
     ]
   },
   {
