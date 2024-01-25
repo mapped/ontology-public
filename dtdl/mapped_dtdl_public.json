@@ -786,11 +786,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Connected_Devices_Count_Status;1",
+    "@id": "dtmi:mapped:core:Connected_Devices_Count_Sensor;1",
     "@type": "Interface",
-    "displayName": "Connected_Devices_Count_Status",
+    "displayName": "Connected_Devices_Count_Sensor",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Status;1"
+      "dtmi:mapped:core:Count_Sensor;1"
     ]
   },
   {
@@ -870,11 +870,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Cooling_Request_Count_Status;1",
+    "@id": "dtmi:mapped:core:Cooling_Request_Count_Sensor;1",
     "@type": "Interface",
-    "displayName": "Cooling_Request_Count_Status",
+    "displayName": "Cooling_Request_Count_Sensor",
     "extends": [
-      "dtmi:mapped:core:Request_Count_Status;1"
+      "dtmi:mapped:core:Request_Count_Sensor;1"
     ]
   },
   {
@@ -1969,11 +1969,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Heating_Request_Count_Status;1",
+    "@id": "dtmi:mapped:core:Heating_Request_Count_Sensor;1",
     "@type": "Interface",
-    "displayName": "Heating_Request_Count_Status",
+    "displayName": "Heating_Request_Count_Sensor",
     "extends": [
-      "dtmi:mapped:core:Request_Count_Status;1"
+      "dtmi:mapped:core:Request_Count_Sensor;1"
     ]
   },
   {
@@ -2868,11 +2868,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Pressure_Request_Count_Status;1",
+    "@id": "dtmi:mapped:core:Pressure_Request_Count_Sensor;1",
     "@type": "Interface",
-    "displayName": "Pressure_Request_Count_Status",
+    "displayName": "Pressure_Request_Count_Sensor",
     "extends": [
-      "dtmi:mapped:core:Request_Count_Status;1"
+      "dtmi:mapped:core:Request_Count_Sensor;1"
     ]
   },
   {
@@ -3032,11 +3032,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Request_Count_Status;1",
+    "@id": "dtmi:mapped:core:Request_Count_Sensor;1",
     "@type": "Interface",
-    "displayName": "Request_Count_Status",
+    "displayName": "Request_Count_Sensor",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Status;1"
+      "dtmi:mapped:core:Count_Sensor;1"
     ]
   },
   {
