@@ -953,11 +953,41 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Damper_Close_Command;1",
+    "@type": "Interface",
+    "displayName": "Damper_Close_Command",
+    "extends": [
+      "dtmi:mapped:core:Close_Command;1",
+      "dtmi:org:brickschema:schema:Brick:Damper_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Damper_Open_Close_Command;1",
+    "@type": "Interface",
+    "displayName": "Damper_Open_Close_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper_Command;1",
+      "dtmi:mapped:core:Open_Close_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Damper_Open_Close_Status;1",
     "@type": "Interface",
     "displayName": "Damper_Open_Close_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Open_Close_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Damper_Open_Command;1",
+    "@type": "Interface",
+    "displayName": "Damper_Open_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper_Command;1",
+      "dtmi:mapped:core:Open_Command;1"
     ]
   },
   {
@@ -3095,6 +3125,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Return_CO2_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Return_CO2_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:CO2_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Return_Water_Temperature_Deadband_Setpoint;1",
     "@type": "Interface",
     "displayName": "Return_Water_Temperature_Deadband_Setpoint",
@@ -3796,6 +3835,26 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Valve_Close_Command;1",
+    "@type": "Interface",
+    "displayName": "Valve_Close_Command",
+    "extends": [
+      "dtmi:mapped:core:Close_Command;1",
+      "dtmi:org:brickschema:schema:Brick:Valve_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Valve_Open_Close_Command;1",
+    "@type": "Interface",
+    "displayName": "Valve_Open_Close_Command",
+    "extends": [
+      "dtmi:mapped:core:Open_Close_Command;1",
+      "dtmi:org:brickschema:schema:Brick:Valve_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Valve_Open_Close_Status;1",
     "@type": "Interface",
     "displayName": "Valve_Open_Close_Status",
@@ -4069,6 +4128,15 @@
     "displayName": "Work_Order",
     "extends": [
       "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Zone_CO2_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Zone_CO2_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:CO2_Sensor;1"
     ]
   },
   {
