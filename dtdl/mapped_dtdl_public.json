@@ -1001,6 +1001,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Defrost_Cutoff_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "displayName": "Defrost_Cutoff_Temperature_Setpoint",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Dehumidification_Status;1",
     "@type": "Interface",
     "displayName": "Dehumidification_Status",
@@ -1156,6 +1165,15 @@
     "displayName": "Display",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Display_Case_Refrigerator;1",
+    "@type": "Interface",
+    "displayName": "Display_Case_Refrigerator",
+    "extends": [
+      "dtmi:mapped:core:Refrigerator;1"
     ]
   },
   {
@@ -3002,6 +3020,15 @@
     "displayName": "Refrigeration_System",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:System;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Refrigerator;1",
+    "@type": "Interface",
+    "displayName": "Refrigerator",
+    "extends": [
+      "dtmi:mapped:core:Refrigeration_Equipment;1"
     ]
   },
   {
