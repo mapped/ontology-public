@@ -161,6 +161,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Air_Cooled_Chiller;1",
+    "@type": "Interface",
+    "displayName": "Air_Cooled_Chiller",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Chiller;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Air_Curtain;1",
     "@type": "Interface",
     "displayName": "Air_Curtain",
@@ -1210,8 +1219,7 @@
     "@type": "Interface",
     "displayName": "Domestic_Hot_Water_Circulating_Pump",
     "extends": [
-      "dtmi:mapped:core:Circulating_Pump;1",
-      "dtmi:org:brickschema:schema:Brick:Hot_Water_Pump;1"
+      "dtmi:mapped:core:Hot_Water_Circulating_Pump;1"
     ]
   },
   {
@@ -1725,6 +1733,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Filter_Alarm;1",
+    "@type": "Interface",
+    "displayName": "Filter_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Filter_Alarm_Setpoint;1",
     "@type": "Interface",
     "displayName": "Filter_Alarm_Setpoint",
@@ -2113,6 +2130,16 @@
     "displayName": "High_Voltage_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Hot_Water_Circulating_Pump;1",
+    "@type": "Interface",
+    "displayName": "Hot_Water_Circulating_Pump",
+    "extends": [
+      "dtmi:mapped:core:Circulating_Pump;1",
+      "dtmi:org:brickschema:schema:Brick:Hot_Water_Pump;1"
     ]
   },
   {
@@ -2725,6 +2752,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_Loss_Alarm;1",
+    "@type": "Interface",
+    "displayName": "Phase_Loss_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phone_Number;1",
     "@type": "Interface",
     "description": "A phone number associated with an agent such as a person.",
@@ -3266,6 +3302,15 @@
     "displayName": "Sensor_Type_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Service_Required_Alarm;1",
+    "@type": "Interface",
+    "displayName": "Service_Required_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
     ]
   },
   {
@@ -3966,6 +4011,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Walk_In_Freezer;1",
+    "@type": "Interface",
+    "displayName": "Walk_In_Freezer",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Walk_In_Refrigerator;1",
+    "@type": "Interface",
+    "displayName": "Walk_In_Refrigerator",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Wall_Air_Conditioner;1",
     "@type": "Interface",
     "displayName": "Wall_Air_Conditioner",
@@ -3989,6 +4052,15 @@
     "displayName": "Waste_Meter",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Meter;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Water_Cooled_Chiller;1",
+    "@type": "Interface",
+    "displayName": "Water_Cooled_Chiller",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Chiller;1"
     ]
   },
   {
@@ -8209,7 +8281,8 @@
     "@type": "Interface",
     "displayName": "Freezer",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Laboratory;1"
+      "dtmi:org:brickschema:schema:Brick:Laboratory;1",
+      "dtmi:mapped:core:Refrigeration_Equipment;1"
     ]
   },
   {
