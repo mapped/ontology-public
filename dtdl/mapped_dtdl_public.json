@@ -4015,7 +4015,7 @@
     "@type": "Interface",
     "displayName": "Walk_In_Freezer",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+      "dtmi:mapped:core:Refrigeration_Equipment;1"
     ]
   },
   {
@@ -4024,7 +4024,7 @@
     "@type": "Interface",
     "displayName": "Walk_In_Refrigerator",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+      "dtmi:mapped:core:Refrigerator;1"
     ]
   },
   {
@@ -8281,8 +8281,7 @@
     "@type": "Interface",
     "displayName": "Freezer",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Laboratory;1",
-      "dtmi:mapped:core:Refrigeration_Equipment;1"
+      "dtmi:org:brickschema:schema:Brick:Laboratory;1"
     ]
   },
   {
