@@ -735,7 +735,16 @@
     "@type": "Interface",
     "displayName": "Compressor_Discharge_Refrigerant_Pressure_Sensor",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Pressure_Sensor;1"
+      "dtmi:mapped:core:Refrigerant_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Compressor_Speed_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Compressor_Speed_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Speed_Sensor;1"
     ]
   },
   {
@@ -1709,7 +1718,7 @@
     "@type": "Interface",
     "displayName": "Fan_Powered_VAV",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:VAV;1"
+      "dtmi:org:brickschema:schema:Brick:Variable_Air_Volume_Box;1"
     ]
   },
   {
@@ -1723,12 +1732,20 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Fan_Speed_Status;1",
+    "@id": "dtmi:mapped:core:Fan_Speed_Mode_Status;1",
     "@type": "Interface",
-    "displayName": "Fan_Speed_Status",
+    "displayName": "Fan_Speed_Mode_Status",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Fan_Status;1",
-      "dtmi:org:brickschema:schema:Brick:Speed_Status;1"
+      "dtmi:org:brickschema:schema:Brick:Speed_Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fan_Speed_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Fan_Speed_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Speed_Sensor;1"
     ]
   },
   {
@@ -2312,6 +2329,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Liquid_Line_Refrigerant_Pressure_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Liquid_Line_Refrigerant_Pressure_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Liquid_Line_Refrigerant_Temperature_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Liquid_Line_Refrigerant_Temperature_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Temperature_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Location_Sensor;1",
     "@type": "Interface",
     "displayName": "Location_Sensor",
@@ -2617,6 +2652,15 @@
     "displayName": "Occupied_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Occupied_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Zone_Air_Heating_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "displayName": "Occupied_Zone_Air_Heating_Temperature_Setpoint",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone_Air_Heating_Temperature_Setpoint;1"
     ]
   },
   {
@@ -2997,6 +3041,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pump_Speed_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Pump_Speed_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Speed_Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pump_Speed_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Pump_Speed_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Speed_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Rain_Level_Sensor;1",
     "@type": "Interface",
     "displayName": "Rain_Level_Sensor",
@@ -3020,6 +3082,15 @@
     "displayName": "Refrigerant_Level_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Refrigerant_Pressure_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Refrigerant_Pressure_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Temperature_Sensor;1"
     ]
   },
   {
@@ -3566,6 +3637,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Subcooling_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Subcooling_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Suction_Line_Refrigerant_Pressure_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Suction_Line_Refrigerant_Pressure_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Suction_Line_Refrigerant_Temperature_Sensor;1",
     "@type": "Interface",
     "displayName": "Suction_Line_Refrigerant_Temperature_Sensor",
@@ -3634,15 +3723,6 @@
     "displayName": "Supply_Fan_Speed_Command",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Fan_Speed_Command;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Supply_Fan_Speed_Status;1",
-    "@type": "Interface",
-    "displayName": "Supply_Fan_Speed_Status",
-    "extends": [
-      "dtmi:mapped:core:Fan_Speed_Status;1"
     ]
   },
   {
@@ -7965,15 +8045,6 @@
     "displayName": "Eye_Wash_Station",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Emergency_Wash_Station;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:FCU;1",
-    "@type": "Interface",
-    "displayName": "FCU",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
     ]
   },
   {
@@ -14477,15 +14548,6 @@
     "displayName": "Usage_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:VAV;1",
-    "@type": "Interface",
-    "displayName": "VAV",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
     ]
   },
   {
