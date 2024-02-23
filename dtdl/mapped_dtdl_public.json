@@ -451,6 +451,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Battery_Cabinet;1",
+    "@type": "Interface",
+    "displayName": "Battery_Cabinet",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Battery_Status;1",
     "@type": "Interface",
     "displayName": "Battery_Status",
@@ -514,6 +523,15 @@
     "displayName": "Booster_Pump",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Water_Pump;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Busway;1",
+    "@type": "Interface",
+    "displayName": "Busway",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
     ]
   },
   {
@@ -595,6 +613,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Carbon_Monoxide_Detector;1",
+    "@type": "Interface",
+    "displayName": "Carbon_Monoxide_Detector",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Ceiling_Height_Sensor;1",
     "@type": "Interface",
     "displayName": "Ceiling_Height_Sensor",
@@ -664,6 +691,15 @@
     "displayName": "Class",
     "extends": [
       "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Clean_Agent_Fire_Suppression_Unit;1",
+    "@type": "Interface",
+    "displayName": "Clean_Agent_Fire_Suppression_Unit",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Fire_Safety_Equipment;1"
     ]
   },
   {
@@ -1261,6 +1297,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Drinking_Fountain;1",
+    "@type": "Interface",
+    "displayName": "Drinking_Fountain",
+    "extends": [
+      "dtmi:mapped:core:Plumbing_Fixture;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Drinking_Water_Fixture;1",
     "@type": "Interface",
     "displayName": "Drinking_Water_Fixture",
@@ -1750,6 +1795,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Faucet;1",
+    "@type": "Interface",
+    "displayName": "Faucet",
+    "extends": [
+      "dtmi:mapped:core:Plumbing_Fixture;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Filter_Alarm;1",
     "@type": "Interface",
     "displayName": "Filter_Alarm",
@@ -1821,6 +1875,15 @@
     "extends": [
       "dtmi:mapped:core:Floor_Level;1",
       "dtmi:mapped:core:Identity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Flush_Valve;1",
+    "@type": "Interface",
+    "displayName": "Flush_Valve",
+    "extends": [
+      "dtmi:mapped:core:Plumbing_Fixture;1"
     ]
   },
   {
@@ -2410,6 +2473,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Maintenance_Bypass_Switch;1",
+    "@type": "Interface",
+    "displayName": "Maintenance_Bypass_Switch",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Switch;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Max_Air_Temperature_Setpoint_Limit;1",
     "@type": "Interface",
     "displayName": "Max_Air_Temperature_Setpoint_Limit",
@@ -2829,6 +2901,15 @@
     "displayName": "Plumbing_Equipment",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Plumbing_Fixture;1",
+    "@type": "Interface",
+    "displayName": "Plumbing_Fixture",
+    "extends": [
+      "dtmi:mapped:core:Plumbing_Equipment;1"
     ]
   },
   {
@@ -3873,6 +3954,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Toilet;1",
+    "@type": "Interface",
+    "displayName": "Toilet",
+    "extends": [
+      "dtmi:mapped:core:Plumbing_Fixture;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Total_GHG_Emissions;1",
     "@type": "Interface",
     "description": "Total Emissions is the sum of Direct Emissions and Indirect Emissions.",
@@ -3909,6 +3999,15 @@
     "displayName": "Total_Harmonic_Distortion_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Transfer_Switch;1",
+    "@type": "Interface",
+    "displayName": "Transfer_Switch",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Switch;1"
     ]
   },
   {
@@ -3964,6 +4063,15 @@
     "displayName": "Unoccupied_Zone_Air_Heating_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Zone_Air_Heating_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Urinal;1",
+    "@type": "Interface",
+    "displayName": "Urinal",
+    "extends": [
+      "dtmi:mapped:core:Plumbing_Fixture;1"
     ]
   },
   {
@@ -4242,6 +4350,15 @@
     "displayName": "Water_Zone",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Waterless_Urinal;1",
+    "@type": "Interface",
+    "displayName": "Waterless_Urinal",
+    "extends": [
+      "dtmi:mapped:core:Urinal;1"
     ]
   },
   {
