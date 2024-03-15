@@ -1392,11 +1392,11 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Display_Case_Refrigerator;1",
+    "@id": "dtmi:mapped:core:Display_Case;1",
     "@type": "Interface",
-    "displayName": "Display_Case_Refrigerator",
+    "displayName": "Display_Case",
     "extends": [
-      "dtmi:mapped:core:Refrigerator;1"
+      "dtmi:mapped:core:Device;1"
     ]
   },
   {
@@ -2300,6 +2300,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heated_Display_Case;1",
+    "@type": "Interface",
+    "displayName": "Heated_Display_Case",
+    "extends": [
+      "dtmi:mapped:core:Display_Case;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heating_Air_Temperature_Setpoint_Offset;1",
     "@type": "Interface",
     "displayName": "Heating_Air_Temperature_Setpoint_Offset",
@@ -2829,6 +2838,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Low_Temperature_Display_Case;1",
+    "@type": "Interface",
+    "displayName": "Low_Temperature_Display_Case",
+    "extends": [
+      "dtmi:mapped:core:Display_Case;1",
+      "dtmi:mapped:core:Refrigeration_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Maintenance_Bypass_Switch;1",
     "@type": "Interface",
     "displayName": "Maintenance_Bypass_Switch",
@@ -2947,6 +2966,16 @@
     "displayName": "Median_Total_GHG_Emissions_Intensity",
     "extends": [
       "dtmi:mapped:core:Total_GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Medium_Temperature_Display_Case;1",
+    "@type": "Interface",
+    "displayName": "Medium_Temperature_Display_Case",
+    "extends": [
+      "dtmi:mapped:core:Display_Case;1",
+      "dtmi:mapped:core:Refrigerator;1"
     ]
   },
   {
