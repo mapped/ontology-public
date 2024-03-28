@@ -3442,6 +3442,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Power_Distribution_Unit;1",
+    "@type": "Interface",
+    "displayName": "Power_Distribution_Unit",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Power_Setpoint;1",
     "@type": "Interface",
     "displayName": "Power_Setpoint",
