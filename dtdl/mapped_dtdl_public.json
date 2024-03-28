@@ -2975,7 +2975,7 @@
     "displayName": "Medium_Temperature_Display_Case",
     "extends": [
       "dtmi:mapped:core:Display_Case;1",
-      "dtmi:mapped:core:Refrigerator;1"
+      "dtmi:mapped:core:Refrigeration_Equipment;1"
     ]
   },
   {
