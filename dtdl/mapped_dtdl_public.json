@@ -1882,6 +1882,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Exhaust_Air_Valve;1",
+    "@type": "Interface",
+    "displayName": "Exhaust_Air_Valve",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Exit_Sign;1",
     "@type": "Interface",
     "displayName": "Exit_Sign",
