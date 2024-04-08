@@ -2037,6 +2037,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fire_Smoke_Damper;1",
+    "@type": "Interface",
+    "displayName": "Fire_Smoke_Damper",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Fire_Sprinkler;1",
     "@type": "Interface",
     "displayName": "Fire_Sprinkler",
