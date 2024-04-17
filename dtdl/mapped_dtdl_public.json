@@ -1242,6 +1242,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Dehumidification_Command;1",
+    "@type": "Interface",
+    "displayName": "Dehumidification_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Dehumidification_Status;1",
     "@type": "Interface",
     "displayName": "Dehumidification_Status",
