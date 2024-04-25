@@ -15880,9 +15880,9 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:w3id:rec:Mezzanine;1",
+    "@id": "dtmi:org:w3id:rec:MezzanineLevel;1",
     "@type": "Interface",
-    "displayName": "Mezzanine",
+    "displayName": "MezzanineLevel",
     "extends": [
       "dtmi:mapped:core:Place;1"
     ]
