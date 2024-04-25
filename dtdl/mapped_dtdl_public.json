@@ -15880,6 +15880,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Mezzanine;1",
+    "@type": "Interface",
+    "displayName": "Mezzanine",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:w3id:rec:Organization;1",
     "@type": "Interface",
     "displayName": "Organization",
