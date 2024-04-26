@@ -15884,7 +15884,7 @@
     "@type": "Interface",
     "displayName": "MezzanineLevel",
     "extends": [
-      "dtmi:mapped:core:Place;1"
+      "dtmi:org:brickschema:schema:Brick:Floor;1"
     ]
   },
   {
