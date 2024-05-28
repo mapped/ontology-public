@@ -97,6 +97,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Accordion_Door;1",
+    "@type": "Interface",
+    "description": "A folding door with interconnected panels that fold like an accordion",
+    "displayName": "Accordion_Door",
+    "extends": [
+      "dtmi:mapped:core:Door;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Account;1",
     "@type": "Interface",
     "description": "A record related to transactions, billing, or usage within a system.",
@@ -388,6 +398,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Automatic_Sliding_Door;1",
+    "@type": "Interface",
+    "description": "A door that opens and closes automatically by sliding horizontally",
+    "displayName": "Automatic_Sliding_Door",
+    "extends": [
+      "dtmi:mapped:core:Door;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Automatic_Tint_Window_Array;1",
     "@type": "Interface",
     "displayName": "Automatic_Tint_Window_Array",
@@ -402,6 +422,16 @@
     "displayName": "Automatic_Transfer_Switch",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Automobile_Lift;1",
+    "@type": "Interface",
+    "description": "A device used to lift automobiles for repairs",
+    "displayName": "Automobile_Lift",
+    "extends": [
+      "dtmi:mapped:core:Automotive_Equipment;1"
     ]
   },
   {
@@ -478,6 +508,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Baler;1",
+    "@type": "Interface",
+    "description": "A machine that compresses recyclable materials into bales",
+    "displayName": "Baler",
+    "extends": [
+      "dtmi:mapped:core:Waste_Management_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Bathtub;1",
     "@type": "Interface",
     "displayName": "Bathtub",
@@ -492,6 +532,16 @@
     "displayName": "Battery_Cabinet",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Battery_Charger;1",
+    "@type": "Interface",
+    "description": "A device used to recharge batteries",
+    "displayName": "Battery_Charger",
+    "extends": [
+      "dtmi:mapped:core:Automotive_Equipment;1"
     ]
   },
   {
@@ -544,6 +594,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Blast_Chiller;1",
+    "@type": "Interface",
+    "description": "A refrigerator used for rapidly cooling food",
+    "displayName": "Blast_Chiller",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Boiler_On_Off_Command;1",
     "@type": "Interface",
     "displayName": "Boiler_On_Off_Command",
@@ -588,6 +648,16 @@
     "displayName": "Booster_Pump",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Water_Pump;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Bread_Slicer;1",
+    "@type": "Interface",
+    "description": "A machine used to slice loaves of bread",
+    "displayName": "Bread_Slicer",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
@@ -797,6 +867,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cleaning_Equipment;1",
+    "@type": "Interface",
+    "description": "Equipment used for cleaning",
+    "displayName": "Cleaning_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Close_Command;1",
     "@type": "Interface",
     "displayName": "Close_Command",
@@ -847,6 +927,16 @@
     "displayName": "Coefficient_Of_Performance",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Commercial_Rack_Washer;1",
+    "@type": "Interface",
+    "description": "A machine used for washing racks and trays used in commercial kitchens",
+    "displayName": "Commercial_Rack_Washer",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
@@ -1008,15 +1098,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Cooking_Equipment;1",
-    "@type": "Interface",
-    "displayName": "Cooking_Equipment",
-    "extends": [
-      "dtmi:mapped:core:Device;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Cooling_Air_Temperature_Setpoint_Offset;1",
     "@type": "Interface",
     "displayName": "Cooling_Air_Temperature_Setpoint_Offset",
@@ -1135,6 +1216,16 @@
     "displayName": "Count_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Culinary_Equipment;1",
+    "@type": "Interface",
+    "description": "Equipment used for food preparation and cooking",
+    "displayName": "Culinary_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -1456,6 +1547,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Donut_Thermoglazer;1",
+    "@type": "Interface",
+    "description": "A machine used to apply a glaze to donuts",
+    "displayName": "Donut_Thermoglazer",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Door;1",
     "@type": "Interface",
     "description": "mapped:Door is adapted from IfcDoor (The door is a building element that is predominately used to provide controlled access for people and goods.)",
@@ -1576,11 +1677,51 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electric_Cart_Mover;1",
+    "@type": "Interface",
+    "description": "A device used to move multiple electric shopping carts",
+    "displayName": "Electric_Cart_Mover",
+    "extends": [
+      "dtmi:mapped:core:Vehicle;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Electric_Energy_Usage_Sensor;1",
     "@type": "Interface",
     "displayName": "Electric_Energy_Usage_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Energy_Usage_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electric_Forklift;1",
+    "@type": "Interface",
+    "description": "A forklift powered by an electric motor",
+    "displayName": "Electric_Forklift",
+    "extends": [
+      "dtmi:mapped:core:Forklift;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electric_Pallet_Jack;1",
+    "@type": "Interface",
+    "description": "A pallet jack powered by an electric motor",
+    "displayName": "Electric_Pallet_Jack",
+    "extends": [
+      "dtmi:mapped:core:Pallet_Jack;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electric_Shopping_Cart;1",
+    "@type": "Interface",
+    "description": "A battery-powered cart used by shoppers",
+    "displayName": "Electric_Shopping_Cart",
+    "extends": [
+      "dtmi:mapped:core:Vehicle;1"
     ]
   },
   {
@@ -2019,6 +2160,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fire_Accordion_Door;1",
+    "@type": "Interface",
+    "description": "An accordion door designed to resist fire",
+    "displayName": "Fire_Accordion_Door",
+    "extends": [
+      "dtmi:mapped:core:Accordion_Door;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Fire_Damper;1",
     "@type": "Interface",
     "displayName": "Fire_Damper",
@@ -2046,6 +2197,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fire_Overhead_Door;1",
+    "@type": "Interface",
+    "description": "An overhead door designed to resist fire",
+    "displayName": "Fire_Overhead_Door",
+    "extends": [
+      "dtmi:mapped:core:Overhead_Door;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Fire_Smoke_Damper;1",
     "@type": "Interface",
     "displayName": "Fire_Smoke_Damper",
@@ -2069,6 +2230,36 @@
     "displayName": "Fire_Sprinkler_Water_Storage_Tank",
     "extends": [
       "dtmi:mapped:core:Water_Storage_Tank;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fish_Tank;1",
+    "@type": "Interface",
+    "description": "A transparent container for keeping fish",
+    "displayName": "Fish_Tank",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Floor_Buffer;1",
+    "@type": "Interface",
+    "description": "A machine used for buffing and polishing floors",
+    "displayName": "Floor_Buffer",
+    "extends": [
+      "dtmi:mapped:core:Cleaning_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Floor_Burnisher;1",
+    "@type": "Interface",
+    "description": "A machine used for scratching on a hard surface, abrasively removing and smoothing the topical layer of the floor and increasing the surface gloss",
+    "displayName": "Floor_Burnisher",
+    "extends": [
+      "dtmi:mapped:core:Cleaning_Equipment;1"
     ]
   },
   {
@@ -2112,6 +2303,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Food_Preperation_Table;1",
+    "@type": "Interface",
+    "description": "A table used to prepare foods",
+    "displayName": "Food_Preperation_Table",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Forced_Open_Alarm;1",
     "@type": "Interface",
     "description": "An alarm indicating if the door is force-opened.",
@@ -2122,11 +2323,30 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Forklift;1",
+    "@type": "Interface",
+    "description": "A powered industrial truck used to lift and move materials",
+    "displayName": "Forklift",
+    "extends": [
+      "dtmi:mapped:core:Vehicle;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Freeze_Alarm;1",
     "@type": "Interface",
     "displayName": "Freeze_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Freight_Elevator;1",
+    "@type": "Interface",
+    "displayName": "Freight_Elevator",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Elevator;1"
     ]
   },
   {
@@ -2250,6 +2470,16 @@
     "displayName": "Geo_Location_Sensor",
     "extends": [
       "dtmi:mapped:core:Location_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Grease_Caddy;1",
+    "@type": "Interface",
+    "description": "A container used for collecting and transporting used cooking grease",
+    "displayName": "Grease_Caddy",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
@@ -2443,6 +2673,16 @@
     "displayName": "High_Limit",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Limit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:High_Pressure_Washer;1",
+    "@type": "Interface",
+    "description": "A machine that uses high-pressure water for cleaning",
+    "displayName": "High_Pressure_Washer",
+    "extends": [
+      "dtmi:mapped:core:Cleaning_Equipment;1"
     ]
   },
   {
@@ -2680,6 +2920,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Key_Storage_Cabinet;1",
+    "@type": "Interface",
+    "description": "A secure box for storing keys",
+    "displayName": "Key_Storage_Cabinet",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Lag_On_Off_Command;1",
     "@type": "Interface",
     "displayName": "Lag_On_Off_Command",
@@ -2798,6 +3048,16 @@
     "displayName": "Load_Current_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Loading_Dock_Leveler;1",
+    "@type": "Interface",
+    "description": "A device used to bridge the gap between a loading dock and a truck",
+    "displayName": "Loading_Dock_Leveler",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -2977,6 +3237,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Meat_Slicer;1",
+    "@type": "Interface",
+    "description": "A machine used to automatically slice deli meats and cheeses",
+    "displayName": "Meat_Slicer",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Median_Total_GHG_Emissions;1",
     "@type": "Interface",
     "description": "Median of Total Emissions in a specified area (Country, Region, etc).",
@@ -2993,6 +3263,16 @@
     "displayName": "Median_Total_GHG_Emissions_Intensity",
     "extends": [
       "dtmi:mapped:core:Total_GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Medical_Equipment;1",
+    "@type": "Interface",
+    "description": "Equipment used for medical purposes",
+    "displayName": "Medical_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -3319,11 +3599,52 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Oven;1",
+    "@id": "dtmi:mapped:core:Overhead_Door;1",
     "@type": "Interface",
-    "displayName": "Oven",
+    "description": "A door that opens by moving upwards and overhead",
+    "displayName": "Overhead_Door",
     "extends": [
-      "dtmi:mapped:core:Cooking_Equipment;1"
+      "dtmi:mapped:core:Door;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Paint_Dispenser;1",
+    "@type": "Interface",
+    "description": "A device used to dispense paint",
+    "displayName": "Paint_Dispenser",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Paint_Shaker;1",
+    "@type": "Interface",
+    "description": "A machine used to mix paint",
+    "displayName": "Paint_Shaker",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pallet_Jack;1",
+    "@type": "Interface",
+    "description": "A tool used to lift and move pallets",
+    "displayName": "Pallet_Jack",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Parcel_Locker;1",
+    "@type": "Interface",
+    "description": "a lockable storage box where packages can be left securely for collection by carriers, delivery companies, residents in apartment complexes, and customers at retail stores",
+    "displayName": "Parcel_Locker",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -3640,6 +3961,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Propane_Forklift;1",
+    "@type": "Interface",
+    "description": "A forklift powered by a propane engine",
+    "displayName": "Propane_Forklift",
+    "extends": [
+      "dtmi:mapped:core:Forklift;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:PropertyBag;1",
     "@type": "Interface",
     "displayName": "PropertyBag",
@@ -3841,6 +4172,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Remote_Control_Locking_Cart_Wheel;1",
+    "@type": "Interface",
+    "description": "A wheel equipped with a locking mechanism that can be activated remotely, used primarily on shopping carts to prevent them from being moved outside of a geographical boundary",
+    "displayName": "Remote_Control_Locking_Cart_Wheel",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Request;1",
     "@type": "Interface",
     "displayName": "Request",
@@ -3931,6 +4272,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Rolling_Rack;1",
+    "@type": "Interface",
+    "description": "A rack with wheels used for storing and transporting items",
+    "displayName": "Rolling_Rack",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Room_Pressure_Monitor;1",
     "@type": "Interface",
     "displayName": "Room_Pressure_Monitor",
@@ -3954,6 +4305,26 @@
     "displayName": "SO2_Level_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Air_Quality_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Safe;1",
+    "@type": "Interface",
+    "description": "A secure container for storing valuables",
+    "displayName": "Safe",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Scale;1",
+    "@type": "Interface",
+    "description": "A scale used in delis and bakeries for weighing ingredients and products",
+    "displayName": "Scale",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -3985,12 +4356,32 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Scissor_Lift;1",
+    "@type": "Interface",
+    "description": "A work assist vehicle with a platform that can be raised vertically",
+    "displayName": "Scissor_Lift",
+    "extends": [
+      "dtmi:mapped:core:Work_Assist_Vehicle;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Screen_Orientation_Status;1",
     "@type": "Interface",
     "description": "screen orientation whose values are either `Landscape` or `Portrait`.",
     "displayName": "Screen_Orientation_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Scrubber;1",
+    "@type": "Interface",
+    "description": "A machine used for scrubbing floors",
+    "displayName": "Scrubber",
+    "extends": [
+      "dtmi:mapped:core:Cleaning_Equipment;1"
     ]
   },
   {
@@ -4189,6 +4580,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Spectrometer;1",
+    "@type": "Interface",
+    "description": "An instrument used to measure properties of light",
+    "displayName": "Spectrometer",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Speed_Mode_Command;1",
     "@type": "Interface",
     "displayName": "Speed_Mode_Command",
@@ -4305,6 +4706,16 @@
     "displayName": "Steam_Pressure_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Pressure_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Stock_Picker;1",
+    "@type": "Interface",
+    "description": "A work assist vehicle with a platform that can be raised for picking items from shelves",
+    "displayName": "Stock_Picker",
+    "extends": [
+      "dtmi:mapped:core:Work_Assist_Vehicle;1"
     ]
   },
   {
@@ -4581,6 +4992,37 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tire_Balancer;1",
+    "@type": "Interface",
+    "description": "A machine used to balance tires",
+    "displayName": "Tire_Balancer",
+    "extends": [
+      "dtmi:mapped:core:Automotive_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tire_Changer;1",
+    "@type": "Interface",
+    "description": "A machine used for removing and installing tires",
+    "displayName": "Tire_Changer",
+    "extends": [
+      "dtmi:mapped:core:Automotive_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tire_Conveyor;1",
+    "@type": "Interface",
+    "description": "A conveyor system used for transporting tires",
+    "displayName": "Tire_Conveyor",
+    "extends": [
+      "dtmi:mapped:core:Automotive_Equipment;1",
+      "dtmi:mapped:core:Conveyor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Toilet;1",
     "@type": "Interface",
     "displayName": "Toilet",
@@ -4644,6 +5086,16 @@
     "displayName": "Transfer_Switch",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Switch;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Trash_Compactor;1",
+    "@type": "Interface",
+    "description": "A machine that compresses trash",
+    "displayName": "Trash_Compactor",
+    "extends": [
+      "dtmi:mapped:core:Waste_Management_Equipment;1"
     ]
   },
   {
@@ -4741,6 +5193,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Vacuum;1",
+    "@type": "Interface",
+    "description": "A device that uses suction to clean surfaces",
+    "displayName": "Vacuum",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Valve_Close_Command;1",
     "@type": "Interface",
     "displayName": "Valve_Close_Command",
@@ -4809,6 +5271,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Vehicle;1",
+    "@type": "Interface",
+    "description": "A device designed for transportation of goods or people",
+    "displayName": "Vehicle",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Vibration_Sensor;1",
     "@type": "Interface",
     "displayName": "Vibration_Sensor",
@@ -4873,6 +5345,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Walkie_Stacker;1",
+    "@type": "Interface",
+    "description": "A pedestrian-operated forklift used for stacking pallets",
+    "displayName": "Walkie_Stacker",
+    "extends": [
+      "dtmi:mapped:core:Forklift;1",
+      "dtmi:mapped:core:Work_Assist_Vehicle;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Wall_Air_Conditioner;1",
     "@type": "Interface",
     "displayName": "Wall_Air_Conditioner",
@@ -4887,6 +5370,16 @@
     "displayName": "Waste_Amount_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Waste_Management_Equipment;1",
+    "@type": "Interface",
+    "description": "Equipment used for managing waste",
+    "displayName": "Waste_Management_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -5122,12 +5615,32 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Work_Assist_Vehicle;1",
+    "@type": "Interface",
+    "description": "A vehicle designed to aid in specific tasks, such as lifting workers or materials",
+    "displayName": "Work_Assist_Vehicle",
+    "extends": [
+      "dtmi:mapped:core:Vehicle;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Work_Order;1",
     "@type": "Interface",
     "description": "A work order for maintenance of a system or a piece of equipment.",
     "displayName": "Work_Order",
     "extends": [
       "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Wrapping_Station;1",
+    "@type": "Interface",
+    "description": "A designated area for wrapping gifts or packages",
+    "displayName": "Wrapping_Station",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
