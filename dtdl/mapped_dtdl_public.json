@@ -931,6 +931,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Combination_Oven;1",
+    "@type": "Interface",
+    "description": "Uses convection cooking, steaming and a combination of both into a single unit. Used for baking, broiling, poaching, roasting, steaming, and warming.",
+    "displayName": "Combination_Oven",
+    "extends": [
+      "dtmi:mapped:core:Oven;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Commercial_Rack_Washer;1",
     "@type": "Interface",
     "description": "A machine used for washing racks and trays used in commercial kitchens",
@@ -1089,11 +1099,31 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Convection_Oven;1",
+    "@type": "Interface",
+    "description": "Uses a fan and exhaust system to spread hot air across the cooking cavity for baking, broiling and roasting",
+    "displayName": "Convection_Oven",
+    "extends": [
+      "dtmi:mapped:core:Oven;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Conveyor;1",
     "@type": "Interface",
     "displayName": "Conveyor",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooking_Oil_Tank;1",
+    "@type": "Interface",
+    "description": "A tank for storing cooking oil",
+    "displayName": "Cooking_Oil_Tank",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
@@ -2351,6 +2381,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fryer;1",
+    "@type": "Interface",
+    "description": "A cooking appliance used for deep frying food",
+    "displayName": "Fryer",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Fuel_Moisture_Sensor;1",
     "@type": "Interface",
     "displayName": "Fuel_Moisture_Sensor",
@@ -3303,6 +3343,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Microwave_Oven;1",
+    "@type": "Interface",
+    "description": "A cooking appliance that uses microwave radiation to heat food",
+    "displayName": "Microwave_Oven",
+    "extends": [
+      "dtmi:mapped:core:Oven;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Min_Air_Temperature_Setpoint_Limit;1",
     "@type": "Interface",
     "displayName": "Min_Air_Temperature_Setpoint_Limit",
@@ -3595,6 +3645,16 @@
     "displayName": "Outside_Air_Temperature_Reset_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Reset_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Oven;1",
+    "@type": "Interface",
+    "description": "A thermally insulated chamber used for heating, baking, or drying substances, primarily used in cooking and baking",
+    "displayName": "Oven",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
@@ -4287,6 +4347,16 @@
     "displayName": "Room_Pressure_Monitor",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Rotisserie;1",
+    "@type": "Interface",
+    "description": "A cooking appliance that rotates food near a heat source",
+    "displayName": "Rotisserie",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
@@ -5037,6 +5107,16 @@
     "displayName": "Torque_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tortilla_Machine;1",
+    "@type": "Interface",
+    "description": "A machine used to make tortillas",
+    "displayName": "Tortilla_Machine",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
