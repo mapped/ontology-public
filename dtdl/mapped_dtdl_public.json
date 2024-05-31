@@ -1118,6 +1118,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooking_Equipment;1",
+    "@type": "Interface",
+    "displayName": "Cooking_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Cooking_Oil_Tank;1",
     "@type": "Interface",
     "description": "A tank for storing cooking oil",
