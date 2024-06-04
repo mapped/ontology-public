@@ -1099,6 +1099,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Convection_Microwave_Oven;1",
+    "@type": "Interface",
+    "description": "A cooking appliance that uses uses a microwave radiation and convection heat to cook food",
+    "displayName": "Convection_Microwave_Oven",
+    "extends": [
+      "dtmi:mapped:core:Convection_Oven;1",
+      "dtmi:mapped:core:Microwave_Oven;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Convection_Oven;1",
     "@type": "Interface",
     "description": "Uses a fan and exhaust system to spread hot air across the cooking cavity for baking, broiling and roasting",
@@ -2473,6 +2484,16 @@
     "displayName": "GHG_Emissions_Intensity_Per_Energy",
     "extends": [
       "dtmi:mapped:core:GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Garbage_Disposal_Unit;1",
+    "@type": "Interface",
+    "description": "A device, usually electrically powered, installed under a kitchen sink between the sink's drain and the trap. The device shreds food waste into pieces small enough to pass through plumbing",
+    "displayName": "Garbage_Disposal_Unit",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
     ]
   },
   {
