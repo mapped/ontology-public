@@ -472,6 +472,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Average_Line_Voltage_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Average_Line_Voltage_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Average_Phase_Voltage_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Average_Phase_Voltage_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:BACnet_Device;1",
     "@type": "Interface",
     "displayName": "BACnet_Device",
@@ -3104,27 +3122,36 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_AB_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_AB_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_AB_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_AB_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_AB_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_AB_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Line_AB_Voltage_Sensor;1",
     "@type": "Interface",
     "displayName": "Line_AB_Voltage_Sensor",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_AN_Active_Power_Sensor;1",
-    "@type": "Interface",
-    "displayName": "Line_AN_Active_Power_Sensor",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_AN_Voltage_Sensor;1",
-    "@type": "Interface",
-    "displayName": "Line_AN_Voltage_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
     ]
@@ -3149,27 +3176,36 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_BC_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_BC_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_BC_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_BC_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_BC_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_BC_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Line_BC_Voltage_Sensor;1",
     "@type": "Interface",
     "displayName": "Line_BC_Voltage_Sensor",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_BN_Active_Power_Sensor;1",
-    "@type": "Interface",
-    "displayName": "Line_BN_Active_Power_Sensor",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_BN_Voltage_Sensor;1",
-    "@type": "Interface",
-    "displayName": "Line_BN_Voltage_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
     ]
@@ -3194,6 +3230,33 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_CA_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_CA_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_CA_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_CA_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_CA_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_CA_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Line_CA_Voltage_Sensor;1",
     "@type": "Interface",
     "displayName": "Line_CA_Voltage_Sensor",
@@ -3203,27 +3266,36 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_CN_Active_Power_Sensor;1",
+    "@id": "dtmi:mapped:core:Line_C_Current_Sensor;1",
     "@type": "Interface",
-    "displayName": "Line_CN_Active_Power_Sensor",
+    "displayName": "Line_C_Current_Sensor",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
+      "dtmi:org:brickschema:schema:Brick:Current_Sensor;1"
     ]
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_CN_Voltage_Sensor;1",
+    "@id": "dtmi:mapped:core:Line_G_Current_Sensor;1",
     "@type": "Interface",
-    "displayName": "Line_CN_Voltage_Sensor",
+    "displayName": "Line_G_Current_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Current_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Line_NG_Voltage_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Line_NG_Voltage_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
     ]
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Line_C_Current_Sensor;1",
+    "@id": "dtmi:mapped:core:Line_N_Current_Sensor;1",
     "@type": "Interface",
-    "displayName": "Line_C_Current_Sensor",
+    "displayName": "Line_N_Current_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Current_Sensor;1"
     ]
@@ -3919,6 +3991,141 @@
     "displayName": "Person_Profile",
     "extends": [
       "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Active_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_A_Active_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_A_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_A_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_A_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Voltage_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_A_Voltage_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Active_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_B_Active_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_B_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_B_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_B_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Voltage_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_B_Voltage_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Active_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_C_Active_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_C_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_C_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_C_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Voltage_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_C_Voltage_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
     ]
   },
   {
@@ -5322,6 +5529,15 @@
     "displayName": "Total_Harmonic_Distortion_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Power_Factor_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Total_Power_Factor_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
     ]
   },
   {
