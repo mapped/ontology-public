@@ -3995,6 +3995,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Active_Energy_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_A_Active_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Active_Power_Sensor;1",
     "@type": "Interface",
     "displayName": "Phase_A_Active_Power_Sensor",
@@ -4040,6 +4049,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Active_Energy_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_B_Active_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Active_Power_Sensor;1",
     "@type": "Interface",
     "displayName": "Phase_B_Active_Power_Sensor",
@@ -4081,6 +4099,15 @@
     "displayName": "Phase_B_Voltage_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Active_Energy_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Phase_C_Active_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
     ]
   },
   {
