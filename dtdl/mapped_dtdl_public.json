@@ -959,6 +959,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Combination_Switch;1",
+    "@type": "Interface",
+    "displayName": "Combination_Switch",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Switch;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Commercial_Rack_Washer;1",
     "@type": "Interface",
     "description": "A machine used for washing racks and trays used in commercial kitchens",
