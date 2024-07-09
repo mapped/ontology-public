@@ -472,6 +472,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Average_GHG_Emissions_Rate;1",
+    "@type": "Interface",
+    "description": "Average Operating Emissions Rate (AOER) is a calculation of the average emissions rate of all the electricity generated on the local grid at a certain time. Average emissions generally are a way to allocate responsibility for emissions evenly, instead of causally. The units of AOER are the amount of pollution per unit of energy (lbs/MWh)",
+    "displayName": "Average_GHG_Emissions_Rate",
+    "extends": [
+      "dtmi:mapped:core:GHG_Emissions_Intensity_Per_Energy;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Average_Line_Voltage_Sensor;1",
     "@type": "Interface",
     "displayName": "Average_Line_Voltage_Sensor",
@@ -1830,6 +1840,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electrical_Grid_Region;1",
+    "@type": "Interface",
+    "description": "A region which is served by an electrical grid.",
+    "displayName": "Electrical_Grid_Region",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Region;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Electrical_Receptacle;1",
     "@type": "Interface",
     "displayName": "Electrical_Receptacle",
@@ -1845,6 +1865,16 @@
     "displayName": "Electricity_GHG_Emissions_Factor",
     "extends": [
       "dtmi:mapped:core:GHG_Emissions_Factor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electricity_GHG_Emissions_Health_Damage;1",
+    "@type": "Interface",
+    "description": "An estimate of the damage to human life and health caused by emissions from electricity generation based on electricity used at a certain time and place. The units of Health Damage are US dollars per MWh (based on the value of a statistical life)",
+    "displayName": "Electricity_GHG_Emissions_Health_Damage",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -2486,7 +2516,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:GHG_Emissions_Factor;1",
     "@type": "Interface",
-    "description": "The Emissions Factor is a coefficient that converts the energy consumption of a given fuel type into equivalent GHG emissions. ",
+    "description": "An emissions factor is a representative value that attempts to relate the quantity of a pollutant released to the atmosphere with an activity associated with the release of that pollutant. These factors are usually expressed as the weight of pollutant divided by a unit weight, volume, distance, or duration of the activity emitting the pollutant (e.g., kilograms of particulate emitted per megagram of coal burned).",
     "displayName": "GHG_Emissions_Factor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Point;1"
@@ -3435,6 +3465,26 @@
     "displayName": "Maintenance_Bypass_Switch",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Switch;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Marginal_GHG_Emissions_Rate;1",
+    "@type": "Interface",
+    "description": "The Marginal Emissions Rate refers to the rate at which greenhouse gas (GHG) emissions are produced by the marginal power plant when there is a change in electricity demand. The units is typically the amount of pollution (CO2e) per unit of energy (e.g. lbs/MWh)",
+    "displayName": "Marginal_GHG_Emissions_Rate",
+    "extends": [
+      "dtmi:mapped:core:GHG_Emissions_Intensity_Per_Energy;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Marginal_Operating_Emissions_Rate_Index;1",
+    "@type": "Interface",
+    "description": "A 0-100 score used by WattTime, which is the statistical percentile of the current Electricity Marginal GHG Emissions Factor relative to the upcoming 24 hours of forecast values (0=lowest/cleanest, 100=highest/dirtiest)",
+    "displayName": "Marginal_Operating_Emissions_Rate_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
