@@ -2666,6 +2666,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heartbeat;1",
+    "@type": "Interface",
+    "description": "A point that represents the heartbeat of the data source such as a device or a connector which is the source of the corresponding Point.",
+    "displayName": "Heartbeat",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heat_Exchanger_Entering_Water_Temperature_Sensor;1",
     "@type": "Interface",
     "displayName": "Heat_Exchanger_Entering_Water_Temperature_Sensor",
