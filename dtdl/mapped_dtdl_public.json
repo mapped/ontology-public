@@ -97,6 +97,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Accessibility_Equipment;1",
+    "@type": "Interface",
+    "description": "Equipment that enables individuals with disabilities or limitations to access and participate in environments, activities, and services independently and safely.",
+    "displayName": "Accessibility_Equipment",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Accordion_Door;1",
     "@type": "Interface",
     "description": "A folding door with interconnected panels that fold like an accordion",
@@ -252,6 +262,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Aircraft_Stand_Mode_Status;1",
+    "@type": "Interface",
+    "description": "The current state of an airport stand, indicating its availability and/or usage",
+    "displayName": "Aircraft_Stand_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Airfield_Lighting_Equipment;1",
     "@type": "Interface",
     "displayName": "Airfield_Lighting_Equipment",
@@ -267,6 +287,36 @@
     "displayName": "Airport",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Site;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Airport_Gate;1",
+    "@type": "Interface",
+    "description": "A designated area in an airport terminal where passengers board and disembark from an aircraft.",
+    "displayName": "Airport_Gate",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Airport_Stand;1",
+    "@type": "Interface",
+    "description": "A designated area on an airport apron where an aircraft is parked, serviced, and prepared for departure, typically equipped with ground support equipment and services such as fueling, catering, and baggage handling.",
+    "displayName": "Airport_Stand",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Airport_Terminal;1",
+    "@type": "Interface",
+    "description": "A building at an airport where passengers process and prepare for flights, including check-in, security, and boarding.",
+    "displayName": "Airport_Terminal",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Building;1"
     ]
   },
   {
@@ -2648,6 +2698,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Ground_Power_Unit;1",
+    "@type": "Interface",
+    "description": "Ground Power Units are usually mobile or stationary units that convert alternating current power to direct current power, which is then supplied to an aircraft through a cable and connector",
+    "displayName": "Ground_Power_Unit",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:H2S_Level_Sensor;1",
     "@type": "Interface",
     "displayName": "H2S_Level_Sensor",
@@ -3984,6 +4044,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Packaged_Air_Conditioner;1",
+    "@type": "Interface",
+    "displayName": "Packaged_Air_Conditioner",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Paint_Dispenser;1",
     "@type": "Interface",
     "description": "A device used to dispense paint",
@@ -4018,6 +4087,16 @@
     "@type": "Interface",
     "description": "a lockable storage box where packages can be left securely for collection by carriers, delivery companies, residents in apartment complexes, and customers at retail stores",
     "displayName": "Parcel_Locker",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Passenger_Boarding_Bridge;1",
+    "@type": "Interface",
+    "description": "A movable, enclosed walkway or connector that extends from a terminal building to an aircraft, ship, or boat,",
+    "displayName": "Passenger_Boarding_Bridge",
     "extends": [
       "dtmi:mapped:core:Thing;1"
     ]
@@ -6092,6 +6171,15 @@
     "displayName": "Weather_Condition_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Wheel_Chair_Lift;1",
+    "@type": "Interface",
+    "displayName": "Wheel_Chair_Lift",
+    "extends": [
+      "dtmi:mapped:core:Accessibility_Equipment;1"
     ]
   },
   {
