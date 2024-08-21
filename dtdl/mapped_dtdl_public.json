@@ -5786,7 +5786,7 @@
     "@type": "Interface",
     "displayName": "Unit_Heater",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
     ]
   },
   {
