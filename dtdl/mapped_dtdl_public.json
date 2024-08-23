@@ -2763,6 +2763,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heat_Trace_System;1",
+    "@type": "Interface",
+    "displayName": "Heat_Trace_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:System;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heated_Display_Case;1",
     "@type": "Interface",
     "displayName": "Heated_Display_Case",
