@@ -262,6 +262,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Aircraft_Docked_Status;1",
+    "@type": "Interface",
+    "description": "Represents a status subclass indicating that an aircraft has successfully docked and is properly positioned at the boarding bridge",
+    "displayName": "Aircraft_Docked_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Aircraft_Stand_Mode_Status;1",
     "@type": "Interface",
     "description": "The current state of an airport stand, indicating its availability and/or usage",
@@ -426,6 +436,26 @@
     "displayName": "Audio_Visual_Equipment",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Auto_Level_Deployed_Status;1",
+    "@type": "Interface",
+    "description": "Represents a status subclass indicating that an automatic leveling mechanism for a boarding bridge is deployed, with its signal wheel in contact with the aircraft's body",
+    "displayName": "Auto_Level_Deployed_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Auto_Level_Fault_Alarm;1",
+    "@type": "Interface",
+    "description": "Indicates an alarm condition when there is a malfunction or error in the automatic leveling system of the boarding bridge",
+    "displayName": "Auto_Level_Fault_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
     ]
   },
   {
@@ -794,6 +824,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cable_Fault_Alarm;1",
+    "@type": "Interface",
+    "description": "Indicates an alarm condition when a cable is disconnected while still energized, posing a potential safety hazard and risk of electrical damage",
+    "displayName": "Cable_Fault_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Calendar;1",
     "@type": "Interface",
     "description": "A calendar which is a container for events.",
@@ -840,6 +880,16 @@
     "displayName": "Canadian_Regional_Median_Total_GHG_Emissions_Intensity",
     "extends": [
       "dtmi:mapped:core:Regional_Median_Total_GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Canopy_Down_Status;1",
+    "@type": "Interface",
+    "description": "Indicates the status when the protective canopy of the boarding bridge is in its lowered position, typically after an aircraft has docked",
+    "displayName": "Canopy_Down_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
     ]
   },
   {
@@ -2865,6 +2915,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:High_Frequency_Alarm;1",
+    "@type": "Interface",
+    "description": "Represents an alarm triggered when electrical frequency is above the acceptable operating range",
+    "displayName": "High_Frequency_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:High_Humidity_Alarm_Setpoint;1",
     "@type": "Interface",
     "displayName": "High_Humidity_Alarm_Setpoint",
@@ -3484,6 +3544,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Low_Frequency_Alarm;1",
+    "@type": "Interface",
+    "description": "Represents an alarm triggered when electrical frequency is below the acceptable operating range",
+    "displayName": "Low_Frequency_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Low_Humidity_Alarm_Setpoint;1",
     "@type": "Interface",
     "displayName": "Low_Humidity_Alarm_Setpoint",
@@ -3865,6 +3935,16 @@
     "extends": [
       "dtmi:mapped:core:Identity;1",
       "dtmi:mapped:core:Name;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Narrow_Body_Status;1",
+    "@type": "Interface",
+    "description": "Represents a status indicating that the boarding bridge is configured for servicing narrow-body aircraft",
+    "displayName": "Narrow_Body_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
     ]
   },
   {
