@@ -272,6 +272,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Aircraft_Stand;1",
+    "@type": "Interface",
+    "description": "A designated area on an airport apron where an aircraft is parked, serviced, and prepared for departure, typically equipped with ground support equipment and services such as fueling, catering, and baggage handling.",
+    "displayName": "Aircraft_Stand",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Aircraft_Stand_Mode_Status;1",
     "@type": "Interface",
     "description": "The current state of an airport stand, indicating its availability and/or usage",
@@ -305,16 +315,6 @@
     "@type": "Interface",
     "description": "A designated area in an airport terminal where passengers board and disembark from an aircraft.",
     "displayName": "Airport_Gate",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Airport_Stand;1",
-    "@type": "Interface",
-    "description": "A designated area on an airport apron where an aircraft is parked, serviced, and prepared for departure, typically equipped with ground support equipment and services such as fueling, catering, and baggage handling.",
-    "displayName": "Airport_Stand",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Zone;1"
     ]
