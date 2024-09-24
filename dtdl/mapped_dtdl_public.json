@@ -403,6 +403,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:AreaQuantity;1",
+    "@type": "Interface",
+    "description": "A quantity that specifies the area of a physical object with a unit. This corresponds to bsh:AreaShape.",
+    "displayName": "AreaQuantity",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Area_Status;1",
     "@type": "Interface",
     "displayName": "Area_Status",
