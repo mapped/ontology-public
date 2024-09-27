@@ -5165,6 +5165,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Service_Request;1",
+    "@type": "Interface",
+    "description": "A formal request for facility-related services, including maintenance and repairs. It initiates the process of addressing issues, potentially leading to a Work Order.",
+    "displayName": "Service_Request",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Service_Required_Alarm;1",
     "@type": "Interface",
     "displayName": "Service_Required_Alarm",
