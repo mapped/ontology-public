@@ -190,6 +190,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Air_Cooled_Condenser_Heat_Exchanger;1",
+    "@type": "Interface",
+    "displayName": "Air_Cooled_Condenser_Heat_Exchanger",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Condenser_Heat_Exchanger;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Air_Curtain;1",
     "@type": "Interface",
     "displayName": "Air_Curtain",
@@ -6192,6 +6201,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Water_Cooled_Condenser_Heat_Exchanger;1",
+    "@type": "Interface",
+    "displayName": "Water_Cooled_Condenser_Heat_Exchanger",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Condenser_Heat_Exchanger;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Water_Differential_Pressure_Sensor;1",
     "@type": "Interface",
     "displayName": "Water_Differential_Pressure_Sensor",
@@ -7772,15 +7790,6 @@
     "displayName": "Condensate_Leak_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Leak_Alarm;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Condenser;1",
-    "@type": "Interface",
-    "displayName": "Condenser",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
     ]
   },
   {
