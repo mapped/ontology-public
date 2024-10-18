@@ -2729,10 +2729,10 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:GeoPointValue;1",
+    "@id": "dtmi:mapped:core:GeoPointQuantity;1",
     "@type": "Interface",
     "description": "Latitude and longitude coordinates of a point on the Earth's surface.",
-    "displayName": "GeoPointValue",
+    "displayName": "GeoPointQuantity",
     "extends": [
       "dtmi:mapped:core:Meta;1"
     ]
