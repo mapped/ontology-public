@@ -1566,6 +1566,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Dehumidifier;1",
+    "@type": "Interface",
+    "displayName": "Dehumidifier",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Device;1",
     "@type": "Interface",
     "displayName": "Device",
