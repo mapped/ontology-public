@@ -1539,6 +1539,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Daylighting_Enable_Status;1",
+    "@type": "Interface",
+    "displayName": "Daylighting_Enable_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Enable_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Defrost_Cutoff_Temperature_Setpoint;1",
     "@type": "Interface",
     "displayName": "Defrost_Cutoff_Temperature_Setpoint",
@@ -1571,6 +1580,15 @@
     "displayName": "Dehumidifier",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Demand_Response_Enable_Status;1",
+    "@type": "Interface",
+    "displayName": "Demand_Response_Enable_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Enable_Status;1"
     ]
   },
   {
@@ -3272,6 +3290,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Lamp_Failure_Count_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Lamp_Failure_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Lead_On_Off_Status;1",
     "@type": "Interface",
     "displayName": "Lead_On_Off_Status",
@@ -3334,6 +3361,15 @@
     "extends": [
       "dtmi:mapped:core:Lighting_Command;1",
       "dtmi:org:brickschema:schema:Brick:On_Off_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Lighting_Scene_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Lighting_Scene_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
     ]
   },
   {
@@ -3573,6 +3609,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Loadshed_Level_Parameter;1",
+    "@type": "Interface",
+    "displayName": "Loadshed_Level_Parameter",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Parameter;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Location_Sensor;1",
     "@type": "Interface",
     "displayName": "Location_Sensor",
@@ -3765,6 +3810,15 @@
     "displayName": "Max_Power_Limit",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Max_Limit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Max_Total_Active_Power_Parameter;1",
+    "@type": "Interface",
+    "displayName": "Max_Total_Active_Power_Parameter",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Parameter;1"
     ]
   },
   {
@@ -4051,6 +4105,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupancy_Disable_Command;1",
+    "@type": "Interface",
+    "displayName": "Occupancy_Disable_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Disable_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Occupancy_Sensing_Device;1",
     "@type": "Interface",
     "displayName": "Occupancy_Sensing_Device",
@@ -4083,6 +4146,24 @@
     "displayName": "Occupied_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Occupied_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Lighting_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Occupied_Lighting_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Timeout_Duration_Parameter;1",
+    "@type": "Interface",
+    "displayName": "Occupied_Timeout_Duration_Parameter",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Parameter;1"
     ]
   },
   {
@@ -5964,11 +6045,29 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unoccupied_Lighting_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Unoccupied_Lighting_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Unoccupied_Zone_Air_Heating_Temperature_Setpoint;1",
     "@type": "Interface",
     "displayName": "Unoccupied_Zone_Air_Heating_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Zone_Air_Heating_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unresponsive_Device_Count_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Unresponsive_Device_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
     ]
   },
   {
