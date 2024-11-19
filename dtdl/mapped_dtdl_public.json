@@ -1548,6 +1548,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Daylighting_Level_Parameter;1",
+    "@type": "Interface",
+    "displayName": "Daylighting_Level_Parameter",
+    "extends": [
+      "dtmi:mapped:core:Level_Parameter;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Defrost_Cutoff_Temperature_Setpoint;1",
     "@type": "Interface",
     "displayName": "Defrost_Cutoff_Temperature_Setpoint",
@@ -3314,6 +3323,15 @@
     "displayName": "Level_Command",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Level_Parameter;1",
+    "@type": "Interface",
+    "displayName": "Level_Parameter",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Parameter;1"
     ]
   },
   {
