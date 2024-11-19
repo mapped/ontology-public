@@ -1069,6 +1069,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cloudy_Day_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Cloudy_Day_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Coefficient_Of_Performance;1",
     "@type": "Interface",
     "displayName": "Coefficient_Of_Performance",
@@ -2349,6 +2358,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Failed_Device_Count_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Failed_Device_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Fan_Filter_Unit;1",
     "@type": "Interface",
     "displayName": "Fan_Filter_Unit",
@@ -3341,6 +3359,15 @@
     "displayName": "Level_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Light_Level_Discrepancy_Alarm;1",
+    "@type": "Interface",
+    "displayName": "Light_Level_Discrepancy_Alarm",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Alarm;1"
     ]
   },
   {
@@ -5042,6 +5069,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Replace_Lamp_Count_Sensor;1",
+    "@type": "Interface",
+    "displayName": "Replace_Lamp_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Request;1",
     "@type": "Interface",
     "displayName": "Request",
@@ -5316,6 +5352,24 @@
     "displayName": "Setpoint_Offset",
     "extends": [
       "dtmi:mapped:core:Offset;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Shade_Level_Command;1",
+    "@type": "Interface",
+    "displayName": "Shade_Level_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Shade_Preset_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Shade_Preset_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
     ]
   },
   {
@@ -6530,12 +6584,39 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Window_Bright_Override_Status;1",
+    "@type": "Interface",
+    "displayName": "Window_Bright_Override_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Window_Dark_Override_Status;1",
+    "@type": "Interface",
+    "displayName": "Window_Dark_Override_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Window_Open_Close_Status;1",
     "@type": "Interface",
     "displayName": "Window_Open_Close_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Open_Close_Status;1",
       "dtmi:mapped:core:Window_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Window_Shade_Mode_Status;1",
+    "@type": "Interface",
+    "displayName": "Window_Shade_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
     ]
   },
   {
