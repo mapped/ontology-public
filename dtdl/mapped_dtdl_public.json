@@ -1566,6 +1566,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Daylighting_Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Daylighting_Power_Saving_Estimate",
+    "extends": [
+      "dtmi:mapped:core:Power_Saving_Estimate;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Defrost_Cutoff_Temperature_Setpoint;1",
     "@type": "Interface",
     "displayName": "Defrost_Cutoff_Temperature_Setpoint",
@@ -3663,6 +3672,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Loadshedding_Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Loadshedding_Power_Saving_Estimate",
+    "extends": [
+      "dtmi:mapped:core:Power_Saving_Estimate;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Location_Sensor;1",
     "@type": "Interface",
     "displayName": "Location_Sensor",
@@ -4159,6 +4177,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupancy_Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Occupancy_Power_Saving_Estimate",
+    "extends": [
+      "dtmi:mapped:core:Power_Saving_Estimate;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Occupancy_Sensing_Device;1",
     "@type": "Interface",
     "displayName": "Occupancy_Sensing_Device",
@@ -4423,6 +4450,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Personal_Control_Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Personal_Control_Power_Saving_Estimate",
+    "extends": [
+      "dtmi:mapped:core:Power_Saving_Estimate;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Active_Energy_Sensor;1",
     "@type": "Interface",
     "displayName": "Phase_A_Active_Energy_Sensor",
@@ -4682,6 +4718,15 @@
     "displayName": "Power_Distribution_Unit",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Power_Saving_Estimate",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -5249,6 +5294,15 @@
     "displayName": "Schedule_Mode_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Schedule_Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Schedule_Power_Saving_Estimate",
+    "extends": [
+      "dtmi:mapped:core:Power_Saving_Estimate;1"
     ]
   },
   {
@@ -6058,6 +6112,15 @@
     "displayName": "Trash_Compactor",
     "extends": [
       "dtmi:mapped:core:Waste_Management_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tuning_Power_Saving_Estimate;1",
+    "@type": "Interface",
+    "displayName": "Tuning_Power_Saving_Estimate",
+    "extends": [
+      "dtmi:mapped:core:Power_Saving_Estimate;1"
     ]
   },
   {
