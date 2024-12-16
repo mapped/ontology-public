@@ -262,6 +262,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Air_Quality_Index;1",
+    "@type": "Interface",
+    "description": "Index indicating the quality of air, taking into account pollutants and other harmful substances.",
+    "displayName": "Air_Quality_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Air_Quality_Sensing_Device;1",
     "@type": "Interface",
     "displayName": "Air_Quality_Sensing_Device",
@@ -408,6 +418,16 @@
     "displayName": "Apparent_Power_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Electric_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Apparent_Temperature_Index;1",
+    "@type": "Interface",
+    "description": "Index measuring the temperature as perceived by humans, taking into account factors such as humidity and wind.",
+    "displayName": "Apparent_Temperature_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -698,6 +718,16 @@
     "displayName": "Billed_Electrical_Energy_Use",
     "extends": [
       "dtmi:mapped:core:Energy_Use;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Binocular_Indirect_Ophthalmoscope;1",
+    "@type": "Interface",
+    "description": "A medical instrument used to examine the eye",
+    "displayName": "Binocular_Indirect_Ophthalmoscope",
+    "extends": [
+      "dtmi:mapped:core:Medical_Equipment;1"
     ]
   },
   {
@@ -2325,7 +2355,7 @@
     "@type": "Interface",
     "displayName": "Exhaust_Air_Valve",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
     ]
   },
   {
@@ -2807,6 +2837,16 @@
     "displayName": "Geo_Location_Sensor",
     "extends": [
       "dtmi:mapped:core:Location_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Grass_Pollen_Index;1",
+    "@type": "Interface",
+    "description": "Index indicating the concentration of grass pollen in the air.",
+    "displayName": "Grass_Pollen_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -3345,6 +3385,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Lens_Tracer;1",
+    "@type": "Interface",
+    "description": "A device used to trace the shape of a patient's eyeglasses",
+    "displayName": "Lens_Tracer",
+    "extends": [
+      "dtmi:mapped:core:Medical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Level_Command;1",
     "@type": "Interface",
     "displayName": "Level_Command",
@@ -3773,6 +3823,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Manual_Lensometer;1",
+    "@type": "Interface",
+    "description": "A device used to measure the prescription of eyeglasses",
+    "displayName": "Manual_Lensometer",
+    "extends": [
+      "dtmi:mapped:core:Medical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Marginal_GHG_Emissions_Rate;1",
     "@type": "Interface",
     "description": "The Marginal Emissions Rate refers to the rate at which greenhouse gas (GHG) emissions are produced by the marginal power plant when there is a change in electricity demand. The units is typically the amount of pollution (CO2e) per unit of energy (e.g. lbs/MWh)",
@@ -4070,6 +4130,16 @@
     "displayName": "Min_Water_Temperature_Setpoint_Limit",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Min_Temperature_Setpoint_Limit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Mold_Index;1",
+    "@type": "Interface",
+    "description": "Index indicating the concentration of mold spores in the air.",
+    "displayName": "Mold_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -4636,6 +4706,16 @@
     "displayName": "Phone_Number",
     "extends": [
       "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phoroptor;1",
+    "@type": "Interface",
+    "description": "A device used by eye care professionals to determine a patient's eyeglass prescription",
+    "displayName": "Phoroptor",
+    "extends": [
+      "dtmi:mapped:core:Medical_Equipment;1"
     ]
   },
   {
@@ -5816,6 +5896,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Supply_Air_Valve;1",
+    "@type": "Interface",
+    "displayName": "Supply_Air_Valve",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Switchboard;1",
     "@type": "Interface",
     "displayName": "Switchboard",
@@ -6116,6 +6205,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Tree_Pollen_Index;1",
+    "@type": "Interface",
+    "description": "Index indicating the concentration of tree pollen in the air.",
+    "displayName": "Tree_Pollen_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Tuning_Power_Saving_Estimate;1",
     "@type": "Interface",
     "displayName": "Tuning_Power_Saving_Estimate",
@@ -6131,6 +6230,26 @@
     "displayName": "Turnstile",
     "extends": [
       "dtmi:mapped:core:Door;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:US_Air_Quality_Index;1",
+    "@type": "Interface",
+    "description": "The U.S. Air Quality Index is the EPA\u2019s index for reporting air quality.",
+    "displayName": "US_Air_Quality_Index",
+    "extends": [
+      "dtmi:mapped:core:Air_Quality_Index;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:UV_Index;1",
+    "@type": "Interface",
+    "description": "Index indicating the level of ultraviolet radiation from the sun.",
+    "displayName": "UV_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -6578,6 +6697,16 @@
     "displayName": "Weather_Condition_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Weed_Pollen_Index;1",
+    "@type": "Interface",
+    "description": "Index indicating the concentration of weed pollen in the air.",
+    "displayName": "Weed_Pollen_Index",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
