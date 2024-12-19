@@ -5797,6 +5797,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:SubBuildingCode;1",
+    "@type": "Interface",
+    "displayName": "SubBuildingCode",
+    "extends": [
+      "dtmi:mapped:core:Identity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Subcooling_Sensor;1",
     "@type": "Interface",
     "displayName": "Subcooling_Sensor",
