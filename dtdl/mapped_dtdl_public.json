@@ -4421,6 +4421,33 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Packaged_Air_Source_Heat_Pump;1",
+    "@type": "Interface",
+    "displayName": "Packaged_Air_Source_Heat_Pump",
+    "extends": [
+      "dtmi:mapped:core:Packaged_Heat_Pump;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Packaged_Heat_Pump;1",
+    "@type": "Interface",
+    "displayName": "Packaged_Heat_Pump",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Packaged_Water_Source_Heat_Pump;1",
+    "@type": "Interface",
+    "displayName": "Packaged_Water_Source_Heat_Pump",
+    "extends": [
+      "dtmi:mapped:core:Packaged_Heat_Pump;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Paint_Dispenser;1",
     "@type": "Interface",
     "description": "A device used to dispense paint",
