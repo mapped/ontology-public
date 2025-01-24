@@ -4928,6 +4928,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Preheat_Coil;1",
+    "@type": "Interface",
+    "displayName": "Preheat_Coil",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Heat_Exchanger;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Pressure_Alarm_Setpoint;1",
     "@type": "Interface",
     "displayName": "Pressure_Alarm_Setpoint",
