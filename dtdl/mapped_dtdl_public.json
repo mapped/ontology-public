@@ -610,6 +610,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Average_GHG_Emissions_Rate_Forecast;1",
+    "@type": "Interface",
+    "description": "A forecased Average Operating Emissions Rate (AOER), which is the average emissions rate of all the electricity generated on the local grid at a certain time.",
+    "displayName": "Average_GHG_Emissions_Rate_Forecast",
+    "extends": [
+      "dtmi:mapped:core:Forecast;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Average_Line_Voltage_Sensor;1",
     "@type": "Interface",
     "displayName": "Average_Line_Voltage_Sensor",
@@ -2091,6 +2101,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electricity_GHG_Emissions_Health_Damage_Forecast;1",
+    "@type": "Interface",
+    "description": "The forecasted human life and health impact of using electricity at a particular time and place, based on the air pollution of marginal electricity generation (typically defined in units USD / MWh). Dollars used as a common numerical representation, the value of a statistical life (VSL). (i.e. WattTime Health Damage Forecast)",
+    "displayName": "Electricity_GHG_Emissions_Health_Damage_Forecast",
+    "extends": [
+      "dtmi:mapped:core:Forecast;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Elevator_Alarm;1",
     "@type": "Interface",
     "displayName": "Elevator_Alarm",
@@ -2665,6 +2685,16 @@
     "displayName": "Forced_Open_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Forecast;1",
+    "@type": "Interface",
+    "description": "A predicted series of values in the future. A forecast includes a timestep which is the interval for each prediction (i.e. hourly) and a horizon which is the length of time into the future the forecast is generated (i.e. 7-day).",
+    "displayName": "Forecast",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
     ]
   },
   {
@@ -3857,6 +3887,16 @@
     "displayName": "Marginal_GHG_Emissions_Rate",
     "extends": [
       "dtmi:mapped:core:GHG_Emissions_Intensity_Per_Energy;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Marginal_GHG_Emissions_Rate_Forecast;1",
+    "@type": "Interface",
+    "description": "A forecasted greenhouse gas emissions factor used to calculate the change in indirect emissions (in CO2e) that would result from a change in load (increase or decrease).",
+    "displayName": "Marginal_GHG_Emissions_Rate_Forecast",
+    "extends": [
+      "dtmi:mapped:core:Forecast;1"
     ]
   },
   {
