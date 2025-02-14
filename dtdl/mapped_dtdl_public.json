@@ -1549,6 +1549,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Damper_Close_Status;1",
+    "@type": "Interface",
+    "displayName": "Damper_Close_Status",
+    "extends": [
+      "dtmi:mapped:core:Close_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Damper_Open_Close_Command;1",
     "@type": "Interface",
     "displayName": "Damper_Open_Close_Command",
@@ -1575,6 +1584,15 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Damper_Command;1",
       "dtmi:mapped:core:Open_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Damper_Open_Status;1",
+    "@type": "Interface",
+    "displayName": "Damper_Open_Status",
+    "extends": [
+      "dtmi:mapped:core:Open_Status;1"
     ]
   },
   {
@@ -6456,6 +6474,15 @@
     "extends": [
       "dtmi:mapped:core:Close_Command;1",
       "dtmi:org:brickschema:schema:Brick:Valve_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Valve_Close_Status;1",
+    "@type": "Interface",
+    "displayName": "Valve_Close_Status",
+    "extends": [
+      "dtmi:mapped:core:Close_Status;1"
     ]
   },
   {
