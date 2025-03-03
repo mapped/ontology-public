@@ -1136,6 +1136,15 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cold_Deck_Supply_Fan;1",
+    "@type": "Interface",
+    "displayName": "Cold_Deck_Supply_Fan",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Supply_Fan;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Combination_Oven;1",
     "@type": "Interface",
     "description": "Uses convection cooking, steaming and a combination of both into a single unit. Used for baking, broiling, poaching, roasting, steaming, and warming.",
@@ -3201,6 +3210,15 @@
     "displayName": "High_Voltage_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Hot_Deck_Supply_Fan;1",
+    "@type": "Interface",
+    "displayName": "Hot_Deck_Supply_Fan",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Supply_Fan;1"
     ]
   },
   {
