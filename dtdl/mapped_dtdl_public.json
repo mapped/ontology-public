@@ -2648,6 +2648,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fan_Array;1",
+    "@type": "Interface",
+    "description": "Multiple fans arranged in modules to form a larger integrated system",
+    "displayName": "Fan_Array",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Collection;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Fan_Filter_Unit;1",
     "@type": "Interface",
     "description": "Equipment that combines a fan and a filter to circulate and clean the air within specific areas, often used in clean rooms or environments requiring high air quality.",
@@ -5819,6 +5829,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Return_Fan_Array;1",
+    "@type": "Interface",
+    "description": "Multiple supply fans arranged in modules to form a larger integrated system",
+    "displayName": "Return_Fan_Array",
+    "extends": [
+      "dtmi:mapped:core:Fan_Array;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Road_Subsurface_Temperature_Sensor;1",
     "@type": "Interface",
     "description": "",
@@ -6497,6 +6517,16 @@
     "displayName": "Supply_Air_Valve",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Supply_Fan_Array;1",
+    "@type": "Interface",
+    "description": "Multiple supply fans arranged in modules to form a larger integrated system",
+    "displayName": "Supply_Fan_Array",
+    "extends": [
+      "dtmi:mapped:core:Fan_Array;1"
     ]
   },
   {
