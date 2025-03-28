@@ -621,6 +621,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Auxiliary_Heater;1",
+    "@type": "Interface",
+    "description": "An additional heating element used to provide extra warmth in HVAC systems, often utilized when the primary heating source is insufficient or during extreme cold weather conditions.",
+    "displayName": "Auxiliary_Heater",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Auxiliary_Heater_Status;1",
     "@type": "Interface",
     "description": "",
