@@ -9418,7 +9418,8 @@
     "description": "A valve that controls air temperature by modulating the amount of cold water flowing through a cooling coil",
     "displayName": "Cooling_Valve",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1",
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
     ]
   },
   {
@@ -12571,7 +12572,8 @@
     "description": "A valve that controls air temperature by modulating the amount of hot water flowing through a heating coil",
     "displayName": "Heating_Valve",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1",
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
     ]
   },
   {
