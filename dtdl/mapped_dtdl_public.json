@@ -2910,6 +2910,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Flue_Damper;1",
+    "@type": "Interface",
+    "description": "A damper located in the flue of a heating system that controls the flow of combustion gases, ensuring proper venting and preventing heat loss when the heating system is not in operation.",
+    "displayName": "Flue_Damper",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Flush_Valve;1",
     "@type": "Interface",
     "description": "A device within a toilet or urinal that releases water for flushing, typically operated by a handle or sensor. Also known as Flushometer.",
