@@ -5109,6 +5109,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Reactive_Energy_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the reactive energy, also known as imaginary energy, in between line A and neutral of a three-phase electrical system. Typically measured in kilovar-hour (kVARh) or MVARh.",
+    "displayName": "Phase_A_Reactive_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Reactive_Power_Sensor;1",
     "@type": "Interface",
     "description": "Measures the reactive power in between line A and neutral of a three-phase electrical system. Typically measured in Volt-Ampere reactive (VAR).",
@@ -5179,6 +5189,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Reactive_Energy_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the reactive energy, also known as imaginary energy, in between line B and neutral of a three-phase electrical system. Typically measured in kilovar-hour (kVARh) or MVARh.",
+    "displayName": "Phase_B_Reactive_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Reactive_Power_Sensor;1",
     "@type": "Interface",
     "description": "Measures the reactive power in between line B and neutral of a three-phase electrical system. Typically measured in Volt-Ampere reactive (VAR).",
@@ -5245,6 +5265,16 @@
     "displayName": "Phase_C_Power_Factor_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Reactive_Energy_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the reactive energy, also known as imaginary energy, in between line C and neutral of a three-phase electrical system. Typically measured in kilovar-hour (kVARh) or MVARh.",
+    "displayName": "Phase_C_Reactive_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
     ]
   },
   {
