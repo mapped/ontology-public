@@ -2956,7 +2956,7 @@
     "description": "A damper located in the flue of a heating system that controls the flow of combustion gases, ensuring proper venting and preventing heat loss when the heating system is not in operation.",
     "displayName": "Flue_Damper",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Damper;1"
+      "dtmi:org:brickschema:schema:Brick:Exhaust_Damper;1"
     ]
   },
   {
@@ -3520,6 +3520,16 @@
     "displayName": "High_Voltage_Alarm",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Voltage_Alarm;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Horizontal_Unit_Ventilator;1",
+    "@type": "Interface",
+    "description": "A unit ventilator installed horizontally at or above ceiling level that can discharge air either horizontally or vertically down, often equipped with collars at discharge, return, and outdoor air openings to attach ductwork.",
+    "displayName": "Horizontal_Unit_Ventilator",
+    "extends": [
+      "dtmi:mapped:core:Unit_Ventilator;1"
     ]
   },
   {
@@ -7105,6 +7115,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unit_Ventilator;1",
+    "@type": "Interface",
+    "description": "A factory-made assembly that combines heating, cooling, and ventilation functions in a compact package, designed to introduce conditioned outdoor air (at least 80% of rated airflow) while maintaining room temperature. Unit ventilators contain components such as fans, coils, dampers, filters, and controls in a single cabinet.",
+    "displayName": "Unit_Ventilator",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Unoccupied_Cooling_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "Target temperature of the air during unoccupied and cooling modes",
@@ -7296,6 +7316,16 @@
     "displayName": "Vehicle",
     "extends": [
       "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Vertical_Unit_Ventilator;1",
+    "@type": "Interface",
+    "description": "A floor-mounted unit ventilator designed to fit below window sills on exterior walls, with vertical air discharge from the cabinet top and return air entering at the front, typically serving classrooms and similar spaces requiring individual zone control.",
+    "displayName": "Vertical_Unit_Ventilator",
+    "extends": [
+      "dtmi:mapped:core:Unit_Ventilator;1"
     ]
   },
   {
