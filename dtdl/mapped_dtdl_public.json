@@ -1642,6 +1642,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cost_Estimate_Per_Interval;1",
+    "@type": "Interface",
+    "description": "A sensor measuring and reporting the estimated cost of a resource such as electricity or over a specified interval.",
+    "displayName": "Cost_Estimate_Per_Interval",
+    "extends": [
+      "dtmi:mapped:core:Cost;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Count_Sensor;1",
     "@type": "Interface",
     "description": "Represents the numerical quantity of specified subjects or events within a given context.",
