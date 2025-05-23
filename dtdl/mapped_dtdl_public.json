@@ -2659,6 +2659,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Exhaust_Fan_Array;1",
+    "@type": "Interface",
+    "description": "Multiple exhaust fans arranged in modules to form a larger integrated system",
+    "displayName": "Exhaust_Fan_Array",
+    "extends": [
+      "dtmi:mapped:core:Fan_Array;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Exit_Sign;1",
     "@type": "Interface",
     "description": "",
