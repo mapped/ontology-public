@@ -1580,6 +1580,26 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooling_Stage_Enable_Command;1",
+    "@type": "Interface",
+    "description": "A command point representing a discrete cooling stage which the equipment should be operating at. The desired stage number is identified by an entity property",
+    "displayName": "Cooling_Stage_Enable_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Stage_Enable_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooling_Stage_Enable_Status;1",
+    "@type": "Interface",
+    "description": "A status point representing the current discrete cooling stage which the equipment is operating at. The active stage number is identified by an entity property",
+    "displayName": "Cooling_Stage_Enable_Status",
+    "extends": [
+      "dtmi:mapped:core:Stage_Enable_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Cooling_Thermal_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the thermal energy used for cooling, often in BTUh or kWh",
@@ -3434,6 +3454,26 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Stage_Enable_Command;1",
+    "@type": "Interface",
+    "description": "A command point representing a discrete heating stage which the equipment should be operating at. The desired stage number is identified by an entity property",
+    "displayName": "Heating_Stage_Enable_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Stage_Enable_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Stage_Enable_Status;1",
+    "@type": "Interface",
+    "description": "A status point representing the current discrete heating stage which the equipment is operating at. The active stage number is identified by an entity property",
+    "displayName": "Heating_Stage_Enable_Status",
+    "extends": [
+      "dtmi:mapped:core:Stage_Enable_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heating_Thermal_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the thermal energy used for heating, often in BTUh or kWh",
@@ -5179,6 +5219,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "A sensor that measures the phase difference between voltage and current waveforms in an AC electrical circuit",
+    "displayName": "Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Active_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the electrical active energy consumption by phase B",
@@ -5896,6 +5946,16 @@
     "displayName": "Reheat_Command",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Reheat_On_Off_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Reheat_On_Off_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:On_Off_Command;1"
     ]
   },
   {
@@ -7457,6 +7517,16 @@
     "displayName": "Wall_Air_Conditioner",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Warm_Up_Heating_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "A heating setpoint used during warm-up operations to rapidly increase space temperature before occupancy, typically with modified system controls for maximum heating efficiency",
+    "displayName": "Warm_Up_Heating_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_Temperature_Setpoint;1"
     ]
   },
   {
