@@ -5159,6 +5159,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_A_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Phase_Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Apparent_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the apparent energy in between line A and neutral of a three-phase electrical system. Typically measured in kilowatt (kWh) or MWh.",
@@ -5249,6 +5259,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_B_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Phase_Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Apparent_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the apparent energy in between line B and neutral of a three-phase electrical system. Typically measured in kilowatt (kWh) or MWh.",
@@ -5325,6 +5345,16 @@
     "displayName": "Phase_C_Active_Power_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_C_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Phase_Angle_Sensor;1"
     ]
   },
   {
