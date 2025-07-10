@@ -1580,6 +1580,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooling_Stage_Count_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Cooling_Stage_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Cooling_Stage_Enable_Command;1",
     "@type": "Interface",
     "description": "A command point representing a discrete cooling stage which the equipment should be operating at. The desired stage number is identified by an entity property",
@@ -1596,6 +1606,26 @@
     "displayName": "Cooling_Stage_Enable_Status",
     "extends": [
       "dtmi:mapped:core:Stage_Enable_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooling_Stage_On_Off_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Cooling_Stage_On_Off_Command",
+    "extends": [
+      "dtmi:mapped:core:Stage_On_Off_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooling_Stage_On_Off_Status;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Cooling_Stage_On_Off_Status",
+    "extends": [
+      "dtmi:mapped:core:Stage_On_Off_Status;1"
     ]
   },
   {
@@ -3454,6 +3484,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Stage_Count_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Heating_Stage_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heating_Stage_Enable_Command;1",
     "@type": "Interface",
     "description": "A command point representing a discrete heating stage which the equipment should be operating at. The desired stage number is identified by an entity property",
@@ -3470,6 +3510,26 @@
     "displayName": "Heating_Stage_Enable_Status",
     "extends": [
       "dtmi:mapped:core:Stage_Enable_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Stage_On_Off_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Heating_Stage_On_Off_Command",
+    "extends": [
+      "dtmi:mapped:core:Stage_On_Off_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Stage_On_Off_Status;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Heating_Stage_On_Off_Status",
+    "extends": [
+      "dtmi:mapped:core:Stage_On_Off_Status;1"
     ]
   },
   {
@@ -5219,6 +5279,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Total_Harmonic_Distortion_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_A_Total_Harmonic_Distortion_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Total_Harmonic_Distortion_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Voltage_Sensor;1",
     "@type": "Interface",
     "description": "Measures the voltage between line A and neutral in a three-phase electrical system",
@@ -5319,6 +5389,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Total_Harmonic_Distortion_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_B_Total_Harmonic_Distortion_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Total_Harmonic_Distortion_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Voltage_Sensor;1",
     "@type": "Interface",
     "description": "Measures the voltage between line B and neutral in a three-phase electrical system",
@@ -5405,6 +5485,16 @@
     "displayName": "Phase_C_Reactive_Power_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Total_Harmonic_Distortion_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_C_Total_Harmonic_Distortion_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Total_Harmonic_Distortion_Sensor;1"
     ]
   },
   {
@@ -6560,12 +6650,42 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Stage_Count_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Stage_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Stage_Enable_Status;1",
     "@type": "Interface",
     "description": "Indicates if a certain stage of the control or operation is enabled.",
     "displayName": "Stage_Enable_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Enable_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Stage_On_Off_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Stage_On_Off_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:On_Off_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Stage_On_Off_Status;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Stage_On_Off_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:On_Off_Status;1"
     ]
   },
   {
