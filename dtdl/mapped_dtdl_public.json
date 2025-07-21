@@ -723,7 +723,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:BACnet_Object_Id;1",
     "@type": "Interface",
-    "description": "",
+    "description": "A BACnet object identifier is a unique identifier for a BACnet object in the form of `{DeviceID}(/object={ObjectType}:{InstanceNumber})?`",
     "displayName": "BACnet_Object_Id",
     "extends": [
       "dtmi:mapped:core:Identity;1"
@@ -733,7 +733,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:BACnet_Vendor_Id;1",
     "@type": "Interface",
-    "description": "",
+    "description": "BACnet vendor identifier a unique identifier for a BACnet vendor as in https://bacnet.org/assigned-vendor-ids/",
     "displayName": "BACnet_Vendor_Id",
     "extends": [
       "dtmi:mapped:core:Identity;1"
@@ -6602,7 +6602,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:SpaceCode;1",
     "@type": "Interface",
-    "description": "",
+    "description": "A space code is a unique identifier for a space within the floor like a room number. Space codes are unique within a building in most of the cases, but there are cases it's distinguishable only within the floor.",
     "displayName": "SpaceCode",
     "extends": [
       "dtmi:mapped:core:Identity;1"
