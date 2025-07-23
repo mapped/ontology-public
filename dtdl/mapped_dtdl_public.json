@@ -2870,6 +2870,26 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:File;1",
+    "@type": "Interface",
+    "description": "A file that is stored in Mapped by either uploading or ingesting it from the source connector.",
+    "displayName": "File",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:FileSize;1",
+    "@type": "Interface",
+    "description": "The size of the file.",
+    "displayName": "FileSize",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Filter_Alarm;1",
     "@type": "Interface",
     "description": "An alarm indicating a filtration system issue, such as a clogged or inefficient filter.",
