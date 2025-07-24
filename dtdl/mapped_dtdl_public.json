@@ -1742,6 +1742,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Current_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of current waveform in an AC electrical circuit",
+    "displayName": "Current_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Current_Sensor;1",
+      "dtmi:mapped:core:Phase_Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Current_Ratio_Sensor;1",
     "@type": "Interface",
     "description": "Measures the current ratio of a transformer.",
@@ -5239,16 +5250,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Phase_A_Angle_Sensor;1",
-    "@type": "Interface",
-    "description": "",
-    "displayName": "Phase_A_Angle_Sensor",
-    "extends": [
-      "dtmi:mapped:core:Phase_Angle_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Apparent_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the apparent energy in between line A and neutral of a three-phase electrical system. Typically measured in kilowatt (kWh) or MWh.",
@@ -5265,6 +5266,16 @@
     "displayName": "Phase_A_Apparent_Power_Sensor",
     "extends": [
       "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Current_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of current waveform on Phase A in a three-phase AC electrical circuit",
+    "displayName": "Phase_A_Current_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Current_Phase_Angle_Sensor;1"
     ]
   },
   {
@@ -5309,6 +5320,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Voltage_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of voltage waveform on Phase A in a three-phase AC electrical circuit",
+    "displayName": "Phase_A_Voltage_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Voltage_Phase_Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Voltage_Sensor;1",
     "@type": "Interface",
     "description": "Measures the voltage between line A and neutral in a three-phase electrical system",
@@ -5321,7 +5342,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_Angle_Sensor;1",
     "@type": "Interface",
-    "description": "A sensor that measures the phase difference between voltage and current waveforms in an AC electrical circuit",
+    "description": "Measures the phase difference between voltage and current waveforms in an AC electrical circuit",
     "displayName": "Phase_Angle_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Angle_Sensor;1"
@@ -5349,16 +5370,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Phase_B_Angle_Sensor;1",
-    "@type": "Interface",
-    "description": "",
-    "displayName": "Phase_B_Angle_Sensor",
-    "extends": [
-      "dtmi:mapped:core:Phase_Angle_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Apparent_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the apparent energy in between line B and neutral of a three-phase electrical system. Typically measured in kilowatt (kWh) or MWh.",
@@ -5375,6 +5386,16 @@
     "displayName": "Phase_B_Apparent_Power_Sensor",
     "extends": [
       "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Current_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of current waveform on Phase B in a three-phase AC electrical circuit",
+    "displayName": "Phase_B_Current_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Current_Phase_Angle_Sensor;1"
     ]
   },
   {
@@ -5419,6 +5440,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Voltage_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of voltage waveform on Phase B in a three-phase AC electrical circuit",
+    "displayName": "Phase_B_Voltage_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Voltage_Phase_Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Voltage_Sensor;1",
     "@type": "Interface",
     "description": "Measures the voltage between line B and neutral in a three-phase electrical system",
@@ -5449,16 +5480,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Phase_C_Angle_Sensor;1",
-    "@type": "Interface",
-    "description": "",
-    "displayName": "Phase_C_Angle_Sensor",
-    "extends": [
-      "dtmi:mapped:core:Phase_Angle_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_C_Apparent_Energy_Sensor;1",
     "@type": "Interface",
     "description": "Measures the apparent energy in between line C and neutral of a three-phase electrical system. Typically measured in kilowatt (kWh) or MWh.",
@@ -5475,6 +5496,16 @@
     "displayName": "Phase_C_Apparent_Power_Sensor",
     "extends": [
       "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Current_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of current waveform on Phase C in a three-phase AC electrical circuit",
+    "displayName": "Phase_C_Current_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Current_Phase_Angle_Sensor;1"
     ]
   },
   {
@@ -5515,6 +5546,16 @@
     "displayName": "Phase_C_Total_Harmonic_Distortion_Sensor",
     "extends": [
       "dtmi:mapped:core:Total_Harmonic_Distortion_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Voltage_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of voltage waveform on Phase C in a three-phase AC electrical circuit",
+    "displayName": "Phase_C_Voltage_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Voltage_Phase_Angle_Sensor;1"
     ]
   },
   {
@@ -7636,6 +7677,17 @@
     "displayName": "Visitor_Log",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Voltage_Phase_Angle_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the phase angle of voltage waveform in an AC electrical circuit",
+    "displayName": "Voltage_Phase_Angle_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Phase_Angle_Sensor;1",
+      "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
     ]
   },
   {
