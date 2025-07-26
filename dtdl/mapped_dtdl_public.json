@@ -2795,7 +2795,7 @@
     "description": "Multiple fans arranged in modules to form a larger integrated system",
     "displayName": "Fan_Array",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Collection;1"
+      "dtmi:mapped:core:Device;1"
     ]
   },
   {
@@ -5930,16 +5930,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Pump_Collection;1",
-    "@type": "Interface",
-    "description": "An group of pumps configured within a single system, each serving the same functional purpose. This offers system redundancy as well as staged operation capabilities for variable load conditions.",
-    "displayName": "Pump_Collection",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Collection;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Pump_On_Off_Command;1",
     "@type": "Interface",
     "description": "Commands Pump On or Off.",
@@ -5956,7 +5946,7 @@
     "description": "An assembly of multiple pumps with integrated piping, valves, control equipment, and sensors for coordinated fluid circulation in building systems",
     "displayName": "Pump_Skid",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Collection;1"
+      "dtmi:mapped:core:Device;1"
     ]
   },
   {
