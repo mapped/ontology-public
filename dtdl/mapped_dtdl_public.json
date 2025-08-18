@@ -401,6 +401,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Airside_Economizer;1",
+    "@type": "Interface",
+    "description": "An airside economizer is a free cooling system that uses outside air directly for building cooling when outdoor dry bulb temperatures are low enough, bypassing or reducing the need for mechanical cooling.",
+    "displayName": "Airside_Economizer",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Economizer;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Alarm_Count_Sensor;1",
     "@type": "Interface",
     "description": "Represents number of alarm occurrences.",
@@ -2827,6 +2837,17 @@
     "displayName": "Fan_Powered_VAV",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Variable_Air_Volume_Box;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Fan_Powered_VAV_With_Reheat;1",
+    "@type": "Interface",
+    "description": "A fan powered VAV box with a reheat coil mounted on the discharge end of the unit that can heat the air delivered to a zone",
+    "displayName": "Fan_Powered_VAV_With_Reheat",
+    "extends": [
+      "dtmi:mapped:core:Fan_Powered_VAV;1",
+      "dtmi:org:brickschema:schema:Brick:Variable_Air_Volume_Box_With_Reheat;1"
     ]
   },
   {
@@ -6111,6 +6132,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Reheat_Coil;1",
+    "@type": "Interface",
+    "description": "A heating coil used to reheat previously cooled air.",
+    "displayName": "Reheat_Coil",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Coil;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Reheat_Command;1",
     "@type": "Interface",
     "description": "A command to activate reheating, which is used for either heating or for dehumidification purposes",
@@ -7929,6 +7960,16 @@
     "displayName": "Waterless_Urinal",
     "extends": [
       "dtmi:mapped:core:Urinal;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Waterside_Economizer;1",
+    "@type": "Interface",
+    "description": "A waterside economizer is a free cooling system that uses a heat exchanger and cooling tower water to provide building cooling without running chillers when outdoor wet bulb temperatures are low enough.",
+    "displayName": "Waterside_Economizer",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Economizer;1"
     ]
   },
   {
