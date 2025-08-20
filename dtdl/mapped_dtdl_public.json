@@ -2238,6 +2238,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Duct_Heater;1",
+    "@type": "Interface",
+    "description": "Duct heaters are a comprised of an open coil, tubular, or finned tubular heating element.",
+    "displayName": "Duct_Heater",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Duct_Smoke_Detector;1",
     "@type": "Interface",
     "description": "The duct smoke detector samples air for early detection of smoke and products of combustion present in air moving through HVAC ducts.",
