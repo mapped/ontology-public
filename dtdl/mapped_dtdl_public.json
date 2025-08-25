@@ -331,6 +331,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Air_Valve;1",
+    "@type": "Interface",
+    "description": "A fast-acting device used in laboratory and critical environments that modulates airflow to maintain precise room pressurization and containment requirements.",
+    "displayName": "Air_Valve",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Aircraft_Docked_Status;1",
     "@type": "Interface",
     "description": "Represents a status subclass indicating that an aircraft has successfully docked and is properly positioned at the boarding bridge",
@@ -2745,7 +2755,7 @@
     "description": "A fast-acting device used in laboratory and critical environments that modulates exhaust airflow to maintain precise room pressurization and containment requirements.",
     "displayName": "Exhaust_Air_Valve",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
+      "dtmi:mapped:core:Air_Valve;1"
     ]
   },
   {
@@ -6312,6 +6322,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Return_Air_Valve;1",
+    "@type": "Interface",
+    "description": "A fast-acting device used in laboratory and critical environments that modulates return airflow to maintain precise room pressurization requirements, often working in conjunction with exhaust air valves.",
+    "displayName": "Return_Air_Valve",
+    "extends": [
+      "dtmi:mapped:core:Air_Valve;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Return_Air_Velocity_Pressure_Sensor;1",
     "@type": "Interface",
     "description": "",
@@ -7039,7 +7059,7 @@
     "description": "A fast-acting device used in laboratory and critical environments that modulates supply airflow to maintain precise room pressurization requirements, often working in conjunction with exhaust air valves.",
     "displayName": "Supply_Air_Valve",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
+      "dtmi:mapped:core:Air_Valve;1"
     ]
   },
   {
