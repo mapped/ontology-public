@@ -5651,16 +5651,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Place_Booking_Calendar;1",
-    "@type": "Interface",
-    "description": "A calendar for booking places, such as conference rooms or other locations.",
-    "displayName": "Place_Booking_Calendar",
-    "extends": [
-      "dtmi:mapped:core:Calendar;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Plumbing_Equipment;1",
     "@type": "Interface",
     "description": "",
@@ -6728,6 +6718,16 @@
     "displayName": "SpaceCode",
     "extends": [
       "dtmi:mapped:core:Identity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Space_Booking_Calendar;1",
+    "@type": "Interface",
+    "description": "A calendar for booking spaces, such as conference rooms or other locations.",
+    "displayName": "Space_Booking_Calendar",
+    "extends": [
+      "dtmi:mapped:core:Calendar;1"
     ]
   },
   {
