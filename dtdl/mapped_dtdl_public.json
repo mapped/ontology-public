@@ -5061,12 +5061,32 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Cooling_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Occupied_Cooling_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Occupied_Cooling_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Occupied_Heating_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "Target air temperature during heating and occupied modes",
     "displayName": "Occupied_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Occupied_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Heating_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Occupied_Heating_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Occupied_Heating_Air_Temperature_Setpoint;1"
     ]
   },
   {
@@ -6903,6 +6923,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Standby_Cooling_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Standby_Cooling_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Standby_Cooling_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Standby_Heating_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "",
@@ -6910,6 +6940,16 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Heating_Temperature_Setpoint;1",
       "dtmi:mapped:core:Standby_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Standby_Heating_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Standby_Heating_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Standby_Heating_Air_Temperature_Setpoint;1"
     ]
   },
   {
@@ -7567,12 +7607,32 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unoccupied_Cooling_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Unoccupied_Cooling_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Unoccupied_Cooling_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Unoccupied_Heating_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "Target air temperature during heating and unoccupied modes",
     "displayName": "Unoccupied_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Unoccupied_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unoccupied_Heating_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Unoccupied_Heating_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Unoccupied_Heating_Air_Temperature_Setpoint;1"
     ]
   },
   {
