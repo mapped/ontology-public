@@ -371,6 +371,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Air_Velocity_Setpoint;1",
+    "@type": "Interface",
+    "description": "Sets the target velocity of air",
+    "displayName": "Air_Velocity_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Velocity_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Aircraft_Docked_Status;1",
     "@type": "Interface",
     "description": "Represents a status subclass indicating that an aircraft has successfully docked and is properly positioned at the boarding bridge",
@@ -2916,6 +2926,16 @@
     "displayName": "Face_Air_Velocity_Sensor",
     "extends": [
       "dtmi:mapped:core:Air_Velocity_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Face_Air_Velocity_Setpoint;1",
+    "@type": "Interface",
+    "description": "Sets the target air velocity at the face of equipment or opening",
+    "displayName": "Face_Air_Velocity_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Air_Velocity_Setpoint;1"
     ]
   },
   {
@@ -8058,6 +8078,16 @@
     "displayName": "Velocity_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Velocity_Setpoint;1",
+    "@type": "Interface",
+    "description": "Sets the target velocity of a medium",
+    "displayName": "Velocity_Setpoint",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Setpoint;1"
     ]
   },
   {
