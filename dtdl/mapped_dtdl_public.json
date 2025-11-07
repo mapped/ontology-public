@@ -1103,6 +1103,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cell_Stage_Count_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the number of active stages in a cooling tower cell",
+    "displayName": "Cell_Stage_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Chilled_Refrigerant_Supply_Temperature_Sensor;1",
     "@type": "Interface",
     "description": "",
@@ -1453,6 +1463,16 @@
     "displayName": "Condenser_Water_Differential_Pressure_Sensor",
     "extends": [
       "dtmi:mapped:core:Water_Differential_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Condenser_Water_Differential_Temperature_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Condenser_Water_Differential_Temperature_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Water_Differential_Temperature_Sensor;1"
     ]
   },
   {
@@ -2213,7 +2233,7 @@
     "description": "",
     "displayName": "Domestic_Hot_Water_Differential_Temperature_Sensor",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Differential_Pressure_Sensor;1"
+      "dtmi:org:brickschema:schema:Brick:Water_Differential_Temperature_Sensor;1"
     ]
   },
   {
@@ -4890,6 +4910,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Mixed_Air_Enthalpy_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the enthalpy of the mixed air stream in an HVAC system, which is a combination of return air and outside air",
+    "displayName": "Mixed_Air_Enthalpy_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_Enthalpy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Mold_Index;1",
     "@type": "Interface",
     "description": "Index indicating the concentration of mold spores in the air.",
@@ -5391,6 +5421,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_A_Current_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_A_Current_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Current_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_A_Power_Factor_Sensor;1",
     "@type": "Interface",
     "description": "Measures the power factor between line A and neutral of a three-phase electrical system.",
@@ -5511,6 +5551,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_B_Current_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_B_Current_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Current_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Phase_B_Power_Factor_Sensor;1",
     "@type": "Interface",
     "description": "Measures the power factor between line B and neutral of a three-phase electrical system.",
@@ -5617,6 +5667,16 @@
     "displayName": "Phase_C_Current_Phase_Angle_Sensor",
     "extends": [
       "dtmi:mapped:core:Current_Phase_Angle_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Phase_C_Current_Sensor;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Phase_C_Current_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Current_Sensor;1"
     ]
   },
   {
@@ -7436,6 +7496,56 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Active_Energy_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the total active energy in a multi-phase electrical system",
+    "displayName": "Total_Active_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Active_Power_Demand_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the total active power demand in a multi-phase electrical system",
+    "displayName": "Total_Active_Power_Demand_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Demand_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Active_Power_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the total active power in a multi-phase electrical system",
+    "displayName": "Total_Active_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Active_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Apparent_Power_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the total apparent power in a multi-phase electrical system",
+    "displayName": "Total_Apparent_Power_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Apparent_Power_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Export_Active_Energy_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the total exported active energy in a multi-phase electrical system",
+    "displayName": "Total_Export_Active_Energy_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Active_Energy_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Total_GHG_Emissions;1",
     "@type": "Interface",
     "description": "Total Emissions is the sum of Direct Emissions and Indirect Emissions.",
@@ -7483,6 +7593,16 @@
     "displayName": "Total_Power_Factor_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Power_Factor_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Total_Reactive_Power_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the total reactive power in a multi-phase electrical system",
+    "displayName": "Total_Reactive_Power_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
     ]
   },
   {
