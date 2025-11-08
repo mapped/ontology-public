@@ -5010,6 +5010,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Min_Outside_Air_Flow_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the outside air flow coming through min outside damper",
+    "displayName": "Min_Outside_Air_Flow_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_Flow_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Min_Water_Temperature_Setpoint_Limit;1",
     "@type": "Interface",
     "description": "",
