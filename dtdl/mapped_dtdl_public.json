@@ -1,6 +1,16 @@
 [
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Absolute_Barometric_Pressure_Sensor;1",
+    "@type": "Interface",
+    "description": "A sensor that measures the absolute barometric pressure of the atmosphere.",
+    "displayName": "Absolute_Barometric_Pressure_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Barometric_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Absolute_Humidity_Sensor;1",
     "@type": "Interface",
     "description": "Measures the air absolute humidity, usually in g/m^3",
@@ -817,6 +827,16 @@
     "displayName": "Baler",
     "extends": [
       "dtmi:mapped:core:Waste_Management_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Barometric_Pressure_Sensor;1",
+    "@type": "Interface",
+    "description": "A sensor that measures the atmospheric pressure.",
+    "displayName": "Barometric_Pressure_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
     ]
   },
   {
@@ -3766,6 +3786,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Height_Above_Sea_Level;1",
+    "@type": "Interface",
+    "description": "The height of an object above mean sea level.",
+    "displayName": "Height_Above_Sea_Level",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Held_Open_Alarm;1",
     "@type": "Interface",
     "description": "An alarm indicating if the door is held open after normally opened.",
@@ -6081,6 +6111,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Precipitation_Status;1",
+    "@type": "Interface",
+    "description": "Status indicating whether precipitation is occurring or not.",
+    "displayName": "Precipitation_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Precipitation_Ten_Minutes_Accumulation_Sensor;1",
     "@type": "Interface",
     "description": "",
@@ -6448,6 +6488,16 @@
     "displayName": "Reheat_On_Off_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:On_Off_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Relative_Barometric_Pressure_Sensor;1",
+    "@type": "Interface",
+    "description": "The atmospheric pressure corrected to sea-level conditions.",
+    "displayName": "Relative_Barometric_Pressure_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Barometric_Pressure_Sensor;1"
     ]
   },
   {
