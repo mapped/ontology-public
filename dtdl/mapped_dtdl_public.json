@@ -2408,6 +2408,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:DurationQuantity;1",
+    "@type": "Interface",
+    "description": "A quantity that specifies a duration of time with a unit. This corresponds to bsh:DurationShape.",
+    "displayName": "DurationQuantity",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Economizer_Status;1",
     "@type": "Interface",
     "description": "",
@@ -8270,6 +8280,16 @@
     "displayName": "Warm_Up_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Warranty;1",
+    "@type": "Interface",
+    "description": "a written guarantee, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.",
+    "displayName": "Warranty",
+    "extends": [
+      "dtmi:mapped:core:Class;1"
     ]
   },
   {
