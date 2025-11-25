@@ -241,6 +241,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Air_Cooled_Heat_Pump_Chiller;1",
+    "@type": "Interface",
+    "description": "A heat pump chiller with an air-cooled condenser that can provide both heating and cooling while transferring heat to or from the ambient air.",
+    "displayName": "Air_Cooled_Heat_Pump_Chiller",
+    "extends": [
+      "dtmi:mapped:core:Air_Cooled_Chiller;1",
+      "dtmi:mapped:core:Heat_Pump_Chiller;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Air_Curtain;1",
     "@type": "Interface",
     "description": "Used to create a barrier of air to separate different thermal environments",
@@ -1354,6 +1365,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cold_Deck_Damper;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Cold_Deck_Damper",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Cold_Deck_Supply_Fan;1",
     "@type": "Interface",
     "description": "A fan in a dual-duct air system that circulates air through cooling coils to create and distribute the cool air through designated ductwork to terminal mixing units.",
@@ -1675,6 +1696,16 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Cooling_Command;1",
       "dtmi:mapped:core:Level_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Cooling_Level_Status;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Cooling_Level_Status",
+    "extends": [
+      "dtmi:mapped:core:Level_Status;1"
     ]
   },
   {
@@ -2780,6 +2811,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Entering_Air_Temperature_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the temperature of air entering a component such as a coil, heat exchanger, fan, or other HVAC equipment.",
+    "displayName": "Entering_Air_Temperature_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_Temperature_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Entity;1",
     "@type": "Interface",
     "description": "",
@@ -3654,6 +3695,26 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heat_Pump_Chiller;1",
+    "@type": "Interface",
+    "description": "A chiller capable of reversing its refrigeration cycle to provide both heating and cooling from a single unit, offering flexible temperature control for building systems.",
+    "displayName": "Heat_Pump_Chiller",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Chiller;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heat_Recovery_Chiller;1",
+    "@type": "Interface",
+    "description": "A chiller that captures and utilizes waste heat from the refrigeration process to provide simultaneous cooling and heating.",
+    "displayName": "Heat_Recovery_Chiller",
+    "extends": [
+      "dtmi:mapped:core:Water_Cooled_Chiller;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heat_Trace_System;1",
     "@type": "Interface",
     "description": "A heat trace system is a set of paths lined along pipes or vessels. These paths are made up of a resistive element that heats up when electricity passes through it.",
@@ -3701,6 +3762,16 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Heating_Command;1",
       "dtmi:mapped:core:Level_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heating_Level_Status;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Heating_Level_Status",
+    "extends": [
+      "dtmi:mapped:core:Level_Status;1"
     ]
   },
   {
@@ -3932,6 +4003,16 @@
     "displayName": "Horizontal_Unit_Ventilator",
     "extends": [
       "dtmi:mapped:core:Unit_Ventilator;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Hot_Deck_Damper;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Hot_Deck_Damper",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper;1"
     ]
   },
   {
@@ -4208,6 +4289,16 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Lead_Lag_Status;1",
       "dtmi:org:brickschema:schema:Brick:On_Off_Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Leaving_Air_Temperature_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the temperature of air leaving a component such as a coil, heat exchanger, fan, or other HVAC equipment.",
+    "displayName": "Leaving_Air_Temperature_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_Temperature_Sensor;1"
     ]
   },
   {
@@ -5187,6 +5278,26 @@
     "displayName": "Networked_Device",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Neutral_Deck;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Neutral_Deck",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Neutral_Deck_Damper;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Neutral_Deck_Damper",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Damper;1"
     ]
   },
   {
@@ -6181,6 +6292,28 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Preheat_Level_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Preheat_Level_Command",
+    "extends": [
+      "dtmi:mapped:core:Level_Command;1",
+      "dtmi:org:brickschema:schema:Brick:Preheat_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Preheat_On_Off_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Preheat_On_Off_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:On_Off_Command;1",
+      "dtmi:org:brickschema:schema:Brick:Preheat_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Pressure_Alarm_Setpoint;1",
     "@type": "Interface",
     "description": "",
@@ -6482,12 +6615,24 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Reheat_Level_Command;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Reheat_Level_Command",
+    "extends": [
+      "dtmi:mapped:core:Level_Command;1",
+      "dtmi:mapped:core:Reheat_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Reheat_On_Off_Command;1",
     "@type": "Interface",
     "description": "",
     "displayName": "Reheat_On_Off_Command",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:On_Off_Command;1"
+      "dtmi:org:brickschema:schema:Brick:On_Off_Command;1",
+      "dtmi:mapped:core:Reheat_Command;1"
     ]
   },
   {
@@ -8340,6 +8485,17 @@
     "displayName": "Water_Cooled_Condenser_Heat_Exchanger",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Condenser_Heat_Exchanger;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Water_Cooled_Heat_Pump_Chiller;1",
+    "@type": "Interface",
+    "description": "A heat pump chiller with a water-cooled condenser that can provide both heating and cooling while using water to transfer heat to or from a secondary water source.",
+    "displayName": "Water_Cooled_Heat_Pump_Chiller",
+    "extends": [
+      "dtmi:mapped:core:Heat_Pump_Chiller;1",
+      "dtmi:mapped:core:Water_Cooled_Chiller;1"
     ]
   },
   {
