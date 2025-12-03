@@ -1863,6 +1863,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:CostQuantity;1",
+    "@type": "Interface",
+    "description": "A quantity that specifies a cost with a unit.",
+    "displayName": "CostQuantity",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Cost_Estimate_Per_Interval;1",
     "@type": "Interface",
     "description": "A sensor measuring and reporting the estimated cost of a resource such as electricity or over a specified interval.",
@@ -8817,6 +8827,16 @@
     "@type": "Interface",
     "description": "A work order for maintenance of a system or a piece of equipment.",
     "displayName": "Work_Order",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Work_Order_Cost;1",
+    "@type": "Interface",
+    "description": "The cost associated with a work order.",
+    "displayName": "Work_Order_Cost",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ]
