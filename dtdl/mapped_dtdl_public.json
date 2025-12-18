@@ -6122,6 +6122,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Point_Group;1",
+    "@type": "Interface",
+    "description": "Nestable collections of associated points with a label, e.g. to model associations of points for display, configuration, packaging, and other user-defined needs",
+    "displayName": "Point_Group",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Collection;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Pool_Equipment;1",
     "@type": "Interface",
     "description": "",
