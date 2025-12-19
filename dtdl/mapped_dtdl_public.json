@@ -1154,6 +1154,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Capillary_Tube_Metering_Device;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Capillary_Tube_Metering_Device",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Metering_Device;1",
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Carbon_Monoxide_Detector;1",
     "@type": "Interface",
     "description": "A device that detects the presence of carbon monoxide gas, a colorless and odorless compound, to prevent carbon monoxide poisoning by alerting occupants of dangerous levels.",
@@ -2647,6 +2658,17 @@
     "displayName": "Electricity_GHG_Emissions_Health_Damage_Forecast",
     "extends": [
       "dtmi:mapped:core:Forecast;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electronic_Expansion_Valve;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Electronic_Expansion_Valve",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Metering_Device;1",
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
     ]
   },
   {
@@ -6535,6 +6557,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Refrigerant_Metering_Device;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Refrigerant_Metering_Device",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Refrigerant_Pressure_Sensor;1",
     "@type": "Interface",
     "description": "Measurement of pressure within a refrigeration line",
@@ -6561,6 +6593,16 @@
     "displayName": "Refrigerant_Temperature_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Temperature_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Refrigerant_Valve;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Refrigerant_Valve",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
     ]
   },
   {
@@ -6823,6 +6865,16 @@
     "displayName": "Return_Fan_Array",
     "extends": [
       "dtmi:mapped:core:Fan_Array;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Reversing_Valve;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Reversing_Valve",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Valve;1"
     ]
   },
   {
@@ -7766,6 +7818,17 @@
     "displayName": "Thermal_Expansion_Tank",
     "extends": [
       "dtmi:mapped:core:Tank;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Thermal_Expansion_Valve;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Thermal_Expansion_Valve",
+    "extends": [
+      "dtmi:mapped:core:Refrigerant_Metering_Device;1",
+      "dtmi:org:brickschema:schema:Brick:Valve;1"
     ]
   },
   {
