@@ -797,7 +797,7 @@
     "description": "",
     "displayName": "BACnet_Device",
     "extends": [
-      "dtmi:mapped:core:Thing;1"
+      "dtmi:mapped:core:Device;1"
     ]
   },
   {
@@ -5203,6 +5203,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Modbus_Device;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Modbus_Device",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Mold_Index;1",
     "@type": "Interface",
     "description": "Index indicating the concentration of mold spores in the air.",
@@ -5340,6 +5350,16 @@
     "displayName": "O2_Level_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:OPCUA_Device;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "OPCUA_Device",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
     ]
   },
   {
