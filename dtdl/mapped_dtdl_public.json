@@ -684,7 +684,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Automatic_Transfer_Switch;1",
     "@type": "Interface",
-    "description": "A device that switches electric power source automatically to a backup source when the main power fails",
+    "description": "A switching device that automatically transfers an electrical load between a preferred source and an alternate source upon loss or degradation of the preferred source voltage.",
     "displayName": "Automatic_Transfer_Switch",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
@@ -1020,6 +1020,16 @@
     "displayName": "Bread_Slicer",
     "extends": [
       "dtmi:mapped:core:Culinary_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Bus_Tie_Breaker;1",
+    "@type": "Interface",
+    "description": "A circuit breaker connecting two bus sections that enables power routing between sections for load management and maintenance, while providing fault isolation to prevent cascading failures.",
+    "displayName": "Bus_Tie_Breaker",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
     ]
   },
   {
