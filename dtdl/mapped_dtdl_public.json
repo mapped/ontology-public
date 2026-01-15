@@ -1629,6 +1629,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Contactor;1",
+    "@type": "Interface",
+    "description": "An electrically-operated switch designed for frequent switching of power circuits, distinguished from circuit breakers by its lack of inherent fault interruption capability.",
+    "displayName": "Contactor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Controllable_Lock;1",
     "@type": "Interface",
     "description": "A type of lock that can be electronically controlled.",
@@ -2769,6 +2779,16 @@
     "displayName": "Email_Identity",
     "extends": [
       "dtmi:mapped:core:Identity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Emergency_Contactor;1",
+    "@type": "Interface",
+    "description": "A contactor that connects the load to the emergency (alternate) power source in an Automatic Transfer Switch or bus tie configuration.",
+    "displayName": "Emergency_Contactor",
+    "extends": [
+      "dtmi:mapped:core:Contactor;1"
     ]
   },
   {
@@ -5360,6 +5380,16 @@
     "displayName": "Neutral_Deck_Damper",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Damper;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Normal_Contactor;1",
+    "@type": "Interface",
+    "description": "A contactor that connects the load to the normal (preferred) power source in an Automatic Transfer Switch or bus tie configuration.",
+    "displayName": "Normal_Contactor",
+    "extends": [
+      "dtmi:mapped:core:Contactor;1"
     ]
   },
   {
