@@ -684,7 +684,7 @@
     "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Automatic_Transfer_Switch;1",
     "@type": "Interface",
-    "description": "A switching device that automatically transfers an electrical load between a preferred source and an alternate source upon loss or degradation of the preferred source voltage.",
+    "description": "A device that switches electric power source automatically to a backup source when the main power fails",
     "displayName": "Automatic_Transfer_Switch",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Electrical_Equipment;1"
