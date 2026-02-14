@@ -5474,6 +5474,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Cooling_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "description": "An offset above a target temperature setpoint during occupied mode, indicating where the Cooling Air Temperature Setpoint is located relative to the target setpoint.",
+    "displayName": "Occupied_Cooling_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Cooling_Air_Temperature_Setpoint_Offset;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Occupied_Cooling_Zone_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "",
@@ -5490,6 +5500,16 @@
     "displayName": "Occupied_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Occupied_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Occupied_Heating_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "description": "An offset below a target air temperature setpoint during occupied mode, indicating where the Heating Air Temperature Setpoint is located relative to the target setpoint.",
+    "displayName": "Occupied_Heating_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Heating_Air_Temperature_Setpoint_Offset;1"
     ]
   },
   {
@@ -7470,6 +7490,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Standby_Cooling_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "description": "An offset above a target temperature setpoint during standby mode, indicating where the Cooling Air Temperature Setpoint is located relative to the target setpoint.",
+    "displayName": "Standby_Cooling_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Cooling_Air_Temperature_Setpoint_Offset;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Standby_Cooling_Zone_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "",
@@ -7487,6 +7517,16 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Heating_Temperature_Setpoint;1",
       "dtmi:mapped:core:Standby_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Standby_Heating_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "description": "An offset below a target air temperature setpoint during standby mode, indicating where the Heating Air Temperature Setpoint is located relative to the target setpoint.",
+    "displayName": "Standby_Heating_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Heating_Air_Temperature_Setpoint_Offset;1"
     ]
   },
   {
@@ -8235,6 +8275,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unoccupied_Cooling_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "description": "An offset above a target temperature setpoint during unoccupied mode, indicating where the Cooling Air Temperature Setpoint is located relative to the target setpoint.",
+    "displayName": "Unoccupied_Cooling_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Cooling_Air_Temperature_Setpoint_Offset;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Unoccupied_Cooling_Zone_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "",
@@ -8251,6 +8301,16 @@
     "displayName": "Unoccupied_Heating_Air_Temperature_Setpoint",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Unoccupied_Air_Temperature_Setpoint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Unoccupied_Heating_Air_Temperature_Setpoint_Offset;1",
+    "@type": "Interface",
+    "description": "An offset below a target air temperature setpoint during unoccupied mode, indicating where the Heating Air Temperature Setpoint is located relative to the target setpoint.",
+    "displayName": "Unoccupied_Heating_Air_Temperature_Setpoint_Offset",
+    "extends": [
+      "dtmi:mapped:core:Heating_Air_Temperature_Setpoint_Offset;1"
     ]
   },
   {
