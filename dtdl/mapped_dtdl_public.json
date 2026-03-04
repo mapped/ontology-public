@@ -6516,6 +6516,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pressurization_Zone;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Pressurization_Zone",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Projection_Screen;1",
     "@type": "Interface",
     "description": "an installation consisting of a surface and a support structure used for displaying a projected image for the view of an audience.",
