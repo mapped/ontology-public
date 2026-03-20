@@ -1629,6 +1629,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Constant_Air_Volume_Box_With_Reheat;1",
+    "@type": "Interface",
+    "description": "A constant air volume terminal unit equipped with a reheat coil that maintains a fixed supply air flow rate while modulating reheat energy to vary discharge air temperature to meet zone thermal loads",
+    "displayName": "Constant_Air_Volume_Box_With_Reheat",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Constant_Air_Volume_Box;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Contactor;1",
     "@type": "Interface",
     "description": "An electrically-operated switch designed for frequent switching of power circuits, distinguished from circuit breakers by its lack of inherent fault interruption capability.",
@@ -3757,6 +3767,36 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heat_Exchanger_Primary_Side;1",
+    "@type": "Interface",
+    "description": "The primary side of a heat exchanger is the side where the fluid is circulating to the load (e.g. heating or cooling coil).",
+    "displayName": "Heat_Exchanger_Primary_Side",
+    "extends": [
+      "dtmi:mapped:core:Heat_Exchanger_Side;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heat_Exchanger_Secondary_Side;1",
+    "@type": "Interface",
+    "description": "The secondary side of a heat exchanger is the side where the fluid is circulating to the load (e.g. heating or cooling coil).",
+    "displayName": "Heat_Exchanger_Secondary_Side",
+    "extends": [
+      "dtmi:mapped:core:Heat_Exchanger_Side;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Heat_Exchanger_Side;1",
+    "@type": "Interface",
+    "description": "A heat exchanger side represents one side of a heat exchanger, which can be either the primary side or the secondary side.",
+    "displayName": "Heat_Exchanger_Side",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Heat_Pump;1",
     "@type": "Interface",
     "description": "A self-contained unit designed to transfer heat energy to or from a designated space, capable of offering both heating and cooling functions",
@@ -4288,6 +4328,16 @@
     "extends": [
       "dtmi:mapped:core:GHG_Emissions_Intensity_Per_Area;1",
       "dtmi:mapped:core:Indirect_GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Intermediate_Filter;1",
+    "@type": "Interface",
+    "description": "A filter installed between the pre-filter and final filter in a multi-stage filtration sequence, providing a intermediate stage of particulate removal to reduce loading on the downstream high-efficiency final filter",
+    "displayName": "Intermediate_Filter",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Filter;1"
     ]
   },
   {
@@ -8231,6 +8281,16 @@
     "displayName": "UV_Lighting_Command",
     "extends": [
       "dtmi:mapped:core:Lighting_Command;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Ultraviolet_C_Lamp;1",
+    "@type": "Interface",
+    "description": "A lamp that emits ultraviolet C-band radiation to inactivate microorganisms in air streams, on coil surfaces, or on drain pans within HVAC equipment",
+    "displayName": "Ultraviolet_C_Lamp",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
     ]
   },
   {
