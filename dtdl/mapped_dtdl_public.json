@@ -3013,6 +3013,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Exhaust_Air_Handling_Unit;1",
+    "@type": "Interface",
+    "description": "An air handling unit designed to handle exhaust air, typically equipped with fans and filters to manage and treat air being expelled from a building.",
+    "displayName": "Exhaust_Air_Handling_Unit",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Air_Handling_Unit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Exhaust_Air_System;1",
     "@type": "Interface",
     "description": "",
@@ -7345,6 +7355,16 @@
     "displayName": "Snow_Accumulation_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Snowmelt_System;1",
+    "@type": "Interface",
+    "description": "A snowmelt system is a system that prevents the build-up of snow and ice on sidewalks, roads, or driveways by using warm fluid to melt it",
+    "displayName": "Snowmelt_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:System;1"
     ]
   },
   {
