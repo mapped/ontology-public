@@ -7039,6 +7039,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Reverse_Osmosis_Unit;1",
+    "@type": "Interface",
+    "description": "A water purification system that uses a semipermeable membrane to remove ions, molecules, and larger particles from drinking water, providing clean and safe water for various applications in buildings.",
+    "displayName": "Reverse_Osmosis_Unit",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Reversing_Valve;1",
     "@type": "Interface",
     "description": "",
