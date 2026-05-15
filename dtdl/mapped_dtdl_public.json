@@ -9207,6 +9207,106 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:AnalogInputObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "AnalogInputObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:AnalogOutputObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "AnalogOutputObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:AnalogValueObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "AnalogValueObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:BinaryInputObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "BinaryInputObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:BinaryOutputObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "BinaryOutputObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:BinaryValueObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "BinaryValueObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:MultistateInputObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "MultistateInputObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:MultistateOutputObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "MultistateOutputObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:MultistateValueObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "MultistateValueObject",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:TimeStamp;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "TimeStamp",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:AED;1",
     "@type": "Interface",
     "description": "",
