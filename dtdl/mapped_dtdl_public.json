@@ -6229,7 +6229,7 @@
     "description": "A phone number associated with an agent such as a person.",
     "displayName": "Phone_Number",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
