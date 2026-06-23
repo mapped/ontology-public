@@ -9212,7 +9212,7 @@
     "description": "",
     "displayName": "AnalogInputObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9222,7 +9222,7 @@
     "description": "",
     "displayName": "AnalogOutputObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9232,7 +9232,7 @@
     "description": "",
     "displayName": "AnalogValueObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9242,7 +9242,7 @@
     "description": "",
     "displayName": "BinaryInputObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9252,7 +9252,7 @@
     "description": "",
     "displayName": "BinaryOutputObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9262,7 +9262,7 @@
     "description": "",
     "displayName": "BinaryValueObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9272,7 +9272,7 @@
     "description": "",
     "displayName": "MultistateInputObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9282,7 +9282,7 @@
     "description": "",
     "displayName": "MultistateOutputObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9292,7 +9292,7 @@
     "description": "",
     "displayName": "MultistateValueObject",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
@@ -9302,7 +9302,7 @@
     "description": "",
     "displayName": "TimeStamp",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Entity;1"
     ]
   },
   {
