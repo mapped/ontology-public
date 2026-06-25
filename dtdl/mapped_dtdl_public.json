@@ -9267,6 +9267,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:ashrae:bacnet:DeviceObject;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "DeviceObject",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:ashrae:bacnet:MultistateInputObject;1",
     "@type": "Interface",
     "description": "",
