@@ -822,6 +822,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:BLE_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports raw Bluetooth Low Energy observations such as received signal strength, direction finding angle of arrival or angle of departure, or a vendor location engine fix.",
+    "displayName": "BLE_Signal",
+    "extends": [
+      "dtmi:mapped:core:Radio_Signal;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Backflow_Preventer;1",
     "@type": "Interface",
     "description": "",
@@ -2460,6 +2470,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Drone;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Drone",
+    "extends": [
+      "dtmi:mapped:core:Robot;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Dual_Duct_Variable_Air_Volume_Box;1",
     "@type": "Interface",
     "description": "A variable air volume terminal unit that modulates airflow individually from separate hot and cold air supply ducts to provide precise temperature control through mixing of conditioned air streams at variable volumes.",
@@ -3582,6 +3602,16 @@
     "displayName": "GHG_Emissions_Intensity_Per_Energy",
     "extends": [
       "dtmi:mapped:core:GHG_Emissions_Intensity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:GNSS_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports global navigation satellite system observations such as a geodetic position fix, Doppler-derived velocity, or course over ground.",
+    "displayName": "GNSS_Signal",
+    "extends": [
+      "dtmi:mapped:core:Radio_Signal;1"
     ]
   },
   {
@@ -5353,6 +5383,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:NR5G_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports raw 5G New Radio positioning observations such as multi round-trip time range, uplink or downlink time difference of arrival, angle of arrival or departure, or a network-computed fix.",
+    "displayName": "NR5G_Signal",
+    "extends": [
+      "dtmi:mapped:core:Radio_Signal;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Name;1",
     "@type": "Interface",
     "description": "",
@@ -5758,6 +5798,16 @@
     "@type": "Interface",
     "description": "A tool used to lift and move pallets",
     "displayName": "Pallet_Jack",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pallet_Rack;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Pallet_Rack",
     "extends": [
       "dtmi:mapped:core:Thing;1"
     ]
@@ -6244,6 +6294,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pillar;1",
+    "@type": "Interface",
+    "description": "A vertical structural element that transmits, through compression, the weight of the structure above to other structural elements below.",
+    "displayName": "Pillar",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Place;1",
     "@type": "Interface",
     "description": "",
@@ -6320,6 +6380,16 @@
     "displayName": "Pool_Equipment",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Pose_Sensor;1",
+    "@type": "Interface",
+    "description": "A point that reports the estimated pose, and optionally the motion state, of a subject in a declared coordinate frame. Unlike Geo_Location_Sensor it is not restricted to Earth coordinates, and unlike Symbolic_Location_Sensor it is metric rather than a named location. Its value conforms to the `mapped.pose_sensor` complex value schema; components absent from a sample are unobserved, not zero.",
+    "displayName": "Pose_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Location_Sensor;1"
     ]
   },
   {
@@ -6717,6 +6787,26 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:RFID_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports raw radio-frequency identification observations such as a reader tag read, phase-derived range, or angle of arrival.",
+    "displayName": "RFID_Signal",
+    "extends": [
+      "dtmi:mapped:core:Radio_Signal;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Radio_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports raw observations derived from a radio technology, such as received signal strength, angle of arrival, propagation range, or a vendor-computed fix. This is distinguished from mapped:Network_Interface and related network classes, which describe network-layer connectivity rather than radio observations.",
+    "displayName": "Radio_Signal",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Point;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Rain_Level_Sensor;1",
     "@type": "Interface",
     "description": "Measures the amount of precipitation fallen",
@@ -7075,6 +7165,16 @@
     "displayName": "Road_Subsurface_Temperature_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Temperature_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Robot;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Robot",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
     ]
   },
   {
@@ -8335,6 +8435,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:UWB_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports raw ultra-wideband observations such as two-way ranging distance, time difference of arrival, angle of arrival, or a multilateration engine fix.",
+    "displayName": "UWB_Signal",
+    "extends": [
+      "dtmi:mapped:core:Radio_Signal;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Ultraviolet_C_Lamp;1",
     "@type": "Interface",
     "description": "A lamp that emits ultraviolet C-band radiation to inactivate microorganisms in air streams, on coil surfaces, or on drain pans within HVAC equipment",
@@ -9051,6 +9161,16 @@
     "displayName": "Wheel_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Status;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:WiFi_Signal;1",
+    "@type": "Interface",
+    "description": "A point that reports raw Wi-Fi observations such as received signal strength, fine timing measurement or round-trip time range, angle of arrival, or a fingerprint location engine fix.",
+    "displayName": "WiFi_Signal",
+    "extends": [
+      "dtmi:mapped:core:Radio_Signal;1"
     ]
   },
   {
