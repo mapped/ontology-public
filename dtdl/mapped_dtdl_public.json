@@ -642,6 +642,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Automated_Guided_Vehicle;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Automated_Guided_Vehicle",
+    "extends": [
+      "dtmi:mapped:core:Robot;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Automatic_Door_Lock;1",
     "@type": "Interface",
     "description": "An electronic locking mechanism that is part of an access control system and automatically unlocks or opens a door when triggered by authorized credentials or sensors.",
@@ -708,6 +718,16 @@
     "displayName": "Automotive_Equipment",
     "extends": [
       "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Autonomous_Mobile_Robot;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Autonomous_Mobile_Robot",
+    "extends": [
+      "dtmi:mapped:core:Robot;1"
     ]
   },
   {
