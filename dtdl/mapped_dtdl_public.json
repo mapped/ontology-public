@@ -482,6 +482,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Aisle;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Aisle",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Alarm_Count_Sensor;1",
     "@type": "Interface",
     "description": "Represents number of alarm occurrences.",
@@ -5514,6 +5524,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:No_Fly_Zone;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "No_Fly_Zone",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Normal_Contactor;1",
     "@type": "Interface",
     "description": "A contactor that connects the load to the normal (preferred) power source in an Automatic Transfer Switch or bus tie configuration.",
@@ -6314,6 +6334,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Picking_Zone;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Picking_Zone",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Pillar;1",
     "@type": "Interface",
     "description": "A vertical structural element that transmits, through compression, the weight of the structure above to other structural elements below.",
@@ -7079,6 +7109,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Restricted_Zone;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Restricted_Zone",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Return_Air_Diffuser;1",
     "@type": "Interface",
     "description": "A specialized air diffuser designed to receive air from a conditioned space and direct it back into the HVAC system for reconditioning and recirculation.",
@@ -7685,6 +7725,16 @@
     "displayName": "Stage_Riser",
     "extends": [
       "dtmi:mapped:core:Furniture;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Staging_Zone;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "Staging_Zone",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Zone;1"
     ]
   },
   {
