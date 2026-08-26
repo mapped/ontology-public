@@ -3123,6 +3123,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:ExtendedProperty;1",
+    "@type": "Interface",
+    "description": "",
+    "displayName": "ExtendedProperty",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:External_Identity;1",
     "@type": "Interface",
     "description": "An identity specific to an external data source.",
