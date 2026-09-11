@@ -36,7 +36,7 @@
     "description": "",
     "displayName": "Access_Card_Number",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -587,7 +587,7 @@
     "description": "A quantity that specifies the area of a physical object with a unit. This corresponds to bsh:AreaShape.",
     "displayName": "AreaQuantity",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -1969,7 +1969,7 @@
     "description": "A quantity that specifies a cost with a unit.",
     "displayName": "CostQuantity",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -2565,7 +2565,7 @@
     "description": "A quantity that specifies a duration of time with a unit. This corresponds to bsh:DurationShape.",
     "displayName": "DurationQuantity",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -3711,7 +3711,7 @@
     "description": "Latitude and longitude coordinates of a point on the Earth's surface.",
     "displayName": "GeoPointQuantity",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -5438,7 +5438,7 @@
     "description": "",
     "displayName": "Name",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
