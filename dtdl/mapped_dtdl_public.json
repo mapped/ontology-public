@@ -3560,7 +3560,7 @@
     "description": "The size of the file.",
     "displayName": "FileSize",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -10143,6 +10143,156 @@
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Damper;1",
       "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Analytic_Shape;1",
+    "@type": "Interface",
+    "description": "Abstract. Parametric geometry requiring no OpenUSD asset, so bulk entities can carry collision or bounding volumes without published USD geometry. An unplaced definition in a local frame centred on the shape, with no position of its own; placement comes from the Representation or the subject entity. Subclassed per primitive because each takes different dimensions.",
+    "displayName": "Analytic_Shape",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Box_Shape;1",
+    "@type": "Interface",
+    "description": "Oriented box given by half-extents along the local X, Y and Z axes.",
+    "displayName": "Box_Shape",
+    "extends": [
+      "dtmi:mapped:openusd:Analytic_Shape;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Capsule_Shape;1",
+    "@type": "Interface",
+    "description": "Capsule given by radius and cap-centre distance, always aligned with local +Z.",
+    "displayName": "Capsule_Shape",
+    "extends": [
+      "dtmi:mapped:openusd:Analytic_Shape;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Collision_Representation;1",
+    "@type": "Interface",
+    "description": "Geometry explicitly authoritative for physics and collision. A render mesh never becomes collision geometry without one of these.",
+    "displayName": "Collision_Representation",
+    "extends": [
+      "dtmi:mapped:openusd:Representation;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Containment_Constraint;1",
+    "@type": "Interface",
+    "description": "Body must remain inside a volume.",
+    "displayName": "Containment_Constraint",
+    "extends": [
+      "dtmi:mapped:openusd:Spatial_Constraint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Keep_Out_Constraint;1",
+    "@type": "Interface",
+    "description": "Body must not intersect a volume.",
+    "displayName": "Keep_Out_Constraint",
+    "extends": [
+      "dtmi:mapped:openusd:Spatial_Constraint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Navigation_Representation;1",
+    "@type": "Interface",
+    "description": "Traversable or obstructed navigation geometry. No equivalent exists in core OpenUSD.",
+    "displayName": "Navigation_Representation",
+    "extends": [
+      "dtmi:mapped:openusd:Representation;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:OpenUSD_LOD_Distance_Heuristic;1",
+    "@type": "Interface",
+    "description": "Distance-based selection; generates UsdLodDistanceHeuristic. Contract: centre, ascending distance thresholds, optional blend thresholds, optional bounding volume.",
+    "displayName": "OpenUSD_LOD_Distance_Heuristic",
+    "extends": [
+      "dtmi:mapped:openusd:OpenUSD_LOD_Heuristic;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:OpenUSD_LOD_Heuristic;1",
+    "@type": "Interface",
+    "description": "Abstract. A level-of-detail selection policy that the USD projection turns into a typed UsdLodHeuristic prim. A root may carry several, one per domain, so thresholds cannot be flattened onto the root binding. In v1 a heuristic belongs to exactly one root, so its root-local centre and extent have one unambiguous basis.",
+    "displayName": "OpenUSD_LOD_Heuristic",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:OpenUSD_LOD_Screen_Size_Heuristic;1",
+    "@type": "Interface",
+    "description": "Viewport-coverage selection; generates UsdLodScreenSizeHeuristic. Contract: root-local extent, projection method, descending coverage thresholds, optional blend thresholds, optional bounding volume.",
+    "displayName": "OpenUSD_LOD_Screen_Size_Heuristic",
+    "extends": [
+      "dtmi:mapped:openusd:OpenUSD_LOD_Heuristic;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:OpenUSD_Layer;1",
+    "@type": "Interface",
+    "description": "A durable, resolvable OpenUSD artifact. Root layers additionally carry the stage metadata (units, up axis, handedness, time-code rate), which is where USD stores it. Runtime stages, prims and coordinate frames are deliberately not modelled; bindings resolve in a layer.",
+    "displayName": "OpenUSD_Layer",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:OpenUSD_Prim_Binding;1",
+    "@type": "Interface",
+    "description": "A reified binding from a semantic vertex to one prim address in one layer. It exists because relationships carry no property bag and the association needs its own identity, provenance and validity window. Its properties describe the association (where it points, what it expects to find, whether it may drive pose), never intrinsic prim facts. A binding with hasLODItem edges is a level-of-detail root; an item binding is owned through its root.",
+    "displayName": "OpenUSD_Prim_Binding",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Representation;1",
+    "@type": "Interface",
+    "description": "Abstract. Declares how an entity's geometry may be used, realised by exactly one of hasPrimBinding or hasShape. Holds no geometric data of its own: collisionApproximation is a processing directive, closedVolumeRequired a validation policy, geometryHash a pinning digest. Placement is the subject entity's own frame unless coordinateFrameId pins one, which is what lets one representation be shared by many entities.",
+    "displayName": "Representation",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Spatial_Constraint;1",
+    "@type": "Interface",
+    "description": "Abstract. An explicit, parameterised spatial rule. Constraint behaviour applies only where such a vertex exists: without hasConstraint, stateless fusion does not clamp a body to a floor. Takes exactly one subject and one target in v1.",
+    "displayName": "Spatial_Constraint",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Support_Constraint;1",
+    "@type": "Interface",
+    "description": "Body must be supported by a surface.",
+    "displayName": "Support_Constraint",
+    "extends": [
+      "dtmi:mapped:openusd:Spatial_Constraint;1"
     ]
   },
   {
