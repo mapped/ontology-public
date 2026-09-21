@@ -5429,6 +5429,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:HeightQuantity;1",
+    "@type": "Interface",
+    "description": "A quantity that specifies a distance along the vertical axis with a unit, used both for the extent of an object and for an elevation relative to a datum. The datum is not carried here: two elevations are comparable only when their producer expressed them against the same one, so the reliable derived value is the difference between them.",
+    "displayName": "HeightQuantity",
+    "extends": [
+      "dtmi:mapped:core:Property_Node;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Height_Above_Sea_Level;1",
     "@type": "Interface",
     "description": "The height of an object above mean sea level.",
@@ -6180,6 +6190,16 @@
     "displayName": "Leaving_Water_Pressure_Sensor",
     "extends": [
       "dtmi:mapped:core:Water_Pressure_Sensor;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:LengthQuantity;1",
+    "@type": "Interface",
+    "description": "A quantity that specifies a distance along any axis with a unit, such as a radius, a clearance, or a span. Distinguished from mapped:HeightQuantity, which is specifically vertical and may be datum-relative.",
+    "displayName": "LengthQuantity",
+    "extends": [
+      "dtmi:mapped:core:Property_Node;1"
     ]
   },
   {
@@ -11929,6 +11949,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Wheel;1",
+    "@type": "Interface",
+    "description": "A wheel of a vehicle or mobile robot, identified on the chassis by its side and axle rather than by a fixed corner name so that vehicles with more than two axles are expressible. Its rolling motion is a Revolute_Joint; rollingRadius converts odometry travel into angular displacement.",
+    "displayName": "Wheel",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Wheel_Chair_Lift;1",
     "@type": "Interface",
     "description": "",
@@ -12254,6 +12284,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Kinematic_Joint;1",
+    "@type": "Interface",
+    "description": "Abstract. A physical joint between two components of an assembly, carrying the axis and limits of its motion. Subclassed per joint kind because a prismatic joint's limits are linear and a revolute joint's are angular, so the unit is fixed by the class rather than requiring the USD layer to be resolved. The corresponding OpenUSD physics joint prim is attached with hasPrimBinding, and joint state is reported through mapped:hasPoint.",
+    "displayName": "Kinematic_Joint",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:openusd:Navigation_Representation;1",
     "@type": "Interface",
     "description": "Traversable or obstructed navigation geometry. No equivalent exists in core OpenUSD.",
@@ -12314,12 +12354,32 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Prismatic_Joint;1",
+    "@type": "Interface",
+    "description": "A joint permitting translation along one axis, such as a forklift mast lift. Limits are linear, in metres.",
+    "displayName": "Prismatic_Joint",
+    "extends": [
+      "dtmi:mapped:openusd:Kinematic_Joint;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:openusd:Representation;1",
     "@type": "Interface",
     "description": "Abstract. Declares how an entity's geometry may be used, realised by exactly one of hasPrimBinding or hasShape. Holds no geometric data of its own: collisionApproximation is a processing directive, closedVolumeRequired a validation policy, geometryHash a pinning digest. Placement is the subject entity's own frame unless coordinateFrameId pins one, which is what lets one representation be shared by many entities.",
     "displayName": "Representation",
     "extends": [
       "dtmi:mapped:core:Meta;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:openusd:Revolute_Joint;1",
+    "@type": "Interface",
+    "description": "A joint permitting rotation about one axis, such as a mast tilt or a rolling wheel. Limits are angular, in radians.",
+    "displayName": "Revolute_Joint",
+    "extends": [
+      "dtmi:mapped:openusd:Kinematic_Joint;1"
     ]
   },
   {
