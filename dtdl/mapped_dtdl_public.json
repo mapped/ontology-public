@@ -97,7 +97,7 @@
     "description": "A minimal unit for access control.",
     "displayName": "Access_Control_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -468,7 +468,7 @@
     "description": "A designated area on an airport apron where an aircraft is parked, serviced, and prepared for departure, typically equipped with ground support equipment and services such as fueling, catering, and baggage handling.",
     "displayName": "Aircraft_Stand",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -498,7 +498,7 @@
     "description": "A specialized site equipped with runways, terminals, and other facilities to handle the takeoff, landing, and maintenance of aircraft.",
     "displayName": "Airport",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Site;1"
+      "dtmi:org:w3id:rec:Site;1"
     ]
   },
   {
@@ -508,7 +508,7 @@
     "description": "A designated area in an airport terminal where passengers board and disembark from an aircraft.",
     "displayName": "Airport_Gate",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -518,7 +518,7 @@
     "description": "A building at an airport where passengers process and prepare for flights, including check-in, security, and boarding.",
     "displayName": "Airport_Terminal",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Building;1"
+      "dtmi:org:w3id:rec:Building;1"
     ]
   },
   {
@@ -538,7 +538,7 @@
     "description": "",
     "displayName": "Aisle",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -598,7 +598,7 @@
     "description": "",
     "displayName": "Ante_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -1071,7 +1071,7 @@
     "description": "",
     "displayName": "Bio_Containment_Unit",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -1444,7 +1444,7 @@
     "description": "An area set aside for charging the batteries of mobile equipment such as forklifts, autonomous mobile robots, or drones.",
     "displayName": "Charging_Area",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -2802,7 +2802,7 @@
     "description": "A room used by data center operations personnel for coordinated maintenance, incident response, and facility control.",
     "displayName": "Data_Center_Operations_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -2822,7 +2822,7 @@
     "description": "A room used to receive, configure, test, and stage information technology equipment before installation in a data hall.",
     "displayName": "Data_Center_Staging_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -3741,6 +3741,16 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Electrical_Grid_Region;1",
+    "@type": "Interface",
+    "description": "A region which is served by an electrical grid.",
+    "displayName": "Electrical_Grid_Region",
+    "extends": [
+      "dtmi:org:w3id:rec:Region;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:mapped:core:Electrical_Receptacle;1",
     "@type": "Interface",
     "description": "A contact device installed at the outlet for the connection of an attachment plug, or for the direct connection of electrical utilization equipment designed to mate with the corresponding contact device.",
@@ -4588,7 +4598,7 @@
     "description": "A horizontal structural element that forms the floor of a storey and carries the loads placed on it to the supporting structure.",
     "displayName": "Floor_Slab",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -4628,7 +4638,7 @@
     "description": "An airspace volume in which uncrewed aerial vehicle flight is permitted. The complement of mapped:No_Fly_Zone.",
     "displayName": "Fly_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -4732,16 +4742,6 @@
     "displayName": "Fuel_Temperature_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:mapped:core:Furniture;1",
-    "@type": "Interface",
-    "description": "Movable objects intended to support various human activities such as seating, eating and sleeping",
-    "displayName": "Furniture",
-    "extends": [
-      "dtmi:mapped:core:Device;1"
     ]
   },
   {
@@ -7315,7 +7315,7 @@
     "description": "A room from which personnel monitor and operate data center computing, network, and facility infrastructure.",
     "displayName": "Network_Operations_Center",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -7375,7 +7375,7 @@
     "description": "",
     "displayName": "No_Fly_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -7455,7 +7455,7 @@
     "description": "Occupancy Zone is a spatial area where devices are monitoring or reporting on the concept of Occupancy (motion sensors, people counters, cameras, etc.)",
     "displayName": "Occupancy_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -7641,7 +7641,7 @@
     "description": "",
     "displayName": "Operating_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -8337,7 +8337,7 @@
     "description": "",
     "displayName": "Picking_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -8408,6 +8408,16 @@
     "displayName": "Plumbing_Valve",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Valve;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:mapped:core:Point_Group;1",
+    "@type": "Interface",
+    "description": "Nestable collections of associated points with a label, e.g. to model associations of points for display, configuration, packaging, and other user-defined needs",
+    "displayName": "Point_Group",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Collection;1"
     ]
   },
   {
@@ -8760,7 +8770,7 @@
     "description": "",
     "displayName": "Pressurization_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:HVAC_Zone;1"
+      "dtmi:org:w3id:rec:HVACZone;1"
     ]
   },
   {
@@ -9003,7 +9013,7 @@
     "description": "An area where inbound goods are unloaded, checked in, and held before being put away or moved on.",
     "displayName": "Receiving_Area",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -9286,7 +9296,7 @@
     "description": "",
     "displayName": "Restricted_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -9556,7 +9566,7 @@
     "description": "An enclosed room where mobile robots dock and charge between tasks. Distinguished from mapped:Charging_Area, which is a zone over a larger floor area rather than an enclosed room.",
     "displayName": "Robot_Charging_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -9746,7 +9756,7 @@
     "description": "An area covered by a recurring security patrol. Whether the patrol is carried out by a person, a ground robot, or a drone is carried by the patrolling entity, not by this class.",
     "displayName": "Security_Patrol_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -9867,7 +9877,7 @@
     "description": "An area where outbound goods are consolidated, loaded, and dispatched.",
     "displayName": "Shipping_Area",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -9927,7 +9937,7 @@
     "description": "A space or group of spaces within a building that are observed by a smoke detector.",
     "displayName": "Smoke_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -10117,7 +10127,7 @@
     "description": "A low platform in a space or on a stage",
     "displayName": "Stage_Riser",
     "extends": [
-      "dtmi:mapped:core:Furniture;1"
+      "dtmi:org:w3id:rec:Furniture;1"
     ]
   },
   {
@@ -10127,7 +10137,7 @@
     "description": "An area where goods are held temporarily between handling steps, such as after picking and before loading. Replaces mapped:Staging_Zone.",
     "displayName": "Staging_Area",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -10139,7 +10149,7 @@
     "description": "",
     "displayName": "Staging_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -11904,7 +11914,7 @@
     "description": "Areas of which the water is controlled by a specific device or a system.",
     "displayName": "Water_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -12541,7 +12551,7 @@
     "description": "A room for performing cleansing rituals before prayer",
     "displayName": "Ablutions_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -12932,26 +12942,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Atrium;1",
-    "@type": "Interface",
-    "description": "a large open-air or skylight covered space surrounded by a building.",
-    "displayName": "Atrium",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Auditorium;1",
-    "@type": "Interface",
-    "description": "A space for performances or larger gatherings",
-    "displayName": "Auditorium",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Automated_External_Defibrillator;1",
     "@type": "Interface",
     "description": "",
@@ -13199,7 +13189,7 @@
     "description": "A space for people to relax while not working",
     "displayName": "Break_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -13220,16 +13210,6 @@
     "displayName": "Broadcast_Room",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Media_Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Building;1",
-    "@type": "Interface",
-    "description": "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity [ISO 12006-2:2013]",
-    "displayName": "Building",
-    "extends": [
-      "dtmi:mapped:core:Place;1"
     ]
   },
   {
@@ -13843,7 +13823,7 @@
     "description": "in a gas separation unit, the insulated section that contains the low-temperature heat exchangers and distillation columns.",
     "displayName": "Cold_Box",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Laboratory;1"
+      "dtmi:org:w3id:rec:Laboratory;1"
     ]
   },
   {
@@ -13933,7 +13913,7 @@
     "description": "A class of spaces that are used by multiple people at the same time",
     "displayName": "Common_Space",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -14119,16 +14099,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Conference_Room;1",
-    "@type": "Interface",
-    "description": "A space dedicated in which to hold a meetings",
-    "displayName": "Conference_Room",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Constant_Air_Volume_Box;1",
     "@type": "Interface",
     "description": "A terminal unit for which supply air flow rate is constant and the supply air temperature is varied to meet thermal load",
@@ -14154,7 +14124,7 @@
     "description": "A space from which operations are managed",
     "displayName": "Control_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -14357,7 +14327,7 @@
     "description": "A room set aside for common office equipment, including printers and copiers",
     "displayName": "Copy_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -14387,7 +14357,7 @@
     "description": "A smaller space set aside for an individual, but not with a door and without full-height walls",
     "displayName": "Cubicle",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Office;1"
+      "dtmi:org:w3id:rec:Office;1"
     ]
   },
   {
@@ -15727,16 +15697,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Elevator_Shaft;1",
-    "@type": "Interface",
-    "description": "The vertical space in which an elevator ascends and descends",
-    "displayName": "Elevator_Shaft",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Vertical_Space;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Elevator_Space;1",
     "@type": "Interface",
     "description": "The vertical space in whcih an elevator ascends and descends",
@@ -15902,7 +15862,7 @@
     "description": "An open space near an entrance that is typicaly only used for employees",
     "displayName": "Employee_Entrance_Lobby",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Lobby;1"
+      "dtmi:org:w3id:rec:Lobby;1"
     ]
   },
   {
@@ -15982,7 +15942,7 @@
     "description": "A space for individuals to work with walls and a door",
     "displayName": "Enclosed_Office",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Office;1"
+      "dtmi:org:w3id:rec:Office;1"
     ]
   },
   {
@@ -16063,7 +16023,7 @@
     "description": "A space or group of spaces that are managed or monitored as one unit for energy purposes",
     "displayName": "Energy_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -16425,22 +16385,12 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Entrance;1",
-    "@type": "Interface",
-    "description": "The location and space of a building where people enter and exit the building",
-    "displayName": "Entrance",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Environment_Box;1",
     "@type": "Interface",
     "description": "(also known as climatic chamber), enclosed space designed to create a particular environment.",
     "displayName": "Environment_Box",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Laboratory;1"
+      "dtmi:org:w3id:rec:Laboratory;1"
     ]
   },
   {
@@ -16471,16 +16421,6 @@
     "displayName": "Even_Month_Status",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Status;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Exercise_Room;1",
-    "@type": "Interface",
-    "description": "An indoor room used for exercise and physical activities",
-    "displayName": "Exercise_Room",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
     ]
   },
   {
@@ -16965,7 +16905,7 @@
     "description": "A logical subdivision of a building that is monitored for fire; may also have a classification for the type of fire hazard that can occur",
     "displayName": "Fire_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -17025,7 +16965,7 @@
     "description": "A space used in the production, storage, serving, or cleanup of food and beverages",
     "displayName": "Food_Service_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -17055,7 +16995,7 @@
     "description": "cold chamber usually kept at a temperature of 22\u00b0F to 31\u00b0F (\u20135\u00b0C to \u20131\u00b0C), with high-volume air circulation.",
     "displayName": "Freezer",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Laboratory;1"
+      "dtmi:org:w3id:rec:Laboratory;1"
     ]
   },
   {
@@ -17195,7 +17135,7 @@
     "description": "The standalone building used to manage the entrance to a campus or building grounds",
     "displayName": "Gatehouse",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -17251,32 +17191,12 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:HVAC_Zone;1",
-    "@type": "Interface",
-    "description": "a space or group of spaces, within a building with heating, cooling, and ventilating requirements, that are sufficiently similar so that desired conditions (e.g., temperature) can be maintained throughout using a single sensor (e.g., thermostat or temperature sensor).",
-    "displayName": "HVAC_Zone",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Hail_Sensor;1",
     "@type": "Interface",
     "description": "Measures hail in terms of its size and damage potential",
     "displayName": "Hail_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Hallway;1",
-    "@type": "Interface",
-    "description": "A common space, used to connect other parts of a building",
-    "displayName": "Hallway",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
     ]
   },
   {
@@ -17716,7 +17636,7 @@
     "description": "A room at a stadium, usually overlooking the field of play, that is physical separate from the other seating at the venue",
     "displayName": "Hospitality_Box",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -17726,7 +17646,7 @@
     "description": "hot air chamber forming part of an air handler.",
     "displayName": "Hot_Box",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Laboratory;1"
+      "dtmi:org:w3id:rec:Laboratory;1"
     ]
   },
   {
@@ -18251,7 +18171,7 @@
     "description": "A room set aside for the storage of cleaning equipment and supplies",
     "displayName": "Janitor_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -18262,16 +18182,6 @@
     "displayName": "Jet_Nozzle_Air_Diffuser",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Air_Diffuser;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Laboratory;1",
-    "@type": "Interface",
-    "description": "facility acceptable to the local, national, or international recognized authority having jurisdiction and which provides uniform testing and examination procedures and standards for meeting design, manufacturing, and factory testing requirements.",
-    "displayName": "Laboratory",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
     ]
   },
   {
@@ -18674,16 +18584,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Library;1",
-    "@type": "Interface",
-    "description": "A place for the storage and/or consumption of physical media, e.g. books, periodicals, and DVDs/CDs",
-    "displayName": "Library",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Light_Command;1",
     "@type": "Interface",
     "deprecated": true,
@@ -18732,7 +18632,7 @@
     "description": "",
     "displayName": "Lighting_Zone",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
     ]
   },
   {
@@ -18833,17 +18733,7 @@
     "description": "A part of a facility where delivery trucks can load and unload. Usually partially enclosed with specific traffic lanes leading to the dock",
     "displayName": "Loading_Dock",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Lobby;1",
-    "@type": "Interface",
-    "description": "A space just after the entrance to a building or other space of a building, where visitors can wait",
-    "displayName": "Lobby",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -18884,16 +18774,6 @@
     "displayName": "Loop",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Collection;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Lounge;1",
-    "@type": "Interface",
-    "description": "A room for lesiure activities or relaxing",
-    "displayName": "Lounge",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
     ]
   },
   {
@@ -19163,16 +19043,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Mail_Room;1",
-    "@type": "Interface",
-    "description": "A room where mail is recieved and sorted for distribution to the rest of the building",
-    "displayName": "Mail_Room",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Maintenance_Mode_Command;1",
     "@type": "Interface",
     "description": "Controls whether or not a device or controller is operating in \"Maintenance\" mode",
@@ -19198,7 +19068,7 @@
     "description": "In Arab countries, an Majlis is a private lounge where visitors are recieved and entertained",
     "displayName": "Majlis",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Lounge;1"
+      "dtmi:org:w3id:rec:Lounge;1"
     ]
   },
   {
@@ -19249,7 +19119,7 @@
     "description": "Usually adjunct to an athletic facility, a private/semi-private space where massages are performed",
     "displayName": "Massage_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -19593,7 +19463,7 @@
     "description": "A non-enclosed space used by members of the media temporarily to cover an event while they are present at a venue",
     "displayName": "Media_Hot_Desk",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -19613,7 +19483,7 @@
     "description": "A class of spaces related to the creation of media",
     "displayName": "Media_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -19623,7 +19493,7 @@
     "description": "A class of rooms used for medical purposes",
     "displayName": "Medical_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -20581,22 +20451,12 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Office;1",
-    "@type": "Interface",
-    "description": "A class of rooms dedicated for work or study",
-    "displayName": "Office",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Office_Kitchen;1",
     "@type": "Interface",
     "description": "A common space, usually near or in a breakroom, where minor food preperation occurs",
     "displayName": "Office_Kitchen",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -20677,7 +20537,7 @@
     "description": "An open space used for work or study by mulitple people. Usuaully subdivided into cubicles or desks",
     "displayName": "Open_Office",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Office;1"
+      "dtmi:org:w3id:rec:Office;1"
     ]
   },
   {
@@ -21176,22 +21036,12 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Parking_Space;1",
-    "@type": "Interface",
-    "description": "An area large enough to park an individual vehicle",
-    "displayName": "Parking_Space",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Parking_Structure;1",
     "@type": "Interface",
     "description": "A building or part of a building devoted to vehicle parking",
     "displayName": "Parking_Structure",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Building;1"
+      "dtmi:org:w3id:rec:Building;1"
     ]
   },
   {
@@ -21277,16 +21127,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Portfolio;1",
-    "@type": "Interface",
-    "description": "A collection of sites",
-    "displayName": "Portfolio",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Collection;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Position_Command;1",
     "@type": "Interface",
     "description": "Controls or reports the position of some object",
@@ -21362,7 +21202,7 @@
     "description": "A room set aside for prayer",
     "displayName": "Prayer_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -21719,32 +21559,12 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Reception;1",
-    "@type": "Interface",
-    "description": "A space, usually in a lobby, where visitors to a building or space can go to after arriving at a building and inform building staff that they have arrived",
-    "displayName": "Reception",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Refrigeration_System;1",
     "@type": "Interface",
     "description": "System designed to remove heat from a space or substance, typically using a refrigerant in a closed loop",
     "displayName": "Refrigeration_System",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Heating_Ventilation_Air_Conditioning_System;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Region;1",
-    "@type": "Interface",
-    "description": "A unit of geographic space, usually contigious or somehow related to a geopolitical feature",
-    "displayName": "Region",
-    "extends": [
-      "dtmi:mapped:core:Place;1"
     ]
   },
   {
@@ -21854,17 +21674,7 @@
     "description": "A room that provides toilets and washbowls. Alternate spelling of Restroom",
     "displayName": "Rest_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Retail_Room;1",
-    "@type": "Interface",
-    "description": "A space set aside for retail in a larger establishment, e.g. a gift shop in a hospital",
-    "displayName": "Retail_Room",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -22109,16 +21919,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Room;1",
-    "@type": "Interface",
-    "description": "One of the rooms in the building that may belong to a HVAC zone. An office, classroom, laboratory, restroom, are all types of room",
-    "displayName": "Room",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Room_Air_Temperature_Setpoint;1",
     "@type": "Interface",
     "description": "Refers to room air temperature setpoints",
@@ -22235,7 +22035,7 @@
     "description": "A class of spaces used by the security staff of a facility",
     "displayName": "Security_Service_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -22265,7 +22065,7 @@
     "description": "",
     "displayName": "Server_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -22275,7 +22075,7 @@
     "description": "A class of spaces related to the operations of building subsystems, e.g. HVAC, electrical, IT, plumbing, etc",
     "displayName": "Service_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -22335,17 +22135,7 @@
     "description": "A space containing showers, usually adjacent to an athletic or execise area",
     "displayName": "Shower",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Site;1",
-    "@type": "Interface",
-    "description": "A geographic region containing 0 or more buildings. Typically used as the encapsulating location for a collection of Brick entities through the hasPart/isPartOf relationships",
-    "displayName": "Site",
-    "extends": [
-      "dtmi:mapped:core:Place;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -22429,16 +22219,6 @@
     "displayName": "Solar_Zenith_Angle_Sensor",
     "extends": [
       "dtmi:org:brickschema:schema:Brick:Angle_Sensor;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Space;1",
-    "@type": "Interface",
-    "description": "A part of the physical world or a virtual world whose 3D spatial extent is bounded actually or theoretically, and provides for certain functions within the zone it is contained in.",
-    "displayName": "Space",
-    "extends": [
-      "dtmi:mapped:core:Place;1"
     ]
   },
   {
@@ -22531,7 +22311,7 @@
     "description": "A class of spaces used in the support of sports",
     "displayName": "Sports_Service_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -22804,7 +22584,7 @@
     "description": "A class of spaces used for storage",
     "displayName": "Storage_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -23319,22 +23099,12 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Team_Room;1",
-    "@type": "Interface",
-    "description": "An office used by multiple team members for specific work tasks. Distinct from Conference Room",
-    "displayName": "Team_Room",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Enclosed_Office;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Telecom_Room;1",
     "@type": "Interface",
     "description": "A class of spaces used to support telecommuncations and IT equipment",
     "displayName": "Telecom_Room",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -23549,7 +23319,7 @@
     "description": "A room or space used to sell or distribute tickets to events at a venue",
     "displayName": "Ticketing_Booth",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -23659,7 +23429,7 @@
     "description": "An enclosed space that connects buildings. Often underground",
     "displayName": "Tunnel",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -24167,7 +23937,7 @@
     "description": "A class of spaces used to connect multiple floors or levels..",
     "displayName": "Vertical_Space",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Space;1"
+      "dtmi:org:w3id:rec:Space;1"
     ]
   },
   {
@@ -24197,7 +23967,7 @@
     "description": "A lobby for visitors to the building. Sometimes used to distinguish from an employee entrance looby",
     "displayName": "Visitor_Lobby",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Lobby;1"
+      "dtmi:org:w3id:rec:Lobby;1"
     ]
   },
   {
@@ -24247,7 +24017,7 @@
     "description": "Storage for clothing, costumes, or uniforms",
     "displayName": "Wardrobe",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -24523,36 +24293,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Wing;1",
-    "@type": "Interface",
-    "description": "A wing is part of a building \u2013 or any feature of a building \u2013 that is subordinate to the main, central structure.",
-    "displayName": "Wing",
-    "extends": [
-      "dtmi:mapped:core:Place;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Workshop;1",
-    "@type": "Interface",
-    "description": "A space used to house equipment that can be used to repair or fabricate things",
-    "displayName": "Workshop",
-    "extends": [
-      "dtmi:org:brickschema:schema:Brick:Room;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:org:brickschema:schema:Brick:Zone;1",
-    "@type": "Interface",
-    "description": "(1) a separately controlled heated or cooled space. (2) one occupied space or several occupied spaces with similar occupancy category, occupant density, zone air distribution effectiveness, and zone primary airflow per unit area. (3) space or group of spaces within a building for which the heating, cooling, or lighting requirements are sufficiently similar that desired conditions can be maintained throughout by a single controlling device.",
-    "displayName": "Zone",
-    "extends": [
-      "dtmi:mapped:core:Place;1"
-    ]
-  },
-  {
-    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:brickschema:schema:Brick:Zone_Air_Conditioning_Mode_Status;1",
     "@type": "Interface",
     "description": "Indicates the mode of AC for a zone",
@@ -24682,12 +24422,52 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Atrium;1",
+    "@type": "Interface",
+    "description": "a large open-air or skylight covered space surrounded by a building.",
+    "displayName": "Atrium",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Auditorium;1",
+    "@type": "Interface",
+    "description": "A space for performances or larger gatherings",
+    "displayName": "Auditorium",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Building;1",
+    "@type": "Interface",
+    "description": "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity [ISO 12006-2:2013]",
+    "displayName": "Building",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:w3id:rec:Company;1",
     "@type": "Interface",
     "description": "",
     "displayName": "Company",
     "extends": [
       "dtmi:org:w3id:rec:Organization;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:ConferenceRoom;1",
+    "@type": "Interface",
+    "description": "A space dedicated in which to hold a meetings",
+    "displayName": "Conference_Room",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -24702,12 +24482,122 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:ElevatorShaft;1",
+    "@type": "Interface",
+    "description": "The vertical space in which an elevator ascends and descends",
+    "displayName": "Elevator_Shaft",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Vertical_Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Entrance;1",
+    "@type": "Interface",
+    "description": "The location and space of a building where people enter and exit the building",
+    "displayName": "Entrance",
+    "extends": [
+      "dtmi:org:w3id:rec:Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:ExerciseRoom;1",
+    "@type": "Interface",
+    "description": "An indoor room used for exercise and physical activities",
+    "displayName": "Exercise_Room",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Furniture;1",
+    "@type": "Interface",
+    "description": "Movable objects intended to support various human activities such as seating, eating and sleeping",
+    "displayName": "Furniture",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:HVACZone;1",
+    "@type": "Interface",
+    "description": "a space or group of spaces, within a building with heating, cooling, and ventilating requirements, that are sufficiently similar so that desired conditions (e.g., temperature) can be maintained throughout using a single sensor (e.g., thermostat or temperature sensor).",
+    "displayName": "HVAC_Zone",
+    "extends": [
+      "dtmi:org:w3id:rec:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Hallway;1",
+    "@type": "Interface",
+    "description": "A common space, used to connect other parts of a building",
+    "displayName": "Hallway",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Laboratory;1",
+    "@type": "Interface",
+    "description": "facility acceptable to the local, national, or international recognized authority having jurisdiction and which provides uniform testing and examination procedures and standards for meeting design, manufacturing, and factory testing requirements.",
+    "displayName": "Laboratory",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:w3id:rec:Lease;1",
     "@type": "Interface",
     "description": "",
     "displayName": "Lease",
     "extends": [
       "dtmi:mapped:core:Entity;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Library;1",
+    "@type": "Interface",
+    "description": "A place for the storage and/or consumption of physical media, e.g. books, periodicals, and DVDs/CDs",
+    "displayName": "Library",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Lobby;1",
+    "@type": "Interface",
+    "description": "A space just after the entrance to a building or other space of a building, where visitors can wait",
+    "displayName": "Lobby",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Lounge;1",
+    "@type": "Interface",
+    "description": "A room for lesiure activities or relaxing",
+    "displayName": "Lounge",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:MailRoom;1",
+    "@type": "Interface",
+    "description": "A room where mail is recieved and sorted for distribution to the rest of the building",
+    "displayName": "Mail_Room",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
     ]
   },
   {
@@ -24722,12 +24612,42 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Office;1",
+    "@type": "Interface",
+    "description": "A class of rooms dedicated for work or study",
+    "displayName": "Office",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:w3id:rec:Organization;1",
     "@type": "Interface",
     "description": "",
     "displayName": "Organization",
     "extends": [
       "dtmi:org:w3id:rec:Agent;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:ParkingSpace;1",
+    "@type": "Interface",
+    "description": "An area large enough to park an individual vehicle",
+    "displayName": "Parking_Space",
+    "extends": [
+      "dtmi:org:w3id:rec:Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Portfolio;1",
+    "@type": "Interface",
+    "description": "A collection of sites",
+    "displayName": "Portfolio",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Collection;1"
     ]
   },
   {
@@ -24742,6 +24662,66 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Reception;1",
+    "@type": "Interface",
+    "description": "A space, usually in a lobby, where visitors to a building or space can go to after arriving at a building and inform building staff that they have arrived",
+    "displayName": "Reception",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Region;1",
+    "@type": "Interface",
+    "description": "A unit of geographic space, usually contigious or somehow related to a geopolitical feature",
+    "displayName": "Region",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:RetailRoom;1",
+    "@type": "Interface",
+    "description": "A space set aside for retail in a larger establishment, e.g. a gift shop in a hospital",
+    "displayName": "Retail_Room",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Room;1",
+    "@type": "Interface",
+    "description": "One of the rooms in the building that may belong to a HVAC zone. An office, classroom, laboratory, restroom, are all types of room",
+    "displayName": "Room",
+    "extends": [
+      "dtmi:org:w3id:rec:Space;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Site;1",
+    "@type": "Interface",
+    "description": "A geographic region containing 0 or more buildings. Typically used as the encapsulating location for a collection of Brick entities through the hasPart/isPartOf relationships",
+    "displayName": "Site",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Space;1",
+    "@type": "Interface",
+    "description": "A part of the physical world or a virtual world whose 3D spatial extent is bounded actually or theoretically, and provides for certain functions within the zone it is contained in.",
+    "displayName": "Space",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:w3id:rec:SubBuilding;1",
     "@type": "Interface",
     "description": "",
@@ -24752,12 +24732,52 @@
   },
   {
     "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:TeamRoom;1",
+    "@type": "Interface",
+    "description": "An office used by multiple team members for specific work tasks. Distinct from Conference Room",
+    "displayName": "Team_Room",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Enclosed_Office;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Wing;1",
+    "@type": "Interface",
+    "description": "A wing is part of a building \u2013 or any feature of a building \u2013 that is subordinate to the main, central structure.",
+    "displayName": "Wing",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Workshop;1",
+    "@type": "Interface",
+    "description": "A space used to house equipment that can be used to repair or fabricate things",
+    "displayName": "Workshop",
+    "extends": [
+      "dtmi:org:w3id:rec:Room;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
     "@id": "dtmi:org:w3id:rec:Workspace;1",
     "@type": "Interface",
     "description": "",
     "displayName": "Workspace",
     "extends": [
-      "dtmi:org:brickschema:schema:Brick:Zone;1"
+      "dtmi:org:w3id:rec:Zone;1"
+    ]
+  },
+  {
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:org:w3id:rec:Zone;1",
+    "@type": "Interface",
+    "description": "(1) a separately controlled heated or cooled space. (2) one occupied space or several occupied spaces with similar occupancy category, occupant density, zone air distribution effectiveness, and zone primary airflow per unit area. (3) space or group of spaces within a building for which the heating, cooling, or lighting requirements are sufficiently similar that desired conditions can be maintained throughout by a single controlling device.",
+    "displayName": "Zone",
+    "extends": [
+      "dtmi:mapped:core:Place;1"
     ]
   }
 ]
