@@ -421,6 +421,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Air_Quality_Lidar_Device;1",
+    "@type": "Interface",
+    "description": "An air quality sensing device that uses light detection and ranging (lidar) to measure air quality, such as particulate matter concentration, across a volume of air rather than at a single point.",
+    "displayName": "Air_Quality_Lidar_Device",
+    "extends": [
+      "dtmi:mapped:core:Air_Quality_Sensing_Device;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Air_Quality_Lidar_Device"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Air_Quality_Sensing_Device;1",
     "@type": "Interface",
     "description": "",
@@ -509,6 +520,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Aircraft_Presence_Sensor;1",
+    "@type": "Interface",
+    "description": "Detects whether an aircraft is present at a gate or passenger boarding bridge interface. Distinguished from mapped:Aircraft_Docked_Status, which indicates that the aircraft is docked and properly positioned at the boarding bridge",
+    "displayName": "Aircraft_Presence_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Aircraft_Presence_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Aircraft_Stand;1",
     "@type": "Interface",
     "description": "A designated area on an airport apron where an aircraft is parked, serviced, and prepared for departure, typically equipped with ground support equipment and services such as fueling, catering, and baggage handling.",
@@ -550,6 +572,17 @@
       "dtmi:org:w3id:rec:Site;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Airport"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Airport_Circulation_Space;1",
+    "@type": "Interface",
+    "description": "A space in an airport terminal that passengers move through between areas such as check-in, security, and gates, e.g. a concourse or connector",
+    "displayName": "Airport_Circulation_Space",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Common_Space;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Airport_Circulation_Space"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -1048,6 +1081,17 @@
       "dtmi:mapped:core:Check_Valve;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Backflow_Preventer_Valve"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Baggage_Handling_Conveyor;1",
+    "@type": "Interface",
+    "description": "A powered conveyor segment or assembly in an airport baggage handling system that moves checked baggage between check-in, screening, make-up, and claim areas",
+    "displayName": "Baggage_Handling_Conveyor",
+    "extends": [
+      "dtmi:mapped:core:Conveyor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Baggage_Handling_Conveyor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -1604,6 +1648,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Checkout_Stand;1",
+    "@type": "Interface",
+    "description": "A staffed or self-service point-of-sale lane where customers pay for their purchases",
+    "displayName": "Checkout_Stand",
+    "extends": [
+      "dtmi:mapped:core:Thing;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Checkout_Stand"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Chilled_Refrigerant_Supply_Temperature_Sensor;1",
     "@type": "Interface",
     "description": "",
@@ -1925,6 +1980,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Cleaning_Program_Status;1",
+    "@type": "Interface",
+    "description": "Indicates whether a device, such as a cooking appliance, is running a cleaning program.",
+    "displayName": "Cleaning_Program_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Cleaning_Program_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Close_Command;1",
     "@type": "Interface",
     "description": "Commands a device, such as a damper or valve, to close",
@@ -2036,6 +2102,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Cold_Storage_Room;1",
+    "@type": "Interface",
+    "description": "A storage room kept below ambient temperature to preserve perishable goods. Distinguished from mapped:Walk_In_Refrigerator and mapped:Walk_In_Freezer, which are the refrigeration equipment that conditions such a room.",
+    "displayName": "Cold_Storage_Room",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Storage_Room;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Cold_Storage_Room"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Cold_Water_Storage_Tank;1",
     "@type": "Interface",
     "description": "A tank used to store cold water, usually in a building's water supply system.",
@@ -2066,6 +2143,18 @@
       "dtmi:org:brickschema:schema:Brick:Switch;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Combination_Switch"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Commercial_Dishwasher;1",
+    "@type": "Interface",
+    "description": "A dishwasher for commercial kitchens, such as a rack or flight-type machine, that washes and rinses dishware at high throughput",
+    "displayName": "Commercial_Dishwasher",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1",
+      "dtmi:mapped:core:Dishwasher;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Commercial_Dishwasher"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -3191,6 +3280,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Defrost_Mode_Status;1",
+    "@type": "Interface",
+    "description": "Indicates whether refrigeration equipment is running a defrost cycle.",
+    "displayName": "Defrost_Mode_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Mode_Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Defrost_Mode_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Dehumidification_Command;1",
     "@type": "Interface",
     "description": "Commands the dehumidification process, actively removing moisture from the air to achieve the desired humidity level",
@@ -3245,6 +3345,17 @@
       "dtmi:org:brickschema:schema:Brick:Enable_Status;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Demand_Response_Enable_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Detergent_Level_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the remaining detergent in a dispenser or reservoir, usually as a % of its usable capacity.",
+    "displayName": "Detergent_Level_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Detergent_Level_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -3339,6 +3450,17 @@
       "dtmi:org:brickschema:schema:Brick:Water_Differential_Temperature_Sensor;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Differential_Supply_Return_Water_Temperature_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Dimming_Command;1",
+    "@type": "Interface",
+    "description": "Controls how much a lighting device's output is reduced from full output, typically in percentages where 0% is full output and 100% is fully dimmed. This is the reverse direction of mapped:Lighting_Level_Command.",
+    "displayName": "Dimming_Command",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Command;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Dimming_Command"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -3752,6 +3874,17 @@
       "dtmi:mapped:core:Thing;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Door"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Door_Position_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures how far a door is open, usually as a % where 0% is fully closed and 100% is fully open. Distinguished from a binary open/closed status.",
+    "displayName": "Door_Position_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Position_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Door_Position_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -4613,6 +4746,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Extension_Position_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures how far a telescoping assembly, such as a passenger boarding bridge, is extended, usually as a % from fully retracted to full travel",
+    "displayName": "Extension_Position_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Position_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Extension_Position_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:External_Identity;1",
     "@type": "Interface",
     "description": "An identity specific to an external data source.",
@@ -5072,6 +5216,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Flush_Count_Sensor;1",
+    "@type": "Interface",
+    "description": "Counts the flush activations of toilets, urinals, or flush valves.",
+    "displayName": "Flush_Count_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Flush_Count_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Flush_Valve;1",
     "@type": "Interface",
     "description": "A device within a toilet or urinal that releases water for flushing, typically operated by a handle or sensor. Also known as Flushometer.",
@@ -5484,6 +5639,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Ground_Power_Status;1",
+    "@type": "Interface",
+    "description": "Indicates whether ground power is connected to and supplying power to an aircraft at the gate",
+    "displayName": "Ground_Power_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Ground_Power_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Ground_Power_Unit;1",
     "@type": "Interface",
     "description": "Ground Power Units are usually mobile or stationary units that convert alternating current power to direct current power, which is then supplied to an aircraft through a cable and connector",
@@ -5786,6 +5952,17 @@
       "dtmi:mapped:core:Display_Case;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Heated_Display_Case"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Heated_Holding_Cabinet;1",
+    "@type": "Interface",
+    "description": "A heated cabinet that keeps cooked food at a safe serving temperature until it is served",
+    "displayName": "Heated_Holding_Cabinet",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Heated_Holding_Cabinet"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -6703,6 +6880,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Item_Throughput_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the number of discrete items, such as bags or dish racks, processed by equipment per unit time.",
+    "displayName": "Item_Throughput_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Item_Throughput_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Key_Storage_Cabinet;1",
     "@type": "Interface",
     "description": "A secure box for storing keys",
@@ -6711,6 +6899,17 @@
       "dtmi:mapped:core:Thing;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Key_Storage_Cabinet"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Kitchen_Exhaust_Hood;1",
+    "@type": "Interface",
+    "description": "A hood mounted over commercial cooking equipment that captures and exhausts heat, smoke, grease-laden vapors, and cooking fumes",
+    "displayName": "Kitchen_Exhaust_Hood",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Exhaust_Fan;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Kitchen_Exhaust_Hood"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -6846,6 +7045,28 @@
       "dtmi:org:brickschema:schema:Brick:Status;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Level_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Lid_Open_Status;1",
+    "@type": "Interface",
+    "description": "Indicates whether the lid of a vessel, such as a cooking pan, is open.",
+    "displayName": "Lid_Open_Status",
+    "extends": [
+      "dtmi:mapped:core:Lid_Position_Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Lid_Open_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Lid_Position_Status;1",
+    "@type": "Interface",
+    "description": "Indicates the position of the lid of a vessel, such as a cooking pan.",
+    "displayName": "Lid_Position_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Lid_Position_Status"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -7255,6 +7476,17 @@
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Location_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Lock_Status;1",
+    "@type": "Interface",
+    "description": "Indicates whether a locking device, such as a door lock or a lid lock, is locked.",
+    "displayName": "Lock_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Lock_Status"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -7909,6 +8141,28 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Moving_Walkway;1",
+    "@type": "Interface",
+    "description": "A slow-moving conveyor belt that transports people horizontally or on a slight incline, typically along long walking routes such as airport concourses",
+    "displayName": "Moving_Walkway",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Moving_Walkway"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Multi_Function_Pan;1",
+    "@type": "Interface",
+    "description": "A tilting cooking pan used for boiling, frying, braising, and pressure cooking in a single appliance",
+    "displayName": "Multi_Function_Pan",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Multi_Function_Pan"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Mute_Status;1",
     "@type": "Interface",
     "description": "Indicates whether the audio of a device, such as a microphone or teleconference unit, is muted",
@@ -8171,6 +8425,17 @@
       "dtmi:mapped:core:Sensor_Equipment;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Occupancy_Sensor_Equipment"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Occupancy_Utilization_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the occupancy of an area relative to its configured capacity, usually as a %.",
+    "displayName": "Occupancy_Utilization_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Occupancy_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Occupancy_Utilization_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -8540,6 +8805,17 @@
       "dtmi:mapped:core:Thing;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Pallet_Rack"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Paper_Towel_Level_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the remaining paper towels in a paper towel dispenser, usually as a % of its usable capacity.",
+    "displayName": "Paper_Towel_Level_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Paper_Towel_Level_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -9519,6 +9795,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Pressure_Fryer;1",
+    "@type": "Interface",
+    "description": "A fryer that cooks food in hot oil inside a sealed, pressurized vessel",
+    "displayName": "Pressure_Fryer",
+    "extends": [
+      "dtmi:mapped:core:Fryer;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Pressure_Fryer"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Pressure_High_Reset_Setpoint;1",
     "@type": "Interface",
     "description": "Upper pressure bound used in a reset strategy. This is a generic setpoint that can refer to air or water pressure",
@@ -9630,6 +9917,28 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Program_Name_Status;1",
+    "@type": "Interface",
+    "description": "Indicates the name of the program or recipe that a device, such as a cooking appliance, is currently running.",
+    "displayName": "Program_Name_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Program_Name_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Program_Progress_Status;1",
+    "@type": "Interface",
+    "description": "Indicates how far the active program or cycle of a device has progressed, usually as a % from 0% at its start to 100% at its completion.",
+    "displayName": "Program_Progress_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Program_Progress_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Projection_Screen;1",
     "@type": "Interface",
     "description": "an installation consisting of a surface and a support structure used for displaying a projected image for the view of an audience.",
@@ -9638,6 +9947,17 @@
       "dtmi:mapped:core:Display;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Projection_Screen"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Proofing_Cabinet;1",
+    "@type": "Interface",
+    "description": "A cabinet that holds dough at a controlled warm temperature and humidity so that it rises before baking",
+    "displayName": "Proofing_Cabinet",
+    "extends": [
+      "dtmi:mapped:core:Culinary_Equipment;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Proofing_Cabinet"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -9763,6 +10083,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Queue_Length_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the estimated number of people waiting in a queue, such as at a checkout lane.",
+    "displayName": "Queue_Length_Sensor",
+    "extends": [
+      "dtmi:mapped:core:Count_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Queue_Length_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:RFID_Signal;1",
     "@type": "Interface",
     "description": "A point that reports raw radio-frequency identification observations such as a reader tag read, phase-derived range, or angle of arrival.",
@@ -9804,6 +10135,17 @@
       "dtmi:mapped:core:Sensor_Equipment;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Rack_Environmental_Monitor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Rack_Oven;1",
+    "@type": "Interface",
+    "description": "A bakery oven that bakes food on a wheeled rack, which typically rotates inside the baking chamber",
+    "displayName": "Rack_Oven",
+    "extends": [
+      "dtmi:mapped:core:Oven;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Rack_Oven"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -10116,6 +10458,17 @@
       "dtmi:org:brickschema:schema:Brick:Sensor;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Remaining_Run_Time_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Remaining_Time_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the estimated time remaining until the active program or cycle of a device, such as a cooking program, completes. Distinguished from mapped:Remaining_Run_Time_Sensor, which is the time a device can continue to supply its load from stored energy or fuel.",
+    "displayName": "Remaining_Time_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Duration_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Remaining_Time_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -10888,6 +11241,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Smart_Washroom_System;1",
+    "@type": "Interface",
+    "description": "A system of connected restroom fixtures, dispensers, and sensors that monitors fixture use, consumable levels, occupancy, and leaks in a restroom.",
+    "displayName": "Smart_Washroom_System",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:System;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Smart_Washroom_System"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Smoke_Damper;1",
     "@type": "Interface",
     "description": "Smoke dampers function to maintain the integrity of a physical smoke barrier.",
@@ -10929,6 +11293,17 @@
       "dtmi:org:brickschema:schema:Brick:System;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Snowmelt_System"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Soap_Level_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the remaining soap in a soap dispenser, usually as a % of its usable capacity.",
+    "displayName": "Soap_Level_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Soap_Level_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -11974,6 +12349,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Tilt_Position_Sensor;1",
+    "@type": "Interface",
+    "description": "Measures the tilt of a tilting vessel, such as a multifunction pan, usually as a % from its normal operating orientation to its full discharge tilt.",
+    "displayName": "Tilt_Position_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Position_Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Tilt_Position_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Time_Status;1",
     "@type": "Interface",
     "description": "",
@@ -12171,6 +12557,17 @@
       "dtmi:org:brickschema:schema:Brick:Reactive_Power_Sensor;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Total_Reactive_Power_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Transaction_Rate_Status;1",
+    "@type": "Interface",
+    "description": "Indicates the number of transactions, such as checkout sales, completed per unit time.",
+    "displayName": "Transaction_Rate_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Transaction_Rate_Status"
   },
   {
     "@context": "dtmi:dtdl:context;3",
