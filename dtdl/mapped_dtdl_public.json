@@ -7634,6 +7634,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Mapped_Universal_Gateway;1",
+    "@type": "Interface",
+    "description": "Mapped's universal gateway device that can connect to multiple protocols and devices, such as BACnet, OPC UA, Modbus, and others.",
+    "displayName": "Mapped_Universal_Gateway",
+    "extends": [
+      "dtmi:mapped:core:Gateway;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Mapped_Universal_Gateway"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Marginal_GHG_Emissions_Rate;1",
     "@type": "Interface",
     "description": "The Marginal Emissions Rate refers to the rate at which greenhouse gas (GHG) emissions are produced by the marginal power plant when there is a change in electricity demand. The units is typically the amount of pollution (CO2e) per unit of energy (e.g. lbs/MWh)",
