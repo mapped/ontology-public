@@ -13833,6 +13833,50 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Node;1",
+    "@type": "Interface",
+    "description": "Abstract. A node in an OPC UA server's address space (OPC 10000-3 \u00a75.2, Base NodeClass), carrying the attributes every node shares. Only Object and Variable nodes are ingested; Method, View and type nodes are not.",
+    "displayName": "opcua:Node",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Node"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Object;1",
+    "@type": "Interface",
+    "description": "An OPC UA Object node (OPC 10000-3 \u00a75.5.1), including folders: a system, a component, or a grouping of other nodes. Its type is named in opcua:typeDefinition. A Brick Thing links to it with mapped:hasExternalReference; the Object itself never carries a Brick class.",
+    "displayName": "opcua:Object",
+    "extends": [
+      "dtmi:mapped:opcua:Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Object"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Server;1",
+    "@type": "Interface",
+    "description": "An OPC UA server application at one endpoint (OPC 10000-1 \u00a72.1.38), not the standard Server Object (i=2253) that describes it. It is the root of the ingested address space and stands in for the Objects folder (i=85): the folder's children hang off it through opcua:organizes. A Brick-side device such as mapped:OPCUA_Device links to it with mapped:hasExternalReference.",
+    "displayName": "opcua:Server",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Server"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Variable;1",
+    "@type": "Interface",
+    "description": "An OPC UA data Variable (OPC 10000-3 \u00a75.6.2, \u00a75.6.4): a node that contains a value. Properties are not stored as Variables; they fold into their parent. Live values are timeseries on the mapped:Point that links to the Variable with mapped:hasExternalReference, not attributes of the Variable. A Variable with component Variables is usually a structure, which a Brick Thing may link to instead.",
+    "displayName": "opcua:Variable",
+    "extends": [
+      "dtmi:mapped:opcua:Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Variable"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:openusd:Analytic_Shape;1",
     "@type": "Interface",
     "description": "Abstract. Parametric geometry requiring no OpenUSD asset, so bulk entities can carry collision or bounding volumes without published USD geometry. An unplaced definition in a local frame centred on the shape, with no position of its own; placement comes from the Representation or the subject entity. Subclassed per primitive because each takes different dimensions.",
@@ -14034,7 +14078,7 @@
     "@id": "dtmi:org:ashrae:bacnet:AnalogInputObject;1",
     "@type": "Interface",
     "description": "A BACnet Analog Input object, as defined in ASHRAE 135, which represents an analog input of a BACnet device, such as a sensor reading",
-    "displayName": "AnalogInputObject",
+    "displayName": "bacnet:AnalogInputObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14045,7 +14089,7 @@
     "@id": "dtmi:org:ashrae:bacnet:AnalogOutputObject;1",
     "@type": "Interface",
     "description": "A BACnet Analog Output object, as defined in ASHRAE 135, which represents a commandable analog output of a BACnet device, such as a valve or damper position command",
-    "displayName": "AnalogOutputObject",
+    "displayName": "bacnet:AnalogOutputObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14056,7 +14100,7 @@
     "@id": "dtmi:org:ashrae:bacnet:AnalogValueObject;1",
     "@type": "Interface",
     "description": "A BACnet Analog Value object, as defined in ASHRAE 135, which represents an analog control parameter held in the memory of a BACnet device, such as a setpoint",
-    "displayName": "AnalogValueObject",
+    "displayName": "bacnet:AnalogValueObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14067,7 +14111,7 @@
     "@id": "dtmi:org:ashrae:bacnet:BinaryInputObject;1",
     "@type": "Interface",
     "description": "A BACnet Binary Input object, as defined in ASHRAE 135, which represents a two-state input of a BACnet device, such as a status contact",
-    "displayName": "BinaryInputObject",
+    "displayName": "bacnet:BinaryInputObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14078,7 +14122,7 @@
     "@id": "dtmi:org:ashrae:bacnet:BinaryOutputObject;1",
     "@type": "Interface",
     "description": "A BACnet Binary Output object, as defined in ASHRAE 135, which represents a commandable two-state output of a BACnet device, such as a start/stop command",
-    "displayName": "BinaryOutputObject",
+    "displayName": "bacnet:BinaryOutputObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14089,7 +14133,7 @@
     "@id": "dtmi:org:ashrae:bacnet:BinaryValueObject;1",
     "@type": "Interface",
     "description": "A BACnet Binary Value object, as defined in ASHRAE 135, which represents a two-state control parameter held in the memory of a BACnet device, such as an enable flag",
-    "displayName": "BinaryValueObject",
+    "displayName": "bacnet:BinaryValueObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14100,7 +14144,7 @@
     "@id": "dtmi:org:ashrae:bacnet:DeviceObject;1",
     "@type": "Interface",
     "description": "A BACnet Device object, as defined in ASHRAE 135, which represents the externally visible characteristics of a BACnet device, such as its identifier, vendor, model and firmware. Each BACnet device contains exactly one Device object",
-    "displayName": "DeviceObject",
+    "displayName": "bacnet:DeviceObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14111,7 +14155,7 @@
     "@id": "dtmi:org:ashrae:bacnet:MultistateInputObject;1",
     "@type": "Interface",
     "description": "A BACnet Multi-state Input object, as defined in ASHRAE 135, which represents an input of a BACnet device with more than two discrete states, such as a reported operating mode",
-    "displayName": "MultistateInputObject",
+    "displayName": "bacnet:MultistateInputObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14122,7 +14166,7 @@
     "@id": "dtmi:org:ashrae:bacnet:MultistateOutputObject;1",
     "@type": "Interface",
     "description": "A BACnet Multi-state Output object, as defined in ASHRAE 135, which represents a commandable output of a BACnet device with more than two discrete states, such as a fan speed selection (off, low, medium, high)",
-    "displayName": "MultistateOutputObject",
+    "displayName": "bacnet:MultistateOutputObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14133,7 +14177,7 @@
     "@id": "dtmi:org:ashrae:bacnet:MultistateValueObject;1",
     "@type": "Interface",
     "description": "A BACnet Multi-state Value object, as defined in ASHRAE 135, which represents a control parameter with more than two discrete states held in the memory of a BACnet device, such as an operating mode selection",
-    "displayName": "MultistateValueObject",
+    "displayName": "bacnet:MultistateValueObject",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
@@ -14144,7 +14188,7 @@
     "@id": "dtmi:org:ashrae:bacnet:TimeStamp;1",
     "@type": "Interface",
     "description": "",
-    "displayName": "TimeStamp",
+    "displayName": "bacnet:TimeStamp",
     "extends": [
       "dtmi:mapped:core:Entity;1"
     ],
