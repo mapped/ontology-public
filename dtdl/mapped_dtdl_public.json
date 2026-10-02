@@ -597,6 +597,19 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Airport_Stand;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:mapped:core:Aircraft_Stand;1",
+    "description": "",
+    "displayName": "Airport_Stand",
+    "extends": [
+      "dtmi:org:w3id:rec:Zone;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Airport_Stand"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Airport_Terminal;1",
     "@type": "Interface",
     "description": "A building at an airport where passengers process and prepare for flights, including check-in, security, and boarding.",
@@ -2394,6 +2407,19 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Condenser_Water_Flow_Status;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:mapped:core:Flow_Status;1",
+    "description": "",
+    "displayName": "Condenser_Water_Flow_Status",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Status;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Condenser_Water_Flow_Status"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Condenser_Water_Supply_Temperature_Sensor;1",
     "@type": "Interface",
     "deprecated": true,
@@ -2403,6 +2429,19 @@
       "dtmi:org:brickschema:schema:Brick:Leaving_Water_Temperature_Sensor;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Condenser_Water_Supply_Temperature_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Condenser_Water_Supply_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:org:brickschema:schema:Brick:Leaving_Condenser_Water_Temperature_Setpoint;1",
+    "description": "",
+    "displayName": "Condenser_Water_Supply_Temperature_Setpoint",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Leaving_Water_Temperature_Setpoint;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Condenser_Water_Supply_Temperature_Setpoint"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -10016,6 +10055,19 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Pump_Collection;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:mapped:core:Pump_Skid;1",
+    "description": "",
+    "displayName": "Pump_Collection",
+    "extends": [
+      "dtmi:mapped:core:Device;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Pump_Collection"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Pump_On_Off_Command;1",
     "@type": "Interface",
     "description": "Commands Pump On or Off.",
@@ -15823,6 +15875,19 @@
       "dtmi:org:brickschema:schema:Brick:Leak_Alarm;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Condensate_Leak_Alarm"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:org:brickschema:schema:Brick:Condenser;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:mapped:core:Condensing_Unit;1",
+    "description": "",
+    "displayName": "Condenser",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:HVAC_Equipment;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Condenser"
   },
   {
     "@context": "dtmi:dtdl:context;3",
