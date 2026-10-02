@@ -205,7 +205,7 @@
     "description": "A postal address, consisting of a street address, an optional second address line, locality, region, postal code and country",
     "displayName": "Address",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Address"
   },
@@ -1004,6 +1004,17 @@
       "dtmi:org:brickschema:schema:Brick:Voltage_Sensor;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Average_Phase_Voltage_Sensor"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:BACnet_Concept;1",
+    "@type": "Interface",
+    "description": "Abstract. The common superclass of all BACnet objects and datatypes anchored into the Mapped class hierarchy.",
+    "displayName": "BACnet_Concept",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#BACnet_Concept"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -5165,7 +5176,7 @@
     "description": "The objectified property of `level`. The `value` of this instance will be translated into an integer for `level`.",
     "displayName": "Floor_Level",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:core:Property_Node;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Floor_Level"
   },
@@ -13225,7 +13236,7 @@
     "description": "a written guarantee, issued to the purchaser of an article by its manufacturer, promising to repair or replace it if necessary within a specified period of time.",
     "displayName": "Warranty",
     "extends": [
-      "dtmi:mapped:core:Class;1"
+      "dtmi:mapped:core:Entity;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Warranty"
   },
@@ -13833,12 +13844,23 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Concept;1",
+    "@type": "Interface",
+    "description": "Abstract. The common superclass of all OPC UA source-layer concepts.",
+    "displayName": "opcua:Concept",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Concept"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Node;1",
     "@type": "Interface",
     "description": "Abstract. A node in an OPC UA server's address space (OPC 10000-3 \u00a75.2, Base NodeClass), carrying the attributes every node shares. Only Object and Variable nodes are ingested; Method, View and type nodes are not.",
     "displayName": "opcua:Node",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:opcua:Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/opcua#Node"
   },
@@ -13860,7 +13882,7 @@
     "description": "An OPC UA server application at one endpoint (OPC 10000-1 \u00a72.1.38), not the standard Server Object (i=2253) that describes it. It is the root of the ingested address space and stands in for the Objects folder (i=85): the folder's children hang off it through opcua:organizes. A Brick-side device such as mapped:OPCUA_Device links to it with mapped:hasExternalReference.",
     "displayName": "opcua:Server",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:opcua:Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/opcua#Server"
   },
@@ -13882,7 +13904,7 @@
     "description": "Abstract. Parametric geometry requiring no OpenUSD asset, so bulk entities can carry collision or bounding volumes without published USD geometry. An unplaced definition in a local frame centred on the shape, with no position of its own; placement comes from the Representation or the subject entity. Subclassed per primitive because each takes different dimensions.",
     "displayName": "Analytic_Shape",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#Analytic_Shape"
   },
@@ -13948,7 +13970,7 @@
     "description": "Abstract. A physical joint between two components of an assembly, carrying the axis and limits of its motion. Subclassed per joint kind because a prismatic joint's limits are linear and a revolute joint's are angular, so the unit is fixed by the class rather than requiring the USD layer to be resolved. The corresponding OpenUSD physics joint prim is attached with hasPrimBinding, and joint state is reported through mapped:hasPoint.",
     "displayName": "Kinematic_Joint",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#Kinematic_Joint"
   },
@@ -13962,6 +13984,17 @@
       "dtmi:mapped:openusd:Representation;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#Navigation_Representation"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:openusd:OpenUSD_Concept;1",
+    "@type": "Interface",
+    "description": "Abstract. The common superclass of all OpenUSD representation, level-of-detail and spatial-constraint concepts.",
+    "displayName": "OpenUSD_Concept",
+    "extends": [
+      "dtmi:mapped:core:Meta;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/openusd#OpenUSD_Concept"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -13981,7 +14014,7 @@
     "description": "Abstract. A level-of-detail selection policy that the USD projection turns into a typed UsdLodHeuristic prim. A root may carry several, one per domain, so thresholds cannot be flattened onto the root binding. In v1 a heuristic belongs to exactly one root, so its root-local centre and extent have one unambiguous basis.",
     "displayName": "OpenUSD_LOD_Heuristic",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#OpenUSD_LOD_Heuristic"
   },
@@ -14003,7 +14036,7 @@
     "description": "A durable, resolvable OpenUSD artifact. Root layers additionally carry the stage metadata (units, up axis, handedness, time-code rate), which is where USD stores it. Runtime stages, prims and coordinate frames are deliberately not modelled; bindings resolve in a layer.",
     "displayName": "OpenUSD_Layer",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#OpenUSD_Layer"
   },
@@ -14014,7 +14047,7 @@
     "description": "A reified binding from a semantic vertex to one prim address in one layer. It exists because relationships carry no property bag and the association needs its own identity, provenance and validity window. Its properties describe the association (where it points, what it expects to find, whether it may drive pose), never intrinsic prim facts. A binding with hasLODItem edges is a level-of-detail root; an item binding is owned through its root.",
     "displayName": "OpenUSD_Prim_Binding",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#OpenUSD_Prim_Binding"
   },
@@ -14036,7 +14069,7 @@
     "description": "Abstract. Declares how an entity's geometry may be used, realised by exactly one of hasPrimBinding or hasShape. Holds no geometric data of its own: collisionApproximation is a processing directive, closedVolumeRequired a validation policy, geometryHash a pinning digest. Placement is the subject entity's own frame unless coordinateFrameId pins one, which is what lets one representation be shared by many entities.",
     "displayName": "Representation",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#Representation"
   },
@@ -14058,7 +14091,7 @@
     "description": "Abstract. An explicit, parameterised spatial rule. Constraint behaviour applies only where such a vertex exists: without hasConstraint, stateless fusion does not clamp a body to a floor. Takes exactly one subject and one target in v1.",
     "displayName": "Spatial_Constraint",
     "extends": [
-      "dtmi:mapped:core:Meta;1"
+      "dtmi:mapped:openusd:OpenUSD_Concept;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/openusd#Spatial_Constraint"
   },
@@ -14080,7 +14113,7 @@
     "description": "A BACnet Analog Input object, as defined in ASHRAE 135, which represents an analog input of a BACnet device, such as a sensor reading",
     "displayName": "bacnet:AnalogInputObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/AnalogInputObject"
   },
@@ -14091,7 +14124,7 @@
     "description": "A BACnet Analog Output object, as defined in ASHRAE 135, which represents a commandable analog output of a BACnet device, such as a valve or damper position command",
     "displayName": "bacnet:AnalogOutputObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/AnalogOutputObject"
   },
@@ -14102,7 +14135,7 @@
     "description": "A BACnet Analog Value object, as defined in ASHRAE 135, which represents an analog control parameter held in the memory of a BACnet device, such as a setpoint",
     "displayName": "bacnet:AnalogValueObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/AnalogValueObject"
   },
@@ -14113,7 +14146,7 @@
     "description": "A BACnet Binary Input object, as defined in ASHRAE 135, which represents a two-state input of a BACnet device, such as a status contact",
     "displayName": "bacnet:BinaryInputObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/BinaryInputObject"
   },
@@ -14124,7 +14157,7 @@
     "description": "A BACnet Binary Output object, as defined in ASHRAE 135, which represents a commandable two-state output of a BACnet device, such as a start/stop command",
     "displayName": "bacnet:BinaryOutputObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/BinaryOutputObject"
   },
@@ -14135,7 +14168,7 @@
     "description": "A BACnet Binary Value object, as defined in ASHRAE 135, which represents a two-state control parameter held in the memory of a BACnet device, such as an enable flag",
     "displayName": "bacnet:BinaryValueObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/BinaryValueObject"
   },
@@ -14146,7 +14179,7 @@
     "description": "A BACnet Device object, as defined in ASHRAE 135, which represents the externally visible characteristics of a BACnet device, such as its identifier, vendor, model and firmware. Each BACnet device contains exactly one Device object",
     "displayName": "bacnet:DeviceObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/DeviceObject"
   },
@@ -14157,7 +14190,7 @@
     "description": "A BACnet Multi-state Input object, as defined in ASHRAE 135, which represents an input of a BACnet device with more than two discrete states, such as a reported operating mode",
     "displayName": "bacnet:MultistateInputObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/MultistateInputObject"
   },
@@ -14168,7 +14201,7 @@
     "description": "A BACnet Multi-state Output object, as defined in ASHRAE 135, which represents a commandable output of a BACnet device with more than two discrete states, such as a fan speed selection (off, low, medium, high)",
     "displayName": "bacnet:MultistateOutputObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/MultistateOutputObject"
   },
@@ -14179,7 +14212,7 @@
     "description": "A BACnet Multi-state Value object, as defined in ASHRAE 135, which represents a control parameter with more than two discrete states held in the memory of a BACnet device, such as an operating mode selection",
     "displayName": "bacnet:MultistateValueObject",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/MultistateValueObject"
   },
@@ -14190,7 +14223,7 @@
     "description": "",
     "displayName": "bacnet:TimeStamp",
     "extends": [
-      "dtmi:mapped:core:Entity;1"
+      "dtmi:mapped:core:BACnet_Concept;1"
     ],
     "uri": "http://data.ashrae.org/bacnet/TimeStamp"
   },
