@@ -8635,20 +8635,6 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
-    "@id": "dtmi:mapped:core:Occupied_Zone_Air_Temperaure_Setpoint;1",
-    "@type": "Interface",
-    "deprecated": true,
-    "deprecatedAndReplacedBy": "dtmi:mapped:core:Occupied_Target_Zone_Air_Temperature_Setpoint;1",
-    "deprecatedInBrickVersion": "1.3.0",
-    "description": "",
-    "displayName": "Occupied_Zone_Air_Temperaure_Setpoint",
-    "extends": [
-      "dtmi:mapped:core:Target_Zone_Air_Temperature_Setpoint;1"
-    ],
-    "uri": "https://mapped.com/schema/mapped/1.0/core#Occupied_Zone_Air_Temperaure_Setpoint"
-  },
-  {
-    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Offset;1",
     "@type": "Interface",
     "description": "Control setting that defines an amount added to or subtracted from a reference value, such as a setpoint or a sensor reading",
@@ -22977,6 +22963,20 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:org:brickschema:schema:Brick:Occupied_Zone_Air_Temperature_Setpoint;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:mapped:core:Occupied_Target_Zone_Air_Temperature_Setpoint;1",
+    "deprecatedInBrickVersion": "1.3.0",
+    "description": "Target temperature of the zone or room during occupied mode",
+    "displayName": "Occupied_Zone_Air_Temperature_Setpoint",
+    "extends": [
+      "dtmi:mapped:core:Target_Zone_Air_Temperature_Setpoint;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Occupied_Zone_Air_Temperature_Setpoint"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:org:brickschema:schema:Brick:Off_Command;1",
     "@type": "Interface",
     "description": "An Off Command controls or reports the binary 'off' status of a control loop, relay or equipment activity. It can only be used to stop/deactivate an associated equipment or process, or determine that the related entity is 'off'",
@@ -24159,6 +24159,19 @@
       "dtmi:org:brickschema:schema:Brick:Terminal_Unit;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Radiator"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:org:brickschema:schema:Brick:Radioactivity_Concentration_Sensor;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:org:brickschema:schema:Brick:Air_Quality_Sensor;1",
+    "description": "",
+    "displayName": "Radioactivity_Concentration_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Radioactivity_Concentration_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -26230,6 +26243,19 @@
       "dtmi:org:brickschema:schema:Brick:Interface;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Touchpanel"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:org:brickschema:schema:Brick:Trace_Heat_Sensor;1",
+    "@type": "Interface",
+    "deprecated": true,
+    "deprecatedAndReplacedBy": "dtmi:org:brickschema:schema:Brick:Sensor;1",
+    "description": "",
+    "displayName": "Trace_Heat_Sensor",
+    "extends": [
+      "dtmi:org:brickschema:schema:Brick:Sensor;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Trace_Heat_Sensor"
   },
   {
     "@context": "dtmi:dtdl:context;3",
