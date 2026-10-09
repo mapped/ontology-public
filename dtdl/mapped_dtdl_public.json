@@ -5215,7 +5215,7 @@
     "description": "The objectified property of `level`. The `value` of this instance will be translated into an integer for `level`.",
     "displayName": "Floor_Level",
     "extends": [
-      "dtmi:mapped:core:Property_Node;1"
+      "dtmi:mapped:core:Meta;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Floor_Level"
   },
@@ -8262,7 +8262,7 @@
     "description": "",
     "displayName": "Name",
     "extends": [
-      "dtmi:mapped:core:Property_Node;1"
+      "dtmi:mapped:core:Meta;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Name"
   },
