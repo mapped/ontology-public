@@ -13895,7 +13895,7 @@
     "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Node;1",
     "@type": "Interface",
-    "description": "Abstract. A node in an OPC UA server's address space (OPC 10000-3 \u00a75.2, Base NodeClass), carrying the attributes every node shares. Only Object and Variable nodes are ingested; Method, View and type nodes are not.",
+    "description": "Abstract. A node in an OPC UA server's address space (OPC 10000-3 \u00a75.2, Base NodeClass), carrying the attributes every node shares. Object and Variable nodes are ingested; Method, View and type nodes are not. A node's OPC UA Properties are attached with opcua:hasProperty as opcua:Property vertices, except the standard Data Access ones, which are fields of their opcua:Variable.",
     "displayName": "opcua:Node",
     "extends": [
       "dtmi:mapped:opcua:Concept;1"
@@ -13915,6 +13915,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Property;1",
+    "@type": "Interface",
+    "description": "An OPC UA Property (OPC 10000-3 \u00a75.6.3): a Variable that describes its parent, reached through HasProperty, typed PropertyType, and always a leaf. opcua:browseName names it and opcua:value holds its value. Standard Data Access Properties (EngineeringUnits, EURange, \u2026) are fields of their opcua:Variable instead. Not a subclass of opcua:Variable: a Property has no components, and opcua:Variable is kept for DataVariables, the ones that become Points.",
+    "displayName": "opcua:Property",
+    "extends": [
+      "dtmi:mapped:opcua:Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Property"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Server;1",
     "@type": "Interface",
     "description": "An OPC UA server application at one endpoint (OPC 10000-1 \u00a72.1.38), not the standard Server Object (i=2253) that describes it. It is the root of the ingested address space and stands in for the Objects folder (i=85): the folder's children hang off it through opcua:organizes. A Brick-side device such as mapped:OPCUA_Device links to it with mapped:hasExternalReference.",
@@ -13928,7 +13939,7 @@
     "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Variable;1",
     "@type": "Interface",
-    "description": "An OPC UA data Variable (OPC 10000-3 \u00a75.6.2, \u00a75.6.4): a node that contains a value. Properties are not stored as Variables; they fold into their parent. Live values are timeseries on the mapped:Point that links to the Variable with mapped:hasExternalReference, not attributes of the Variable. A Variable with component Variables is usually a structure, which a Brick Thing may link to instead.",
+    "description": "An OPC UA DataVariable (OPC 10000-3 \u00a75.6.2, \u00a75.6.4): a node that contains a value, reached through HasComponent. Properties are Variables too (\u00a75.6.3) but are stored as opcua:Property or as fields of their parent. Live values are timeseries on the mapped:Point that links to the Variable with mapped:hasExternalReference. A Variable with component Variables is usually a structure, which a Brick Thing may link to instead.",
     "displayName": "opcua:Variable",
     "extends": [
       "dtmi:mapped:opcua:Node;1"
