@@ -14775,7 +14775,6 @@
     "description": "An array of Automatic Tint Windows.",
     "displayName": "Automatic_Tint_Window_Array",
     "extends": [
-      "dtmi:mapped:core:Device;1",
       "dtmi:org:brickschema:schema:Brick:System;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Automatic_Tint_Window_Array"
