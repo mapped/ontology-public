@@ -31568,9 +31568,42 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:DataType;1",
+    "@type": "Interface",
+    "description": "An OPC UA DataType node (OPC 10000-3 \u00a75.8.3): a built-in type such as Double, or a structure, enumeration or other subtype from namespace 0, a companion spec or a vendor. One vertex per DataType that an ingested Variable, Property or opcua:Field names through opcua:hasDataType, and per supertype of those. A structure's fields are opcua:Field vertices (opcua:hasField); an enumeration's values are opcua:EnumValue vertices (opcua:hasEnumValue).",
+    "displayName": "opcua:DataType",
+    "extends": [
+      "dtmi:mapped:opcua:Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#DataType"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:EnumValue;1",
+    "@type": "Interface",
+    "description": "One value of an enumeration and its label, an EnumValueType (OPC 10000-3 \u00a78.39): an entry of a MultiStateDiscreteType Variable's EnumStrings or a MultiStateValueDiscreteType Variable's EnumValues (OPC 10000-8 \u00a75.3.3), or an EnumField (\u00a78.52) of an enumeration or OptionSet DataType. Reached through opcua:hasEnumValue. Not an OPC UA node: its identity is its owner's opcua:nodeId and its opcua:enumValue.",
+    "displayName": "opcua:EnumValue",
+    "extends": [
+      "dtmi:mapped:opcua:Concept;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#EnumValue"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:Field;1",
+    "@type": "Interface",
+    "description": "One field of a structure DataType: a StructureField of its StructureDefinition (OPC 10000-3 \u00a78.51). opcua:hasDataType points to the field's DataType, as it does for a Variable or Property. Not an OPC UA node and without a NodeId, so not an opcua:Node: its identity is its structure's opcua:nodeId and its opcua:fieldName, which is unique within the structure.",
+    "displayName": "opcua:Field",
+    "extends": [
+      "dtmi:mapped:opcua:Concept;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#Field"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Node;1",
     "@type": "Interface",
-    "description": "Abstract. A node in an OPC UA server's address space (OPC 10000-3 \u00a75.2, Base NodeClass), carrying the attributes every node shares. Object and Variable nodes are ingested; Method, View and type nodes are not. A node's OPC UA Properties are attached with opcua:hasProperty as opcua:Property vertices, except the standard Data Access ones, which are fields of their opcua:Variable.",
+    "description": "Abstract. A node in an OPC UA server's address space (OPC 10000-3 \u00a75.2, Base NodeClass), carrying the attributes every node shares. Objects, Variables and Properties are ingested, with the types they use and those types' supertypes; Method, View and ReferenceType nodes are not. A node's OPC UA Properties are attached with opcua:hasProperty as opcua:Property vertices, except the standard Data Access ones, which become part of their opcua:Variable.",
     "displayName": "opcua:Node",
     "extends": [
       "dtmi:mapped:opcua:Concept;1"
@@ -31581,12 +31614,23 @@
     "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Object;1",
     "@type": "Interface",
-    "description": "An OPC UA Object node (OPC 10000-3 \u00a75.5.1), including folders: a system, a component, or a grouping of other nodes. Its type is named in opcua:typeDefinition. A Brick Thing links to it with mapped:hasExternalReference; the Object itself never carries a Brick class.",
+    "description": "An OPC UA Object node (OPC 10000-3 \u00a75.5.1), including folders: a system, a component, or a grouping of other nodes. Its type is the opcua:ObjectType that opcua:hasTypeDefinition points to. A Brick Thing links to it with mapped:hasExternalReference; the Object itself never carries a Brick class.",
     "displayName": "opcua:Object",
     "extends": [
       "dtmi:mapped:opcua:Node;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/opcua#Object"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:ObjectType;1",
+    "@type": "Interface",
+    "description": "An OPC UA ObjectType node (OPC 10000-3 \u00a75.5.2), such as FolderType, BaseObjectType, or a companion-spec or vendor type like PumpType. One vertex per ObjectType that an ingested Object names through opcua:hasTypeDefinition, and one per supertype of those, linked with opcua:hasSubtype. Namespace-0 types are included.",
+    "displayName": "opcua:ObjectType",
+    "extends": [
+      "dtmi:mapped:opcua:Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#ObjectType"
   },
   {
     "@context": "dtmi:dtdl:context;3",
@@ -31620,6 +31664,17 @@
       "dtmi:mapped:opcua:Node;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/opcua#Variable"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:opcua:VariableType;1",
+    "@type": "Interface",
+    "description": "An OPC UA VariableType node (OPC 10000-3 \u00a75.6.5), such as AnalogItemType, TwoStateDiscreteType or BaseDataVariableType. One vertex per VariableType that an ingested Variable names through opcua:hasTypeDefinition, and one per supertype of those, linked with opcua:hasSubtype. PropertyType gets no vertex, because opcua:Property already says it.",
+    "displayName": "opcua:VariableType",
+    "extends": [
+      "dtmi:mapped:opcua:Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/opcua#VariableType"
   },
   {
     "@context": "dtmi:dtdl:context;3",
