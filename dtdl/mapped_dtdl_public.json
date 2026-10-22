@@ -31649,7 +31649,7 @@
     "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:opcua:Server;1",
     "@type": "Interface",
-    "description": "An OPC UA server application at one endpoint (OPC 10000-1 \u00a72.1.38), not the standard Server Object (i=2253) that describes it. It is the root of the ingested address space and stands in for the Objects folder (i=85): the folder's children hang off it through opcua:organizes. A Brick-side device such as mapped:Device links to it with mapped:hasExternalReference.",
+    "description": "An OPC UA server application at one endpoint (OPC 10000-1 \u00a72.1.38), not the standard Server Object (i=2253) that describes it. It is the root of the ingested address space and stands in for the Objects folder (i=85): the folder's children hang off it through opcua:organizes.",
     "displayName": "opcua:Server",
     "extends": [
       "dtmi:mapped:opcua:Concept;1"
