@@ -5677,6 +5677,17 @@
   },
   {
     "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:CostRateQuantity;1",
+    "@type": "Interface",
+    "description": "A quantity that specifies a cost per unit of time with a unit, such as an hourly labor rate.",
+    "displayName": "CostRateQuantity",
+    "extends": [
+      "dtmi:mapped:core:Property_Node;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#CostRateQuantity"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
     "@id": "dtmi:mapped:core:Cost_Estimate_Per_Interval;1",
     "@type": "Interface",
     "description": "A sensor measuring and reporting the estimated cost of a resource such as electricity or over a specified interval.",
@@ -15385,6 +15396,17 @@
       "dtmi:mapped:core:Exhaust_Fan;1"
     ],
     "uri": "https://mapped.com/schema/mapped/1.0/core#Kitchen_Exhaust_Hood"
+  },
+  {
+    "@context": "dtmi:dtdl:context;3",
+    "@id": "dtmi:mapped:core:Labor_Entry;1",
+    "@type": "Interface",
+    "description": "A record of labor performed against a work order: one technician's or vendor's time on one work session, with its type (work, travel, wait, break), whether it is billable, and its rate and cost where known. A work order's booked labor time is the sum of its billable entries.",
+    "displayName": "Labor_Entry",
+    "extends": [
+      "dtmi:mapped:core:Entity;1"
+    ],
+    "uri": "https://mapped.com/schema/mapped/1.0/core#Labor_Entry"
   },
   {
     "@context": "dtmi:dtdl:context;3",
